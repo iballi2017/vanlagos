@@ -1,0 +1,31 @@
+/* body{
+   
+} */
+
+/* .form-btn{
+    border: none;
+    border-radius: 0%;
+} */
+
+/*  Register page style */
+.register-page .form-section {
+  background-color: #fff;
+}
+
+.register-page input,
+.login-page input {
+  background-color: #e5e5e5;
+}
+
+/* login-page */
+.form-btn {
+  border: none;
+  border-radius: 0%;
+  color: white;
+  background-color: green;
+}
+
+.login-page a {
+  text-align: center;
+  color: #b0b0b0;
+}
