@@ -53,6 +53,11 @@ include_once '../includes/header.php'; ?>
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- if the table is empty -->
+                    <div class="p-4">
+                        <p>You currently have no preview bookings</p>
+                    </div>
                 </div>
             </div>
         </div>

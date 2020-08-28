@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap");
+
+/********
+    scss variables
+********/
+$OneViewport: 100vh;
+$greenishColor: #4d9f45;
+$greenishLightColor: #a8b622;
+$greenishLightColor2: #c3d03f;
+$greyishColor: #dedede;
+$white: #ffffff;
+$lightBlue: #2589bd;
+$mainFontfamily: "Roboto", sans-serif;
+
+
+
+.form-wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"]{
+
+    &:focus{
+        outline: 0;
+    }
+}

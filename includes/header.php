@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PM Transit</title>
+    <title>Van Lagos</title>
     <!-- font family -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap" rel="stylesheet">
     <!-- Font awesome -->
@@ -38,25 +38,13 @@
                     <li class="nav-item main-animate-nav-item active">
                         <a class="nav-link custom-nav-link" href="../user/about-us.php">About Us</a>
                     </li>
-                    <li class="nav-item dropdown main-animate-nav-item">
-                        <a class="nav-link dropdown-toggle special-service-dropdown custom-nav-link" href="#"
-                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Special Services
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Hire a bus</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">NYSC Special</a>
-                        </div>
-                    </li>
                     <li class="nav-item main-animate-nav-item">
-                        <a class="nav-link custom-nav-link" href="https://postmailexpress.com/users/cargo-service"
-                            target="_blank">Cargo</a>
+                        <a class="nav-link custom-nav-link" href="#"
+                            target="_blank">Pricing</a>
                     </li>
-                    <li class="nav-item main-animate-nav-item">
+                    <!-- <li class="nav-item main-animate-nav-item">
                         <a class="nav-link custom-nav-link" href="../user/booking.php">Hire a Bus</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item main-animate-nav-item">
                         <a class="nav-link custom-nav-link" href="../user/contact-us.php">Contact Us</a>
                     </li>
