@@ -259,7 +259,7 @@ navbar brand logo modified for screen-readers
   background-color: #ffffff; }
 
 .index-booking-form {
-  margin-top: -200px; }
+  margin-top: -30vh; }
 
 .hero-tab-nav-links {
   background-color: #f0f0f0;
@@ -490,5 +490,49 @@ input.invalid {
 
 .text {
   /* bottom: 0; */ }
+
+#userHireForm .form-wrapper {
+  max-width: 600px;
+  margin: 0 auto; }
+#userHireForm .fontawesome-pseudo:before,
+#userHireForm .fontawesome-pseudo:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; }
+#userHireForm #pills-hirevan-tab.active {
+  background-color: #a8b622; }
+#userHireForm input[type="text"],
+#userHireForm select {
+  width: 100%; }
+  #userHireForm input[type="text"]:focus,
+  #userHireForm select:focus {
+    outline: 0; }
+#userHireForm select {
+  /* remove default style from browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+  #userHireForm select option {
+    margin: 5em;
+    line-height: 2;
+    font: inherit; }
+  #userHireForm select::after {
+    content: "hhhhh"; }
+#userHireForm .select_drop_wrapper {
+  position: relative; }
+  #userHireForm .select_drop_wrapper::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0dd";
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    color: #a8b622;
+    pointer-events: none;
+    bottom: .4em; }
+#userHireForm .pick-up-label::before {
+  content: "\f073";
+  margin-right: 0.3em; }
 
 /*# sourceMappingURL=style.css.map */

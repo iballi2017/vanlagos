@@ -6,7 +6,44 @@
   max-width: 600px;
   margin: 0 auto; }
 
-input[type="text"]:focus {
-  outline: 0; }
+.fontawesome-pseudo:before, .fontawesome-pseudo:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; }
+
+input[type="text"], select {
+  width: 100%; }
+  input[type="text"]:focus, select:focus {
+    outline: 0; }
+
+select {
+  /* remove default style from browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+  select option {
+    margin: 5em;
+    line-height: 2;
+    font: inherit; }
+  select::after {
+    content: "hhhhh"; }
+
+.select_drop_wrapper {
+  position: relative; }
+  .select_drop_wrapper::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0dd";
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    color: red;
+    pointer-events: none;
+    bottom: 0; }
+
+.pick-up-label::before {
+  content: "\f073";
+  margin-right: .3em; }
 
 /*# sourceMappingURL=style.css.map */

@@ -37,47 +37,307 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-hirevan" role="tabpanel"
                 aria-labelledby="pills-hirevan-tab">
+                <!-- VAN HIRE FORM OPENS -->
+                <form action="#" class="container">
+                    <!-- Pick-up place -->
+                    <div class="row no-gutters">
+                        <div class="col-9">
+                            <div class="border m-1 rounded">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-md-4 py-1 px-2 bg-light">
+                                        <label for="pickUpAddress" class="m-0">Pick-up</label>
+                                    </div>
+                                    <div class="col-7 col-md-8 py-1 px-3">
+                                        <input type="text" id="pickUpAddress" class="border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="border m-1 rounded">
+                                <div class="row">
+                                    <div class="col py-1 px-3">
+                                        <div class="select_drop_wrapper mx-1">
+                                            <select class="border-0" name="state" id="state">
+                                                <option value="default" selected>State</option>
+                                                <option value="lagos">Lagos</option>
+                                                <option value="lagos">Abuja</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Drop-off place -->
+                    <div class="row no-gutters">
+                        <div class="col-9">
+                            <div class="border m-1 rounded">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-md-4 py-1 px-2 bg-light">
+                                        <label for="dropOffAddress" class="m-0">Drop-off</label>
+                                    </div>
+                                    <div class="col-7 col-md-8 py-1 px-3">
+                                        <input type="text" id="dropOffAddress" class="border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="border m-1 rounded">
+                                <div class="row">
+                                    <div class="col py-1 px-3">
+                                        <div class="select_drop_wrapper mx-1">
+                                            <select class="border-0" name="state" id="state">
+                                                <option value="default" selected>State</option>
+                                                <option value="lagos">Lagos</option>
+                                                <option value="lagos">Abuja</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <form action="#">
+
+                    <!-- Pick-up place -->
+                    <div class="row no-gutters">
+                        <div class="col-9">
+                            <div class="border m-1 rounded">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-md-4 py-1 px-2 bg-light">
+                                        <label for="pickupDate"
+                                            class="m-0 pick-up-label fontawesome-pseudo">Pick-up</label>
+                                    </div>
+                                    <div class="col-7 col-md-8 py-1 px-3">
+                                        <input type="text" id="pickupDate" class="border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="border m-1 rounded">
+                                <div class="row">
+                                    <div class="col py-1 px-3">
+                                        <div class="select_drop_wrapper mx-1">
+                                            <select class="border-0" name="dropOffTime" id="dropOffTime">
+                                                <option value="default" selected>Time</option>
+                                                <option value="10am">10:00AM</option>
+                                                <option value="2pm">2:00PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drop-off place -->
+                    <div class="row no-gutters">
+                        <div class="col-9">
+                            <div class="border m-1 rounded">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-md-4 py-1 px-2 bg-light">
+                                        <label for="dropOffDate"
+                                            class="m-0 pick-up-label fontawesome-pseudo">Drop-off</label>
+                                    </div>
+                                    <div class="col-7 col-md-8 py-1 px-3">
+                                        <input type="text" id="dropOffDate" class="border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="border m-1 rounded">
+                                <div class="row">
+                                    <div class="col py-1 px-3">
+                                        <div class="select_drop_wrapper mx-1">
+                                            <select class="border-0" name="dropOffTime" id="dropOffTime">
+                                                <option value="default" selected>Time</option>
+                                                <option value="10am">10:00AM</option>
+                                                <option value="2pm">2:00PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Link button -->
                     <div class="row">
-                        <div class="col-9">
-                            <div class="row border p-2 mb-3 no-gutters">
-                                <div class="col-2 bg-light">
-                                    <label for="#">Pick-up</label>
-                                </div>
-                                <div class="col-10">
-                                    <input type="text" class="border-0" style="width: 100%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <select name="state" id="state" style=" width: 100%">
-                                <option value="lagos">Lagos</option>
-                                <option value="lagos">Abuja</option>
-                            </select>
-                        </div>
-                    </div><div class="row">
-                        <div class="col-9">
-                            <div class="row border p-2 mb-3 no-gutters">
-                                <div class="col-2 bg-light">
-                                    <label for="#">Drop-off</label>
-                                </div>
-                                <div class="col-10">
-                                    <input type="text" class="border-0" style="width: 100%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <select name="state" id="state" style=" width: 100%">
-                                <option value="lagos">Lagos</option>
-                                <option value="lagos">Abuja</option>
-                            </select>
+                        <div class="col">
+                            <a href="#">Continue Reservation</a>
                         </div>
                     </div>
                 </form>
+                <!-- VAN HIRE FORM CLOSES -->
             </div>
             <div class="tab-pane fade" id="pills-hirebus" role="tabpanel" aria-labelledby="pills-hirebus-tab">
-                hire a bus lorem200
+
+                <!-- BUS HIRE FORM OPENS -->
+
+                <form action="#" class="container">
+                    <!-- Pick-up place -->
+                    <div class="row no-gutters">
+                        <div class="col-9">
+                            <div class="border m-1 rounded">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-md-4 py-1 px-2 bg-light">
+                                        <label for="pickUpAddress" class="m-0">Pick-up</label>
+                                    </div>
+                                    <div class="col-7 col-md-8 py-1 px-3">
+                                        <input type="text" id="pickUpAddress" class="border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="border m-1 rounded">
+                                <div class="row">
+                                    <div class="col py-1 px-3">
+                                        <div class="select_drop_wrapper">
+                                            <select class="border-0" name="state" id="state">
+                                                <option value="default" selected>State</option>
+                                                <option value="lagos">Lagos</option>
+                                                <option value="lagos">Abuja</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Drop-off place -->
+                    <div class="row no-gutters">
+                        <div class="col-9">
+                            <div class="border m-1 rounded">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-md-4 py-1 px-2 bg-light">
+                                        <label for="dropOffAddress" class="m-0">Drop-off</label>
+                                    </div>
+                                    <div class="col-7 col-md-8 py-1 px-3">
+                                        <input type="text" id="dropOffAddress" class="border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="border m-1 rounded">
+                                <div class="row">
+                                    <div class="col py-1 px-3">
+                                        <div class="select_drop_wrapper">
+                                            <select class="border-0" name="state" id="state">
+                                                <option value="default" selected>State</option>
+                                                <option value="lagos">Lagos</option>
+                                                <option value="lagos">Abuja</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Pick-up place -->
+                    <div class="row no-gutters">
+                        <div class="col-9">
+                            <div class="border m-1 rounded">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-md-4 py-1 px-2 bg-light">
+                                        <label for="pickupTime"
+                                            class="m-0 pick-up-label fontawesome-pseudo">Pick-up</label>
+                                    </div>
+                                    <div class="col-7 col-md-8 py-1 px-3">
+                                        <input type="text" id="pickupTime" class="border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="border m-1 rounded">
+                                <div class="row">
+                                    <div class="col py-1 px-3">
+                                        <div class="select_drop_wrapper">
+                                            <select class="border-0" name="dropOffDate" id="dropOffDate">
+                                                <option value="default" selected>Date</option>
+                                                <option value="10am">10:00AM</option>
+                                                <option value="2pm">2:00PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drop-off place -->
+                    <div class="row no-gutters">
+                        <div class="col-9">
+                            <div class="border m-1 rounded">
+                                <div class="row no-gutters">
+                                    <div class="col-5 col-md-4 py-1 px-2 bg-light">
+                                        <label for="dropOffDate"
+                                            class="m-0 pick-up-label fontawesome-pseudo">Drop-off</label>
+                                    </div>
+                                    <div class="col-7 col-md-8 py-1 px-3">
+                                        <input type="text" id="dropOffDate" class="border-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="border m-1 rounded">
+                                <div class="row">
+                                    <div class="col py-1 px-3">
+                                        <div class="select_drop_wrapper">
+                                            <select class="border-0" name="dropOffTime" id="dropOffTime">
+                                                <option value="default" selected>Date</option>
+                                                <option value="10am">10:00AM</option>
+                                                <option value="2pm">2:00PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                                        <div class="col-12 col-md-9">
+                                            <div class="row border mb-3 no-gutters rounded">
+                                                <div class="col-3 py-1 px-2 bg-light">
+                                                    <label for="#" class="m-0 pick-up-label fontawesome-pseudo">Drop-off</label>
+                                                </div>
+                                                <div class="col-9 py-1 px-3">
+                                                    <input type="text" class="border-0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="row border rounded">
+                                                <div class="col py-1 px-3">
+                                                    <div class="select_drop_wrapper">
+                                                        <select class="border-0" name="state" id="state">
+                                                            <option value="default" selected>Date</option>
+                                                            <option value="10am">10:00AM</option>
+                                                            <option value="2pm">2:00PM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                    <!-- Link button -->
+                    <div class="row">
+                        <div class="col">
+                            <a href="#">Continue Reservation</a>
+                        </div>
+                    </div>
+                </form>
+                <!-- BUS HIRE FORM CLOSES -->
             </div>
         </div>
     </div>

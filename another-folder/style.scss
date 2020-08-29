@@ -19,9 +19,52 @@ $mainFontfamily: "Roboto", sans-serif;
     margin: 0 auto;
 }
 
-input[type="text"]{
+.fontawesome-pseudo:before, .fontawesome-pseudo:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 
+input[type="text"],select{
+width: 100%;
     &:focus{
         outline: 0;
     }
+}
+// Custom form select dropdown
+select {
+  /* remove default style from browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  option {
+    margin: 5em;
+    line-height: 2;
+    font: inherit;
+  }
+
+  &::after {
+    content: "hhhhh";
+  }
+}
+.select_drop_wrapper {
+  position: relative;
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0dd";
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    color: red;
+    pointer-events: none;
+    bottom: 0;
+  }
+}
+
+.pick-up-label::before{
+    content: "\f073";
+    margin-right: .3em;
 }

@@ -300,7 +300,8 @@ navbar brand logo modified for screen-readers
 }
 
 .index-booking-form {
-  margin-top: -200px;
+  // margin-top: -200px;
+  margin-top: -30vh;
 }
 
 .hero-tab-nav-links {
@@ -318,7 +319,6 @@ navbar brand logo modified for screen-readers
     color: $white;
   }
 }
-
 
 .section-title::after {
   content: "";
@@ -621,4 +621,67 @@ input.invalid {
 
 .text {
   /* bottom: 0; */
+}
+
+#userHireForm {
+  .form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .fontawesome-pseudo:before,
+  .fontawesome-pseudo:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  #pills-hirevan-tab.active{
+    background-color: $greenishLightColor;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    &:focus {
+      outline: 0;
+    }
+  }
+  // Custom form select dropdown
+  select {
+    /* remove default style from browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    option {
+      margin: 5em;
+      line-height: 2;
+      font: inherit;
+    }
+
+    &::after {
+      content: "hhhhh";
+    }
+  }
+  .select_drop_wrapper {
+    position: relative;
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0dd";
+      font-weight: 900;
+      font-size: 20px;
+      position: absolute;
+      right: 0;
+      color: $greenishLightColor;
+      pointer-events: none;
+      bottom: .4em;
+    }
+  }
+
+  .pick-up-label::before {
+    content: "\f073";
+    margin-right: 0.3em;
+  }
 }
