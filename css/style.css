@@ -32,6 +32,11 @@ h5,
 h6 {
   clear: both; }
 
+.fontawesome-pseudo:before,
+.fontawesome-pseudo:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; }
+
 .text-content-top {
   height: 50vh;
   display: flex;
@@ -41,11 +46,20 @@ h6 {
   .text-content-top .hero-title {
     color: #ffffff; }
     .text-content-top .hero-title h1 {
-      font-size: 4rem;
+      font-size: 1.2rem;
       margin: 0; }
-    .text-content-top .hero-title h3 {
-      font-size: 2rem;
+    .text-content-top .hero-title h2 {
+      font-size: 0.9rem;
       margin: 0; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.text-lowercase {
+  text-transform: lowercase; }
+
+.text-capitalize {
+  text-transform: capitalize; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -87,9 +101,7 @@ textarea {
   font-family: "Roboto", sans-serif;
   border: 1px solid #ccc;
   border-radius: 3px;
-  padding: 3px;
-  border: 1px solid #4d9f45;
-  background-color: unset; }
+  padding: 3px; }
   .form-control:focus, .form-control:active,
   .custom-select:focus,
   .custom-select:active,
@@ -116,6 +128,9 @@ textarea {
     inset: 0;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6); }
 
+.grey_control {
+  background-color: #efefef; }
+
 select {
   border: 1px solid #ccc; }
 
@@ -133,6 +148,17 @@ textarea {
     outline: 0;
     inset: 0;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6); }
+
+.grey-btn {
+  background-color: #c4c4c4;
+  color: #ffffff; }
+
+.regular-link {
+  color: #4d9f45;
+  transition: all 300ms ease-in-out; }
+  .regular-link:hover {
+    color: #c3d03f;
+    text-decoration: none; }
 
 /*......................................................*/
 /*...................... Brand-logo style considering screen readers ......................*/
@@ -179,40 +205,16 @@ navbar brand logo modified for screen-readers
     inset: 0;
     box-shadow: unset; }
 
+.nav-item.active .custom-nav-link {
+  color: #a8b622; }
+
 .custom-nav-link {
-  color: #ffffff; }
+  color: #ffffff;
+  transition: all 300ms ease-in-out; }
   .custom-nav-link:hover {
     color: #a8b622; }
 
 /*......................................................*/
-/*......................
- Nav-links animation 
- ......................*/
-.main-animate-nav-item {
-  display: inline-block;
-  position: relative;
-  margin-right: 1.2em; }
-
-.main-animate-nav-item:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 3px;
-  left: 50%;
-  position: absolute;
-  background: #a8b622;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0; }
-
-.main-animate-nav-item:hover:after {
-  width: 100%;
-  left: 0; }
-
-.main-animate-nav-item.active {
-  border-bottom: 3px solid #a8b622;
-  color: #ffffff; }
-
 /* ..............
  hero content section
  ..................*/
@@ -221,7 +223,8 @@ navbar brand logo modified for screen-readers
   background-image: url(../images/hero-banner4.png);
   background-blend-mode: soft-light;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .how-it-works {
   height: 70vh;
@@ -259,14 +262,15 @@ navbar brand logo modified for screen-readers
   background-color: #ffffff; }
 
 .index-booking-form {
-  margin-top: -30vh; }
+  margin-top: -40vh; }
 
 .hero-tab-nav-links {
   background-color: #f0f0f0;
   color: #a8b622;
   border-radius: 0 !important;
   padding-top: 1em;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  font-size: 1rem; }
   .hero-tab-nav-links:hover, .hero-tab-nav-links:focus {
     color: #4d9f45; }
   .hero-tab-nav-links.active {
@@ -294,6 +298,28 @@ navbar brand logo modified for screen-readers
   .why-choose-us-list li {
     text-align: center;
     flex-basis: 46%; }
+
+/*............... Pricing ................*/
+#pricingSection .cust_title {
+  display: inline-flex;
+  align-items: center; }
+#pricingSection .cust_title::after,
+#pricingSection .cust_title::before {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #c4c4c4;
+  margin-right: 0.5em;
+  margin-left: 0.5em; }
+#pricingSection .desc-icons {
+  margin: 0 auto; }
+#pricingSection .desc-icons img {
+  width: 20px; }
+#pricingSection .item-name {
+  font-weight: 500; }
+#pricingSection .price {
+  font-size: 1.2rem;
+  font-weight: 600; }
 
 /*...............How it works................*/
 .how-it-works-inner {
@@ -331,7 +357,9 @@ navbar brand logo modified for screen-readers
 /*......................................................*/
 /*...................... footer ......................*/
 footer {
-  background-color: #293927;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  background-color: #1b1c13;
   color: #ffffff; }
   footer ul {
     padding: 0; }
@@ -365,7 +393,13 @@ input {
   width: 100%;
   font-size: 17px;
   font-family: Raleway;
-  border: 1px solid #aaaaaa; }
+  border: 1px solid #aaaaaa;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */ }
+  input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
+  input[type="number"] {
+    -moz-appearance: textfield; }
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
@@ -457,6 +491,13 @@ input.invalid {
   .faq-accordion-button:hover {
     color: #a8b622; }
 
+@media (min-width: 900px) {
+  .text-content-top .hero-title {
+    color: #ffffff; }
+    .text-content-top .hero-title h1 {
+      font-size: 2rem; }
+    .text-content-top .hero-title h2 {
+      font-size: 1.3rem; } }
 @media (min-width: 765px) {
   .curve-left-top {
     border-radius: 10px 0 0 0 !important; }
@@ -494,10 +535,6 @@ input.invalid {
 #userHireForm .form-wrapper {
   max-width: 600px;
   margin: 0 auto; }
-#userHireForm .fontawesome-pseudo:before,
-#userHireForm .fontawesome-pseudo:after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900; }
 #userHireForm #pills-hirevan-tab.active {
   background-color: #a8b622; }
 #userHireForm input[type="text"],
@@ -506,33 +543,79 @@ input.invalid {
   #userHireForm input[type="text"]:focus,
   #userHireForm select:focus {
     outline: 0; }
-#userHireForm select {
-  /* remove default style from browsers */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none; }
-  #userHireForm select option {
-    margin: 5em;
-    line-height: 2;
-    font: inherit; }
-  #userHireForm select::after {
-    content: "hhhhh"; }
-#userHireForm .select_drop_wrapper {
-  position: relative; }
-  #userHireForm .select_drop_wrapper::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0dd";
-    font-weight: 900;
-    font-size: 20px;
-    position: absolute;
-    right: 0;
-    color: #a8b622;
-    pointer-events: none;
-    bottom: .4em; }
 #userHireForm .pick-up-label::before {
   content: "\f073";
   margin-right: 0.3em; }
+
+.user-profile-container form label {
+  display: block; }
+
+.select_drop_wrapper {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: unset; }
+  .select_drop_wrapper::after {
+    content: "\f0dd";
+    font-size: 20px;
+    position: absolute;
+    right: 0.3em;
+    color: #a8b622;
+    pointer-events: none;
+    bottom: 0.4em; }
+  .select_drop_wrapper:focus, .select_drop_wrapper:active {
+    outline: 0;
+    inset: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6); }
+  .select_drop_wrapper select {
+    /* remove default style from browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    width: 100%; }
+    .select_drop_wrapper select:focus {
+      outline: 0; }
+    .select_drop_wrapper select option {
+      margin: 5em;
+      line-height: 2;
+      font: inherit;
+      font-size: 0.8rem; }
+    .select_drop_wrapper select::after {
+      content: "hhhhh"; }
+
+.rej_checkbox,
+.rej_radio {
+  position: absolute;
+  opacity: 0; }
+  .rej_checkbox ~ label,
+  .rej_radio ~ label {
+    cursor: pointer; }
+  .rej_checkbox:checked ~ label .customCheck::after,
+  .rej_radio:checked ~ label .customCheck::after {
+    content: "\f00c";
+    color: #4d9f45; }
+
+.rej_radio:checked ~ label .customRadio {
+  box-shadow: inset 0 0 0 5px #4d9f45; }
+
+.customCheck,
+.customRadio {
+  --size: 1.2em;
+  width: var(--size);
+  height: var(--size);
+  margin-right: var(--size);
+  cursor: pointer;
+  border: 0.6px solid #4d9f45;
+  border-radius: 3px;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+  display: grid;
+  place-content: center; }
+
+.customRadio {
+  border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */

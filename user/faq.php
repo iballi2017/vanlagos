@@ -29,7 +29,7 @@ include_once '../includes/header.php'; ?>
                                             <button class="btn btn-link collapsed faq-accordion-button" type="button"
                                                 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                                                 aria-controls="collapseOne">
-                                                1. Why PME Transit
+                                                1. Why VanLagos
                                             </button>
                                         </h2>
                                     </div>
@@ -37,7 +37,7 @@ include_once '../includes/header.php'; ?>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                         data-parent="#accordionExample">
                                         <div class="card-body">
-                                            PME Transit is a pre-scheduled bus booking platform with the latest
+                                            VanLagos is a pre-scheduled bus booking platform with the latest
                                             technology for an effective and efficient service delivery. We offer the
                                             most affordable prices with great offers and discounts while still providing
                                             safety and comfort.
@@ -57,7 +57,7 @@ include_once '../includes/header.php'; ?>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordionExample">
                                         <div class="card-body">
-                                            With PME Transit bus booking, you have the ease of choosing different
+                                            With VanLagos bus booking, you have the ease of choosing different
                                             methods for payments. Payment options like bank transfer, POS and online
                                             transfer are available for the convenience of our customers.
                                         </div>

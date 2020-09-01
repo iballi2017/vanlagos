@@ -30,7 +30,7 @@ include_once '../includes/header.php'; ?>
                                 <tr>
                                     <th scope="col">S/N</th>
                                     <th scope="col">Date</th>
-                                    <th scope="col">name of bus</th>
+                                    <th scope="col">Name of bus</th>
                                     <th scope="col">Seat(s) selected</th>
                                     <th scope="col">Amount</th>
                                 </tr>

@@ -31,40 +31,37 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="d-block d-lg-none text-center mt-4 mb-2">
+                    <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2 w-50">Sign In</a>
+                    <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2">Sign Up</a>
+                </div>
                 <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item main-animate-nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li> -->
-                    <li class="nav-item main-animate-nav-item active">
+                    <li class="nav-item active">
                         <a class="nav-link custom-nav-link" href="../user/about-us.php">About Us</a>
                     </li>
-                    <li class="nav-item main-animate-nav-item">
-                        <a class="nav-link custom-nav-link" href="#"
-                            target="_blank">Pricing</a>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#" target="_blank">Pricing</a>
                     </li>
-                    <!-- <li class="nav-item main-animate-nav-item">
-                        <a class="nav-link custom-nav-link" href="../user/booking.php">Hire a Bus</a>
-                    </li> -->
-                    <li class="nav-item main-animate-nav-item">
-                        <a class="nav-link custom-nav-link" href="../user/contact-us.php">Contact Us</a>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="../user/contact-us-alt.php">Contact Us</a>
                     </li>
-                    <li class="nav-item main-animate-nav-item">
+                    <li class="nav-item">
                         <a class="nav-link custom-nav-link" href="../user/user-account-profile.php"><i
                                 class="fas fa-user"></i> My Account</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-lg-block">
                         <a class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
                             href="../user/login.php">Sign
                             In</a>
                     </li>
-                    <li class="nav-item mt-2 mt-md-0">
+                    <li class="nav-item mt-2 mt-md-0 d-none d-lg-block">
                         <a class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
                             href="../user/register.php">Sign
                             Up</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2">Logout
-                        </button>
+                        <a class="nav-link custom-nav-link" href="#"></i>Logout</a>
                     </li>
                 </ul>
             </div>

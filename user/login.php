@@ -20,32 +20,31 @@ include_once '../includes/header.php'; ?>
                 <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
                     <div class="card my-5">
 
-                        <div class="card-body p-5">
-                            <h4 class="text-center mb-5"><strong>Login to your account</strong></h4>
+                        <div class="card-body p-4 p-md-5">
+                            <h4 class="text-center mb-4"><strong>Login to your account</strong></h4>
                             <form>
 
 
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="inputEmail"
+                                <div class="form-group mb-3">
+                                    <input type="email" class="form-control grey_control" id="inputEmail"
                                         placeholder="Email / Phone number">
                                 </div>
 
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="inputPassword"
+                                <div class="form-group mb-3">
+                                    <input type="password" class="form-control grey_control" id="inputPassword"
                                         placeholder="Password">
                                 </div>
 
                                 <!-- <div class="form-group"> -->
-                                <button type="submit" class="btn custom-form-btn px-3">Login</button>
+                                <button type="submit" class="btn custom-form-btn px-5 mb-3">Login</button>
                                 <!-- </div> -->
                                 <div class="">
-                                    Dont have account? Click <a href="#">here</a> to
-                                    register
+                                    <small>
+                                    Dont have account? Click <a href="#" class="regular-link">here</a> to
+                                    register</small>
                                 </div>
-                                <div><a href="#"> Forgot password?</a></div>
-
                                 <div>
-                                    <a href="#">Continue without login</a>
+                                    <small><a href="#" class="regular-link"> Forgot password?</a></small>
                                 </div>
                             </form>
                         </div>

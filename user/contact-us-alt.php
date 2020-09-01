@@ -12,7 +12,7 @@ include_once '../includes/header.php'; ?>
     </section>
 
     <section class="mt-5">
-        <div class="container bg-white p-3">
+        <div class="container bg-white p-5">
             <div class="row">
                 <div class="col">
                     <h3>Send us a message</h3>

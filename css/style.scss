@@ -46,6 +46,12 @@ h6 {
   clear: both;
 }
 
+.fontawesome-pseudo:before,
+.fontawesome-pseudo:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
 .text-content-top {
   height: 50vh;
   display: flex;
@@ -56,14 +62,24 @@ h6 {
   .hero-title {
     color: $white;
     h1 {
-      font-size: 4rem;
+      font-size: 1.2rem;
       margin: 0;
     }
-    h3 {
-      font-size: 2rem;
+    h2 {
+      font-size: 0.9rem;
       margin: 0;
     }
   }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
 }
 
 /*--------------------------------------------------------------
@@ -104,8 +120,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
-  border: 1px solid $greenishColor;
-  background-color: unset;
+  // background-color: unset;
 
   &:focus,
   &:active {
@@ -114,6 +129,10 @@ textarea {
     inset: 0;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
   }
+}
+
+.grey_control {
+  background-color: #efefef;
 }
 
 select {
@@ -140,6 +159,20 @@ textarea {
   }
 }
 
+.grey-btn {
+  background-color: #c4c4c4;
+  color: $white;
+}
+
+.regular-link {
+  color: $greenishColor;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    color: $greenishLightColor2;
+    text-decoration: none;
+  }
+}
+
 //........................................
 
 /*......................................................*/
@@ -147,6 +180,11 @@ textarea {
 .main-nav-bar {
   background-color: #1b1c13;
 }
+// .navbar-nav{
+//   > li +{
+//     margin-left: 1.3em;
+//   }
+// }
 .navbar-light .navbar-nav .nav-link {
   color: $white;
 
@@ -202,45 +240,19 @@ navbar brand logo modified for screen-readers
   }
 }
 
+.nav-item.active {
+  .custom-nav-link {
+    color: $greenishLightColor;
+  }
+}
 .custom-nav-link {
   color: $white;
+  transition: all 300ms ease-in-out;
   &:hover {
     color: $greenishLightColor;
   }
 }
 /*......................................................*/
-/*......................
- Nav-links animation 
- ......................*/
-
-.main-animate-nav-item {
-  //   letter-spacing: 0.12em;
-  display: inline-block;
-  position: relative;
-  margin-right: 1.2em;
-}
-
-.main-animate-nav-item:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 3px;
-  left: 50%;
-  position: absolute;
-  background: $greenishLightColor;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.main-animate-nav-item:hover:after {
-  width: 100%;
-  left: 0;
-}
-.main-animate-nav-item.active {
-  border-bottom: 3px solid $greenishLightColor;
-  color: $white;
-}
 
 /* ..............
  hero content section
@@ -251,6 +263,7 @@ navbar brand logo modified for screen-readers
   background-blend-mode: soft-light;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .how-it-works {
@@ -301,7 +314,7 @@ navbar brand logo modified for screen-readers
 
 .index-booking-form {
   // margin-top: -200px;
-  margin-top: -30vh;
+  margin-top: -40vh;
 }
 
 .hero-tab-nav-links {
@@ -310,6 +323,7 @@ navbar brand logo modified for screen-readers
   border-radius: 0 !important;
   padding-top: 1em;
   padding-bottom: 1em;
+  font-size: 1rem;
   &:hover,
   &:focus {
     color: $greenishColor;
@@ -345,6 +359,41 @@ navbar brand logo modified for screen-readers
   li {
     text-align: center;
     flex-basis: 46%;
+  }
+}
+
+/*............... Pricing ................*/
+#pricingSection {
+  .cust_title {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .cust_title::after,
+  .cust_title::before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #c4c4c4;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  .desc-icons {
+    margin: 0 auto;
+  }
+
+  .desc-icons img {
+    width: 20px;
+  }
+
+  .item-name {
+    font-weight: 500;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 }
 
@@ -391,7 +440,9 @@ navbar brand logo modified for screen-readers
 /*......................................................*/
 /*...................... footer ......................*/
 footer {
-  background-color: #293927;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  background-color: #1b1c13;
   color: $white;
 
   ul {
@@ -449,6 +500,17 @@ input {
   font-size: 17px;
   font-family: Raleway;
   border: 1px solid #aaaaaa;
+
+  // Number inputs (removing the spin button arrows on the right side)
+  /* Chrome, Safari, Edge, Opera */
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  /* Firefox */
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -576,6 +638,20 @@ input.invalid {
   }
 }
 
+@media (min-width: 900px) {
+  .text-content-top {
+    .hero-title {
+      color: $white;
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
 @media (min-width: 765px) {
   .curve-left-top {
     border-radius: 10px 0 0 0 !important;
@@ -629,13 +705,7 @@ input.invalid {
     margin: 0 auto;
   }
 
-  .fontawesome-pseudo:before,
-  .fontawesome-pseudo:after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-  }
-  
-  #pills-hirevan-tab.active{
+  #pills-hirevan-tab.active {
     background-color: $greenishLightColor;
   }
 
@@ -647,6 +717,79 @@ input.invalid {
     }
   }
   // Custom form select dropdown
+  // select {
+  //   /* remove default style from browsers */
+  //   -webkit-appearance: none;
+  //   -moz-appearance: none;
+  //   -ms-appearance: none;
+  //   -o-appearance: none;
+  //   appearance: none;
+
+  //   option {
+  //     margin: 5em;
+  //     line-height: 2;
+  //     font: inherit;
+  //     font-size: 0.8rem;
+  //   }
+
+  //   &::after {
+  //     content: "hhhhh";
+  //   }
+  // }
+  // .select_drop_wrapper {
+  //   position: relative;
+  //   &::after {
+  //     content: "\f0dd";
+  //     font-size: 20px;
+  //     position: absolute;
+  //     right: 0;
+  //     color: $greenishLightColor;
+  //     pointer-events: none;
+  //     bottom: 0.4em;
+  //   }
+  // }
+
+  .pick-up-label::before {
+    content: "\f073";
+    margin-right: 0.3em;
+  }
+}
+
+.user-profile-container {
+  form {
+    label {
+      display: block;
+    }
+  }
+}
+
+// Custom form select dropdown
+
+.select_drop_wrapper {
+  position: relative;
+  &::after {
+    content: "\f0dd";
+    font-size: 20px;
+    position: absolute;
+    right: 0.3em;
+    color: $greenishLightColor;
+    pointer-events: none;
+    bottom: 0.4em;
+  }
+  // ........................
+  font-family: $mainFontfamily;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: unset;
+
+  &:focus,
+  &:active {
+    outline: 0;
+    inset: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+  }
+  // ........................
+  // Custom form select dropdown
   select {
     /* remove default style from browsers */
     -webkit-appearance: none;
@@ -654,34 +797,62 @@ input.invalid {
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
+    width: 100%;
+
+    &:focus {
+      outline: 0;
+    }
 
     option {
       margin: 5em;
       line-height: 2;
       font: inherit;
+      font-size: 0.8rem;
     }
 
     &::after {
       content: "hhhhh";
     }
   }
-  .select_drop_wrapper {
-    position: relative;
+}
+// ........................
+// Custom form checkbox
+.rej_checkbox,
+.rej_radio {
+  position: absolute;
+  opacity: 0;
+
+  ~ label {
+    cursor: pointer;
+  }
+  &:checked ~ label .customCheck {
     &::after {
-      font-family: "Font Awesome 5 Free";
-      content: "\f0dd";
-      font-weight: 900;
-      font-size: 20px;
-      position: absolute;
-      right: 0;
-      color: $greenishLightColor;
-      pointer-events: none;
-      bottom: .4em;
+      content: "\f00c";
+      color: $greenishColor;
     }
   }
+}
 
-  .pick-up-label::before {
-    content: "\f073";
-    margin-right: 0.3em;
+.rej_radio {
+  &:checked ~ label .customRadio {
+    box-shadow: inset 0 0 0 5px $greenishColor;
   }
+}
+
+.customCheck,
+.customRadio {
+  --size: 1.2em;
+  width: var(--size);
+  height: var(--size);
+  margin-right: var(--size);
+  cursor: pointer;
+  border: 0.6px solid $greenishColor;
+  border-radius: 3px;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+  display: grid;
+  place-content: center;
+}
+.customRadio {
+  border-radius: 50%;
 }
