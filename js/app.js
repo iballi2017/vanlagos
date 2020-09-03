@@ -114,6 +114,72 @@ $(document).ready(function () {
     // })
 
 
+    function removehide(arg1, arg2) {
+        if (arg1) {
+            if (arg2.hasClass("d-none")) {
+                arg2.removeClass("d-none")
+            } else {
+                arg2.addClass("d-none")
+            }
+        }
+    }
+    // 
+    function showbankDetails(arg1, arg2) {
+        if (arg1) {
+            if (arg2.hasClass("d-none")) {
+                arg2.removeClass("d-none")
+            } else {
+                return
+            }
+        }
+    }
+    // 
+    function hidebankDetails(arg1, arg2) {
+        if (arg1) {
+            if (!arg2.hasClass("d-none")) {
+                arg2.addClass("d-none")
+            } else {
+                return
+            }
+        }
+    }
+
+    var agreeTermsLabel = $("#agreeTermsLabel");
+    var agreeTerms = $("#agreeTerms");
+    var agreeTermsChecked = $("#agreeTerms:checked");
+    var paymentOption = $("#paymentOption");
+    // 
+    var bankTransfer = $("#bankTransfer");
+    var bankTransferChecked = $("#bankTransfer:checked");
+    var seller_account_details = $("#seller_account_details");
+    // 
+    var gtPay = $("#gtPay");
+    var gtPayChecked = $("#gtPay:checked");
+    // 
+    var paymentContinueBtn = $("#paymentContinueBtn");
+
+    // agreeTerms.on("click", function () {
+    //     removehide(agreeTermsChecked, paymentOption)
+    // })
+    agreeTermsLabel.on("click", function () {
+        removehide(agreeTermsChecked, paymentOption)
+        if (agreeTermsChecked) {
+            paymentContinueBtn.removeAttr("disabled").removeClass("grey-btn").addClass("custom-form-btn");
+        } else {
+            paymentContinueBtn.attr("disabled", true)
+            paymentContinueBtn.addClass("grey-btn")
+            paymentContinueBtn.removeClass("custom-form-btn")
+        }
+    })
+
+    bankTransfer.on("click", function () {
+        showbankDetails(bankTransferChecked, seller_account_details)
+    })
+
+    gtPay.on("click", function () {
+        hidebankDetails(gtPayChecked, seller_account_details)
+    })
+
 })
 
 

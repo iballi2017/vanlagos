@@ -16,6 +16,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e5e5e5;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -25,15 +27,13 @@ body {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
+
 button,
 input,
 select,
 optgroup,
 textarea {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.5;
 }
 
@@ -626,6 +626,15 @@ input.invalid {
   }
 }
 
+
+.bus-hire-page{
+  .page-info-banner{
+    p span:first-child{
+      font-weight: 600;
+    }
+  }
+}
+
 .faq-accordion-button {
   color: $greenishColor;
   &:hover {
@@ -634,6 +643,9 @@ input.invalid {
 }
 
 @media (min-width: 900px) {
+body {
+  font-size: 16px;
+}
   .text-content-top {
     .hero-title {
       color: $white;
@@ -662,6 +674,13 @@ input.invalid {
       flex-basis: 24%;
     }
   }
+.bus-hire-page{
+  .page-info-banner{
+    p span:first-child{
+      font-size: 1.4rem; font-weight: 600;
+    }
+  }
+}
 }
 
 @media (max-width: 425px) {
@@ -694,7 +713,7 @@ input.invalid {
   /* bottom: 0; */
 }
 
-#userHireForm {
+.userHireForm {
   .form-wrapper {
     max-width: 600px;
     margin: 0 auto;
@@ -749,6 +768,7 @@ input.invalid {
     margin-right: 0.3em;
   }
 }
+
 
 .user-profile-container {
   form {
@@ -850,4 +870,9 @@ input.invalid {
 }
 .customRadio {
   border-radius: 50%;
+}
+
+.flex-label{
+  display: flex;
+  align-items: center;
 }

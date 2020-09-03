@@ -5,7 +5,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif; }
 
 * {
   box-sizing: border-box; }
@@ -13,15 +15,12 @@ body {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
 button,
 input,
 select,
 optgroup,
 textarea {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.5; }
 
 h1,
@@ -486,12 +485,18 @@ input.invalid {
   inset: 0;
   box-shadow: unset; }
 
+.bus-hire-page .page-info-banner p span:first-child {
+  font-weight: 600; }
+
 .faq-accordion-button {
   color: #4d9f45; }
   .faq-accordion-button:hover {
     color: #a8b622; }
 
 @media (min-width: 900px) {
+  body {
+    font-size: 16px; }
+
   .text-content-top .hero-title {
     color: #ffffff; }
     .text-content-top .hero-title h1 {
@@ -507,7 +512,11 @@ input.invalid {
 
   .why-choose-us-list li {
     text-align: center;
-    flex-basis: 24%; } }
+    flex-basis: 24%; }
+
+  .bus-hire-page .page-info-banner p span:first-child {
+    font-size: 1.4rem;
+    font-weight: 600; } }
 @media (max-width: 425px) {
   .step {
     height: 40px;
@@ -532,18 +541,18 @@ input.invalid {
 .text {
   /* bottom: 0; */ }
 
-#userHireForm .form-wrapper {
+.userHireForm .form-wrapper {
   max-width: 600px;
   margin: 0 auto; }
-#userHireForm #pills-hirevan-tab.active {
+.userHireForm #pills-hirevan-tab.active {
   background-color: #a8b622; }
-#userHireForm input[type="text"],
-#userHireForm select {
+.userHireForm input[type="text"],
+.userHireForm select {
   width: 100%; }
-  #userHireForm input[type="text"]:focus,
-  #userHireForm select:focus {
+  .userHireForm input[type="text"]:focus,
+  .userHireForm select:focus {
     outline: 0; }
-#userHireForm .pick-up-label::before {
+.userHireForm .pick-up-label::before {
   content: "\f073";
   margin-right: 0.3em; }
 
@@ -617,5 +626,9 @@ input.invalid {
 
 .customRadio {
   border-radius: 50%; }
+
+.flex-label {
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

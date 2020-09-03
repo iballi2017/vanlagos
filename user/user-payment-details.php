@@ -78,7 +78,7 @@ include_once '../includes/header.php'; ?>
                                 <div class="row">
                                     <div class="col-12 mb-3">
                                         <input type="checkbox" class="rej_checkbox" name="agreeTerms" id="agreeTerms">
-                                        <label for="agreeTerms" class="d-flex">
+                                        <label for="agreeTerms" class="flex-label" id="agreeTermsLabel">
                                             <span class="customCheck fontawesome-pseudo"></span>
                                             I agree to the&nbsp;<a href="#" class="regular-link">terms & condition</a>
                                         </label>
@@ -89,19 +89,19 @@ include_once '../includes/header.php'; ?>
 
                         </div>
 
-                        <div class="card my-2 rounded-0">
+                        <div class="card my-2 rounded-0 d-none" id="paymentOption">
                             <div class="card-header bg-white">
                                 SELECT PAYMENT METHOD
                             </div>
                             <div class="card-body">
                                 <div>
                                     <input type="radio" class="rej_radio" name="paymentMethod" id="bankTransfer">
-                                    <label for="bankTransfer" class="d-flex">
+                                    <label for="bankTransfer" class="d-flex" id="banktransferToggler">
                                         <span class="customRadio fontawesome-pseudo"></span>
                                         Bank Transfer
                                     </label>
 
-                                    <div class="container">
+                                    <div class="container d-none" id="seller_account_details">
 
                                         <div class="row">
                                             <div class="col">
@@ -189,8 +189,8 @@ include_once '../includes/header.php'; ?>
                 <!-- submit button -->
                 <div class="row">
                     <div class="col-12 col-md-7">
-                        <button type="button" class="btn custom-form-btn" onclick="goBack()">Back</button>
-                        <button type="submit" class="btn grey-btn float-right">Continue</button>
+                        <button type="button" class="btn-lg custom-form-btn" onclick="goBack()">Back</button>
+                        <button type="submit" class="btn-lg  float-right" id="paymentContinueBtn" >Continue</button>
                     </div>
                 </div>
                 <!--  -->
