@@ -190,7 +190,7 @@ include_once '../includes/header.php'; ?>
                 <div class="row">
                     <div class="col-12 col-md-7">
                         <button type="button" class="btn-lg custom-form-btn" onclick="goBack()">Back</button>
-                        <button type="submit" class="btn-lg  float-right" id="paymentContinueBtn" >Continue</button>
+                        <button type="submit" class="btn-lg grey-btn float-right" id="paymentContinueBtn" >Continue</button>
                     </div>
                 </div>
                 <!--  -->
