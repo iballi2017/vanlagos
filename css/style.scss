@@ -3,6 +3,7 @@
 /********
     scss variables
 ********/
+
 $OneViewport: 100vh;
 $greenishColor: #4d9f45;
 $greenishLightColor: #a8b622;
@@ -10,19 +11,20 @@ $greenishLightColor2: #c3d03f;
 $greyishColor: #dedede;
 $white: #ffffff;
 $lightBlue: #2589bd;
-$mainFontfamily: "Roboto", sans-serif;
-
+$mainFontfamily: "Roboto",
+sans-serif;
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #e5e5e5;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -33,8 +35,8 @@ input,
 select,
 optgroup,
 textarea {
-  font-size: .9rem;
-  line-height: 1.5;
+    font-size: .9rem;
+    line-height: 1.5;
 }
 
 h1,
@@ -43,66 +45,69 @@ h3,
 h4,
 h5,
 h6 {
-  clear: both;
+    clear: both;
 }
 
 .fontawesome-pseudo:before,
 .fontawesome-pseudo:after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 
 .text-content-top {
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-
-  .hero-title {
-    color: $white;
-    h1 {
-      font-size: 1.2rem;
-      margin: 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    .hero-title {
+        color: $white;
+        h1 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        h2 {
+            font-size: 0.9rem;
+            margin: 0;
+        }
     }
-    h2 {
-      font-size: 0.9rem;
-      margin: 0;
-    }
-  }
 }
 
 .text-uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 .text-lowercase {
-  text-transform: lowercase;
+    text-transform: lowercase;
 }
+
 .text-capitalize {
-  text-transform: capitalize;
+    text-transform: capitalize;
 }
+
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: 0.6em 1em 0.4em;
-  &:focus,
-  &:active {
-    outline: 0;
-    inset: 0;
-    box-shadow: unset;
-  }
+    border: 1px solid;
+    border-color: #ccc #ccc #bbb;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 0.6em 1em 0.4em;
+    &:focus,
+    &:active {
+        outline: 0;
+        inset: 0;
+        box-shadow: unset;
+    }
 }
 
 .form-control,
@@ -116,763 +121,774 @@ input[type="tel"],
 input[type="date"],
 input[type="time"],
 textarea {
-  font-family: $mainFontfamily;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 3px;
-  // background-color: unset;
-
-  &:focus,
-  &:active {
-    border: 1px solid $greenishColor;
-    outline: 0;
-    inset: 0;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-  }
+    font-family: $mainFontfamily;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+    // background-color: unset;
+    &:focus,
+    &:active {
+        border: 1px solid $greenishColor;
+        outline: 0;
+        inset: 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    }
 }
 
 .grey_control {
-  background-color: #efefef;
+    background-color: #efefef;
 }
 
 select {
-  border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 textarea {
-  width: 100%;
+    width: 100%;
 }
 
 // custom buttom
 .custom-form-btn {
-  background-color: $greenishLightColor;
-  color: $white;
-  &:hover {
-    background-color: $greenishLightColor2 !important;
+    background-color: $greenishLightColor;
     color: $white;
-  }
-  &:focus {
-    border: 1px solid $greenishLightColor;
-    outline: 0;
-    inset: 0;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-  }
+    &:hover {
+        background-color: $greenishLightColor2 !important;
+        color: $white;
+    }
+    &:focus {
+        border: 1px solid $greenishLightColor;
+        outline: 0;
+        inset: 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    }
 }
 
 .grey-btn {
-  background-color: #c4c4c4;
-  color: $white;
+    background-color: #c4c4c4;
+    color: $white;
 }
 
 .regular-link {
-  color: $greenishColor;
-  transition: all 300ms ease-in-out;
-  &:hover {
-    color: $greenishLightColor2;
-    text-decoration: none;
-  }
+    color: $greenishColor;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        color: $greenishLightColor2;
+        text-decoration: none;
+    }
 }
 
 //........................................
 
 /*......................................................*/
-/*...................... Brand-logo style considering screen readers ......................*/
-.main-nav-bar {
-  background-color: #1b1c13;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: $white;
 
-  &:hover {
-    color: $white;
-  }
+
+/*...................... Brand-logo style considering screen readers ......................*/
+
+.main-nav-bar {
+    background-color: #1b1c13;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
+
 
 /*...........................
 navbar brand logo modified for screen-readers
 */
+
 .navbar-brand {
-  text-indent: -100000px;
-  padding: 0;
-  h2 {
-    background-image: url("../images/brand-logo.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 90px;
-    height: 40px;
-  }
+    text-indent: -100000px;
+    padding: 0;
+    h2 {
+        background-image: url("../images/brand-logo.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 90px;
+        height: 40px;
+    }
 }
 
 .btn-custom-green-outline {
-  border: 1px solid $greenishLightColor;
-  &:hover {
-    background-color: $greenishColor;
-  }
-  &:focus {
-    border: 1px solid $greenishColor;
-  }
+    border: 1px solid $greenishLightColor;
+    &:hover {
+        background-color: $greenishColor;
+    }
+    &:focus {
+        border: 1px solid $greenishColor;
+    }
 }
 
 .mobile-menu-icon {
-  color: $greenishColor !important;
-
-  &:active {
-    color: $greenishLightColor !important;
-    border: 1px solid $greenishColor !important;
-  }
+    color: $greenishColor !important;
+    &:active {
+        color: $greenishLightColor !important;
+        border: 1px solid $greenishColor !important;
+    }
 }
 
 .custom-nav-btn {
-  color: $white;
-
-  &:hover,
-  &:focus {
-    background-color: $greenishLightColor;
     color: $white;
-    outline: 0;
-    inset: 0;
-    box-shadow: unset;
-  }
+    &:hover,
+    &:focus {
+        background-color: $greenishLightColor;
+        color: $white;
+        outline: 0;
+        inset: 0;
+        box-shadow: unset;
+    }
 }
 
 .nav-item.active {
-  .custom-nav-link {
-    color: $greenishLightColor;
-  }
+    .custom-nav-link {
+        color: $greenishLightColor;
+    }
 }
+
 .custom-nav-link {
-  color: $white;
-  transition: all 300ms ease-in-out;
-  &:hover {
-    color: $greenishLightColor;
-  }
+    color: $white;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        color: $greenishLightColor;
+    }
 }
+
+
 /*......................................................*/
+
 
 /* ..............
  hero content section
  ..................*/
+
 .hero {
-  height: 80/100 * $OneViewport;
-  background-image: url(../images/hero-banner4.png);
-  background-blend-mode: soft-light;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    height: 80/100 * $OneViewport;
+    background-image: url(../images/hero-banner4.png);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .how-it-works {
-  height: 70vh;
-  background-image: url("../images/buses-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .content-area {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  ul {
-    counter-reset: counter-name;
-    font-size: 1.3rem;
-
-    li {
-      list-style: none;
-      position: relative;
-      margin-bottom: 2.5em;
-      padding-left: 1em;
+    height: 70vh;
+    background-image: url("../images/buses-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content-area {
+        background-color: rgba(0, 0, 0, 0.4);
     }
-
-    li::before {
-      counter-increment: counter-name;
-      content: counter(counter-name) "  ";
-      position: absolute;
-      left: -2.5rem;
-      top: -0.2em;
-      width: 2em;
-      height: 2em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 100%;
-      border: 3px solid $white;
-      color: $white;
+    ul {
+        counter-reset: counter-name;
+        font-size: 1.3rem;
+        li {
+            list-style: none;
+            position: relative;
+            margin-bottom: 2.5em;
+            padding-left: 1em;
+        }
+        li::before {
+            counter-increment: counter-name;
+            content: counter(counter-name) "  ";
+            position: absolute;
+            left: -2.5rem;
+            top: -0.2em;
+            width: 2em;
+            height: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            border: 3px solid $white;
+            color: $white;
+        }
     }
-  }
 }
 
+
 /*......................................................*/
+
+
 /*...................... Hero tab ......................*/
 
 .hero-tab-main-content-wrapper {
-  background-color: $white;
+    background-color: $white;
 }
 
 .index-booking-form {
-  // margin-top: -200px;
-  margin-top: -40vh;
+    // margin-top: -200px;
+    margin-top: -40vh;
 }
 
 .hero-tab-nav-links {
-  background-color: #f0f0f0;
-  color: $greenishLightColor;
-  border-radius: 0 !important;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-size: 1rem;
-  &:hover,
-  &:focus {
-    color: $greenishColor;
-  }
-  &.active {
-    background-color: $greenishLightColor !important;
-    color: $white;
-  }
+    background-color: #f0f0f0;
+    color: $greenishLightColor;
+    border-radius: 0 !important;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1rem;
+    &:hover,
+    &:focus {
+        color: $greenishColor;
+    }
+    &.active {
+        background-color: $greenishLightColor !important;
+        color: $white;
+    }
 }
 
 .section-title::after {
-  content: "";
-  display: block;
-  height: 10px;
+    content: "";
+    display: block;
+    height: 10px;
 }
+
 
 /*...............why-choose-us-list................*/
-.why-choose-us {
-  .section-title::after {
-    background-color: $greenishLightColor;
-    width: 10%;
-    margin: 0 auto;
-    margin-top: 0.5em;
-  }
-}
-.why-choose-us-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
 
-  li {
-    text-align: center;
-    flex-basis: 46%;
-  }
+.why-choose-us {
+    .section-title::after {
+        background-color: $greenishLightColor;
+        width: 10%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+    }
 }
+
+.why-choose-us-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    li {
+        text-align: center;
+        flex-basis: 46%;
+    }
+}
+
 
 /*............... Pricing ................*/
+
 #pricingSection {
-  .cust_title {
-    display: inline-flex;
-    align-items: center;
-  }
-
-  .cust_title::after,
-  .cust_title::before {
-    content: "";
-    width: 50px;
-    height: 5px;
-    background-color: #c4c4c4;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-  }
-
-  .desc-icons {
-    margin: 0 auto;
-  }
-
-  .desc-icons img {
-    width: 20px;
-  }
-
-  .item-name {
-    font-weight: 500;
-  }
-
-  .price {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
+    .cust_title {
+        display: inline-flex;
+        align-items: center;
+    }
+    .cust_title::after,
+    .cust_title::before {
+        content: "";
+        width: 50px;
+        height: 5px;
+        background-color: #c4c4c4;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+    .desc-icons {
+        margin: 0 auto;
+    }
+    .desc-icons img {
+        width: 20px;
+    }
+    .item-name {
+        font-weight: 500;
+    }
+    .price {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
 }
 
+
 /*...............How it works................*/
+
 .how-it-works-inner {
-  .section-title::after {
-    background-color: $white;
-    width: 25%;
-    margin-top: 0.5em;
-  }
-  height: 100%;
-  color: #fff;
-  display: flex;
-  align-items: center;
+    .section-title::after {
+        background-color: $white;
+        width: 25%;
+        margin-top: 0.5em;
+    }
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .problem-then-contact-us {
-  background-color: #212121;
-  .problem-then-contact-us-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+    background-color: #212121;
+    .problem-then-contact-us-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
 
 .title-component-wrapper {
-  background-color: #202020;
-  background-image: url(../images/page-title-image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: soft-light;
-  color: $white;
+    background-color: #202020;
+    background-image: url(../images/page-title-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    color: $white;
 }
 
 .select-bus-page-header {
-  background-color: #7b9e89;
+    background-color: #7b9e89;
 }
 
 .select-bus-condition-wrapper {
-  background-color: #f18805;
+    background-color: #f18805;
 }
 
+
 /*......................................................*/
+
+
 /*...................... footer ......................*/
+
 footer {
-  font-size: 0.8rem;
-  font-weight: lighter;
-  background-color: #1b1c13;
-  color: $white;
-
-  ul {
-    padding: 0;
-    li {
-      list-style: none;
-      margin-top: 1em;
-    }
-  }
-
-  a {
-    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    background-color: #1b1c13;
     color: $white;
-
-    &:hover,
-    &:focus {
-      color: $white;
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            margin-top: 1em;
+        }
     }
-  }
-
-  .social-icons {
-    display: flex;
-    // justify-content: space-between;
-    // width: 50%;
-
-    .social-icon {
-      margin-right: 2em;
+    a {
+        text-decoration: none;
+        color: $white;
+        &:hover,
+        &:focus {
+            color: $white;
+        }
     }
-  }
-
-  .footer-column-title::after {
-    content: "";
-    display: block;
-    height: 5px;
-    width: 50px;
-    background-color: $greenishLightColor;
-    margin-top: 0.5em;
-  }
+    .social-icons {
+        display: flex;
+        // justify-content: space-between;
+        // width: 50%;
+        .social-icon {
+            margin-right: 2em;
+        }
+    }
+    .footer-column-title::after {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 50px;
+        background-color: $greenishLightColor;
+        margin-top: 0.5em;
+    }
 }
 
 // vehicle-selection page
+
 /* Style the form */
+
 #regForm {
-  background-color: #ffffff;
-  // margin: 100px auto;
-  // padding: 40px;
-  // width: 70%;
-  // min-width: 300px;
+    background-color: #ffffff;
+    // margin: 100px auto;
+    // padding: 40px;
+    // width: 70%;
+    // min-width: 300px;
 }
+
 
 /* Style the input fields */
-input {
-  padding: 10px;
-  width: 100%;
-  font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #aaaaaa;
 
-  // Number inputs (removing the spin button arrows on the right side)
-  /* Chrome, Safari, Edge, Opera */
-  &[type="number"]::-webkit-outer-spin-button,
-  &[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-  /* Firefox */
-  &[type="number"] {
-    -moz-appearance: textfield;
-  }
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    // Number inputs (removing the spin button arrows on the right side)
+    /* Chrome, Safari, Edge, Opera */
+    &[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    /* Firefox */
+    &[type="number"] {
+        -moz-appearance: textfield;
+    }
 }
+
 
 /* Mark input boxes that gets an error on validation: */
+
 input.invalid {
-  background-color: #ffdddd;
+    background-color: #ffdddd;
 }
+
 
 /* Hide all steps by default: */
+
 .tab {
-  display: none;
+    display: none;
 }
 
+
 /* Make circles that indicate the steps of the form: */
+
 .step {
-  height: 60px;
-  width: 60px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100000;
-  margin: 0;
+    height: 60px;
+    width: 60px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    margin: 0;
 }
 
 .step p {
-  margin: 0;
-  font-weight: 600;
+    margin: 0;
+    font-weight: 600;
 }
+
 
 /* Mark the active step: */
+
 .step.active {
-  opacity: 1;
+    opacity: 1;
 }
 
+
 /* Mark the steps that are finished and valid: */
+
 .step.finish {
-  background-color: #00327a;
+    background-color: #00327a;
 }
-.step.finish > .step-label {
-  color: #00327a !important;
-  font-weight: 600;
+
+.step.finish>.step-label {
+    color: #00327a !important;
+    font-weight: 600;
 }
 
 .line-through-steps {
-  background-color: #bbbbbb;
-  height: 5px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  margin: 0 auto;
+    background-color: #bbbbbb;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .step-indicators {
-  text-align: center;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
+
+
 /* Mark the steps that are finished and valid: */
+
 .step.finish {
-  background-color: #00327a;
+    background-color: #00327a;
 }
+
 // vehicle-selection page
-.vehicle-selection-container {
-}
+.vehicle-selection-container {}
 
 // step-1-select-a-bus
-.step-1-select-a-bus-page {
-}
+.step-1-select-a-bus-page {}
 
 .custom-control-label::after {
-  // background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' heig…M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e);
-  // background: green !important;
-  background-image: url(../images/seat.svg) !important;
+    // background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' heig…M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e);
+    // background: green !important;
+    background-image: url(../images/seat.svg) !important;
 }
-.custom-control-input:checked ~ .custom-control-label::before {
-  color: #fff;
-  border-color: $greenishColor;
-  background-color: $greenishColor;
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: $greenishColor;
+    background-color: $greenishColor;
 }
 
 // .custom-checkbox .custom-control-input {
 //   background-color: red;
 // }
-
 // step-2-fill-information-page
 .step-2-fill-information-page {
-  .passenger-accordion-plus-btn::before,
-  .passenger-accordion-minus-btn::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: $greenishLightColor;
-  }
-  .passenger-accordion-plus-btn::before {
-    content: "\f067";
-  }
-  .passenger-accordion-minus-btn::before {
-    content: "\f068";
-  }
-  .passenger-accordion-btn {
-    &:hover {
-      border: none;
+    .passenger-accordion-plus-btn::before,
+    .passenger-accordion-minus-btn::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $greenishLightColor;
     }
-
-    &:focus {
-      border: 1px solid $greenishColor;
-      outline: 0;
-      inset: 0;
-      box-shadow: unset;
+    .passenger-accordion-plus-btn::before {
+        content: "\f067";
     }
-  }
+    .passenger-accordion-minus-btn::before {
+        content: "\f068";
+    }
+    .passenger-accordion-btn {
+        &:hover {
+            border: none;
+        }
+        &:focus {
+            border: 1px solid $greenishColor;
+            outline: 0;
+            inset: 0;
+            box-shadow: unset;
+        }
+    }
 }
 
-
-.bus-hire-page{
-  .page-info-banner{
-    p span:first-child{
-      font-weight: 600;
+.bus-hire-page {
+    .page-info-banner {
+        p span:first-child {
+            font-weight: 600;
+        }
     }
-  }
 }
 
 .faq-accordion-button {
-  color: $greenishColor;
-  &:hover {
-    color: $greenishLightColor;
-  }
+    color: $greenishColor;
+    &:hover {
+        color: $greenishLightColor;
+    }
 }
 
 @media (min-width: 900px) {
-body {
-  font-size: 16px;
-}
-  .text-content-top {
-    .hero-title {
-      color: $white;
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.3rem;
-      }
+    body {
+        font-size: 16px;
     }
-  }
+    .text-content-top {
+        .hero-title {
+            color: $white;
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    }
 }
 
 @media (min-width: 765px) {
-  .curve-left-top {
-    border-radius: 10px 0 0 0 !important;
-  }
-
-  .curve-right-top {
-    border-radius: 0 10px 0 0 !important;
-  }
-
-  .why-choose-us-list {
-    li {
-      text-align: center;
-      flex-basis: 24%;
+    .curve-left-top {
+        border-radius: 10px 0 0 0 !important;
     }
-  }
-.bus-hire-page{
-  .page-info-banner{
-    p span:first-child{
-      font-size: 1.4rem; font-weight: 600;
+    .curve-right-top {
+        border-radius: 0 10px 0 0 !important;
     }
-  }
-}
+    .why-choose-us-list {
+        li {
+            text-align: center;
+            flex-basis: 24%;
+        }
+    }
+    .bus-hire-page {
+        .page-info-banner {
+            p span:first-child {
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 @media (max-width: 425px) {
-  .step {
-    height: 40px;
-    width: 40px;
-  }
+    .step {
+        height: 40px;
+        width: 40px;
+    }
 }
 
+
 /* structure.hml style */
+
 .step-indicators-items {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .step-indicator-circle {
-  background-color: aqua;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .text {
-  /* bottom: 0; */
+    /* bottom: 0; */
 }
 
 .userHireForm {
-  .form-wrapper {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  #pills-hirevan-tab.active {
-    background-color: $greenishLightColor;
-  }
-
-  input[type="text"],
-  select {
-    width: 100%;
-    &:focus {
-      outline: 0;
+    .form-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
     }
-  }
-  // Custom form select dropdown
-  // select {
-  //   /* remove default style from browsers */
-  //   -webkit-appearance: none;
-  //   -moz-appearance: none;
-  //   -ms-appearance: none;
-  //   -o-appearance: none;
-  //   appearance: none;
-
-  //   option {
-  //     margin: 5em;
-  //     line-height: 2;
-  //     font: inherit;
-  //     font-size: 0.8rem;
-  //   }
-
-  //   &::after {
-  //     content: "hhhhh";
-  //   }
-  // }
-  // .select_drop_wrapper {
-  //   position: relative;
-  //   &::after {
-  //     content: "\f0dd";
-  //     font-size: 20px;
-  //     position: absolute;
-  //     right: 0;
-  //     color: $greenishLightColor;
-  //     pointer-events: none;
-  //     bottom: 0.4em;
-  //   }
-  // }
-
-  .pick-up-label::before {
-    content: "\f073";
-    margin-right: 0.3em;
-  }
+    #pills-hirevan-tab.active {
+        background-color: $greenishLightColor;
+    }
+    input[type="text"],
+    select {
+        width: 100%;
+        &:focus {
+            outline: 0;
+        }
+    }
+    // Custom form select dropdown
+    // select {
+    //   /* remove default style from browsers */
+    //   -webkit-appearance: none;
+    //   -moz-appearance: none;
+    //   -ms-appearance: none;
+    //   -o-appearance: none;
+    //   appearance: none;
+    //   option {
+    //     margin: 5em;
+    //     line-height: 2;
+    //     font: inherit;
+    //     font-size: 0.8rem;
+    //   }
+    //   &::after {
+    //     content: "hhhhh";
+    //   }
+    // }
+    // .select_drop_wrapper {
+    //   position: relative;
+    //   &::after {
+    //     content: "\f0dd";
+    //     font-size: 20px;
+    //     position: absolute;
+    //     right: 0;
+    //     color: $greenishLightColor;
+    //     pointer-events: none;
+    //     bottom: 0.4em;
+    //   }
+    // }
+    .pick-up-label::before {
+        content: "\f073";
+        margin-right: 0.3em;
+    }
 }
 
-
 .user-profile-container {
-  form {
-    label {
-      display: block;
+    form {
+        label {
+            display: block;
+        }
     }
-  }
 }
 
 // Custom form select dropdown
-
 .select_drop_wrapper {
-  position: relative;
-  &::after {
-    content: "\f0dd";
-    font-size: 20px;
-    position: absolute;
-    right: 0.3em;
-    color: $greenishLightColor;
-    pointer-events: none;
-    bottom: 0.4em;
-  }
-  // ........................
-  font-family: $mainFontfamily;
-  border-radius: 3px;
-  padding: 5px;
-  background-color: unset;
-
-  &:focus,
-  &:active {
-    outline: 0;
-    inset: 0;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-  }
-  // ........................
-  // Custom form select dropdown
-  select {
-    /* remove default style from browsers */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    width: 100%;
-
-    &:focus {
-      outline: 0;
-    }
-
-    option {
-      margin: 5em;
-      line-height: 2;
-      font: inherit;
-      font-size: 0.8rem;
-    }
-
+    position: relative;
     &::after {
-      content: "hhhhh";
+        content: "\f0dd";
+        font-size: 20px;
+        position: absolute;
+        right: 0.3em;
+        color: $greenishLightColor;
+        pointer-events: none;
+        bottom: 0.4em;
     }
-  }
+    // ........................
+    font-family: $mainFontfamily;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: unset;
+    &:focus,
+    &:active {
+        outline: 0;
+        inset: 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+    // ........................
+    // Custom form select dropdown
+    select {
+        /* remove default style from browsers */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        width: 100%;
+        &:focus {
+            outline: 0;
+        }
+        option {
+            margin: 5em;
+            line-height: 2;
+            font: inherit;
+            font-size: 0.8rem;
+        }
+        &::after {
+            content: "hhhhh";
+        }
+    }
 }
+
 // ........................
 // Custom form checkbox
 .rej_checkbox,
 .rej_radio {
-  position: absolute;
-  opacity: 0;
-
-  ~ label {
-    cursor: pointer;
-  }
-  &:checked ~ label .customCheck {
-    &::after {
-      content: "\f00c";
-      color: $greenishColor;
+    position: absolute;
+    opacity: 0;
+    margin-top: -3000px;
+    ~label {
+        cursor: pointer;
     }
-  }
+    &:checked~label .customCheck {
+        &::after {
+            content: "\f00c";
+            color: $greenishColor;
+        }
+    }
 }
 
 .rej_radio {
-  &:checked ~ label .customRadio {
-    box-shadow: inset 0 0 0 5px $greenishColor;
-  }
+    &:checked~label .customRadio {
+        box-shadow: inset 0 0 0 5px $greenishColor;
+    }
 }
 
 .customCheck,
 .customRadio {
-  --size: 1.2em;
-  width: var(--size);
-  height: var(--size);
-  margin-right: var(--size);
-  cursor: pointer;
-  border: 0.6px solid $greenishColor;
-  border-radius: 3px;
-  transform: scale(1);
-  transition: transform 300ms ease-in-out;
-  display: grid;
-  place-content: center;
-}
-.customRadio {
-  border-radius: 50%;
+    --size: 1.2em;
+    width: var(--size);
+    height: var(--size);
+    margin-right: var(--size);
+    cursor: pointer;
+    border: 0.6px solid $greenishColor;
+    border-radius: 3px;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    display: grid;
+    place-content: center;
 }
 
-.flex-label{
-  display: flex;
-  align-items: center;
+.customRadio {
+    border-radius: 50%;
+}
+
+.flex-label {
+    display: flex !important;
+    align-items: center !important;
 }

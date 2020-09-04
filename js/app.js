@@ -73,20 +73,19 @@
 
 
 
-$(document).ready(function () {
+$(document).ready(function() {
     const w = $(".passenger-accordion-btn").parent().parent().siblings()
-    $(".passenger-accordion-btn").click(function () {
+    $(".passenger-accordion-btn").click(function() {
         if (!w.hasClass("show")) {
             $(this).removeClass("passenger-accordion-plus-btn").addClass("passenger-accordion-minus-btn")
-        }
-        else {
+        } else {
             $(this).removeClass("passenger-accordion-minus-btn").addClass("passenger-accordion-plus-btn")
         }
     })
 
     var loc = window.location.pathname;
 
-    $('#navbarSupportedContent').find('a').each(function () {
+    $('#navbarSupportedContent').find('a').each(function() {
         $(this).toggleClass('active', $(this).attr('href') == loc);
     });
 
@@ -114,16 +113,8 @@ $(document).ready(function () {
     // })
 
 
-    function removehide(arg1, arg2) {
-        if (arg1) {
-            if (arg2.hasClass("d-none")) {
-                arg2.removeClass("d-none")
-            } else {
-                arg2.addClass("d-none")
-            }
-        }
-    }
-    // 
+
+    // #### Payment section PART B
     function showbankDetails(arg1, arg2) {
         if (arg1) {
             if (arg2.hasClass("d-none")) {
@@ -144,43 +135,54 @@ $(document).ready(function () {
         }
     }
 
-    var agreeTermsLabel = $("#agreeTermsLabel");
-    var agreeTerms = $("#agreeTerms");
-    var agreeTermsChecked = $("#agreeTerms:checked");
-    var paymentOption = $("#paymentOption");
-    // 
     var bankTransfer = $("#bankTransfer");
     var bankTransferChecked = $("#bankTransfer:checked");
     var seller_account_details = $("#seller_account_details");
     // 
     var gtPay = $("#gtPay");
     var gtPayChecked = $("#gtPay:checked");
-    // 
-    var paymentContinueBtn = $("#paymentContinueBtn");
 
-    // agreeTerms.on("click", function () {
-    //     removehide(agreeTermsChecked, paymentOption)
-    // })
-    agreeTermsLabel.on("click", function () {
-        removehide(agreeTermsChecked, paymentOption)
-        if (agreeTermsChecked) {
-            paymentContinueBtn.removeAttr("disabled").removeClass("grey-btn").addClass("custom-form-btn");
-        } else {
-            paymentContinueBtn.attr("disabled", true)
-            paymentContinueBtn.addClass("grey-btn")
-            paymentContinueBtn.removeClass("custom-form-btn")
-        }
-    })
-
-    bankTransfer.on("click", function () {
+    bankTransfer.on("click", function() {
         showbankDetails(bankTransferChecked, seller_account_details)
     })
 
-    gtPay.on("click", function () {
+    gtPay.on("click", function() {
         hidebankDetails(gtPayChecked, seller_account_details)
     })
 
 })
+
+
+// #### Payment section PART A
+// 
+var agreeTerms = document.querySelector("#agreeTerms");
+var agreeTermsLabel = document.querySelector("#agreeTermsLabel");
+var paymentOption = document.querySelector("#paymentOption");
+var paymentContinueBtn = document.querySelector("#paymentContinueBtn");
+
+function checktoggle(arg1, arg2) {
+    if (!arg1.checked) {
+        arg2.classList.remove("d-none")
+        paymentContinueBtn.classList.remove("grey-btn")
+        paymentContinueBtn.classList.add("custom-form-btn");
+        paymentContinueBtn.removeAttribute("disabled")
+    } else {
+        arg2.classList.add("d-none")
+        paymentContinueBtn.classList.add("grey-btn")
+        paymentContinueBtn.classList.remove("custom-form-btn")
+        paymentContinueBtn.setAttribute("disabled", true)
+    }
+    console.log("hi there!")
+}
+
+agreeTermsLabel.addEventListener("click", () => {
+    checktoggle(agreeTerms, paymentOption)
+});
+
+
+
+
+
 
 
 // back function

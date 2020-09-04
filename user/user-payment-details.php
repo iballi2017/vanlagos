@@ -189,8 +189,8 @@ include_once '../includes/header.php'; ?>
                 <!-- submit button -->
                 <div class="row">
                     <div class="col-12 col-md-7">
-                        <button type="button" class="btn-lg custom-form-btn" onclick="goBack()">Back</button>
-                        <button type="submit" class="btn-lg grey-btn float-right" id="paymentContinueBtn" >Continue</button>
+                        <button type="button" class="py-2 px-5 custom-form-btn" onclick="goBack()">Back</button>
+                        <button type="submit" class="py-2 px-5 grey-btn float-right" id="paymentContinueBtn" disabled>Continue</button>
                     </div>
                 </div>
                 <!--  -->

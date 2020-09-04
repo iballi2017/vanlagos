@@ -598,7 +598,8 @@ input.invalid {
 .rej_checkbox,
 .rej_radio {
   position: absolute;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: -3000px; }
   .rej_checkbox ~ label,
   .rej_radio ~ label {
     cursor: pointer; }
@@ -628,7 +629,7 @@ input.invalid {
   border-radius: 50%; }
 
 .flex-label {
-  display: flex;
-  align-items: center; }
+  display: flex !important;
+  align-items: center !important; }
 
 /*# sourceMappingURL=style.css.map */
