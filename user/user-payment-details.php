@@ -2,7 +2,7 @@
 include_once '../includes/header.php'; ?>
 
 
-<main class="user-profile-container mb-5">
+<main class="user-payment-container mb-5">
 
 
 

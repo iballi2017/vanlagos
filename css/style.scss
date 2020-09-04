@@ -444,6 +444,21 @@ navbar brand logo modified for screen-readers
     background-color: #f18805;
 }
 
+.user-payment-response-container {
+    .message-container {
+        max-width: 700px;
+        margin: 0 auto;
+        a {
+            text-decoration-line: none;
+            color: $greenishLightColor;
+            transition: 3s ease;
+            &:hover {
+                color: $greenishLightColor2;
+            }
+        }
+    }
+}
+
 
 /*......................................................*/
 

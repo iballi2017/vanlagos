@@ -180,10 +180,6 @@ agreeTermsLabel.addEventListener("click", () => {
 
 
 
-
-
-
-
 // back function
 function goBack() {
     window.history.back();

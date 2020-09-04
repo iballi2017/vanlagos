@@ -353,6 +353,16 @@ navbar brand logo modified for screen-readers
 .select-bus-condition-wrapper {
   background-color: #f18805; }
 
+.user-payment-response-container .message-container {
+  max-width: 700px;
+  margin: 0 auto; }
+  .user-payment-response-container .message-container a {
+    text-decoration-line: none;
+    color: #a8b622;
+    transition: 3s ease; }
+    .user-payment-response-container .message-container a:hover {
+      color: #c3d03f; }
+
 /*......................................................*/
 /*...................... footer ......................*/
 footer {
