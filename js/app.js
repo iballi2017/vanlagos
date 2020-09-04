@@ -172,7 +172,6 @@ function checktoggle(arg1, arg2) {
         paymentContinueBtn.classList.remove("custom-form-btn")
         paymentContinueBtn.setAttribute("disabled", true)
     }
-    console.log("hi there!")
 }
 
 agreeTermsLabel.addEventListener("click", () => {
