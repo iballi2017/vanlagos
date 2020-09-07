@@ -281,6 +281,10 @@ navbar brand logo modified for screen-readers
   display: block;
   height: 10px; }
 
+.d-none {
+    transition: 300ms ease-in-out;
+    }
+
 /*...............why-choose-us-list................*/
 .why-choose-us .section-title::after {
   background-color: #a8b622;
