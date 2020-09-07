@@ -552,7 +552,7 @@ input.invalid {
   /* bottom: 0; */ }
 
 .userHireForm .form-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto; }
 .userHireForm #pills-hirevan-tab.active {
   background-color: #a8b622; }
