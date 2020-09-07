@@ -582,7 +582,7 @@ input.invalid {
     right: 0.3em;
     color: #a8b622;
     pointer-events: none;
-    bottom: 0.4em; }
+    bottom: 0.2em; }
   .select_drop_wrapper:focus, .select_drop_wrapper:active {
     outline: 0;
     inset: 0;
