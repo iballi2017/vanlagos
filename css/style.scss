@@ -9,6 +9,7 @@ $greenishColor: #4d9f45;
 $greenishLightColor: #a8b622;
 $greenishLightColor2: #c3d03f;
 $greyishColor: #dedede;
+$greyColor_alt: #F6F6F6;
 $white: #ffffff;
 $lightBlue: #2589bd;
 $mainFontfamily: "Roboto",
@@ -324,7 +325,7 @@ navbar brand logo modified for screen-readers
 }
 
 .hero-tab-nav-links {
-    background-color: #f0f0f0;
+    background-color: $greyColor_alt;
     color: $greenishLightColor;
     border-radius: 0 !important;
     padding-top: 1em;
@@ -916,6 +917,7 @@ input.invalid {
 }
 
 .hire_option_label {
-    /* padding: 1em; */
-    border: 1px solid #ccc;
+    background-color: $greyColor_alt;
+    border-radius: 3px;
+    color: $greenishColor;
 }

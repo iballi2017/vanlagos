@@ -99,15 +99,15 @@
                             <div>
                                 <!-- <form action="#"> -->
                                     <div class="flex-label">
-                                        <div>
+                                        <div class="mr-2">
                                             <input type="radio" id="dailyRadio" name="hire_option" class="hire_option rej_radio" checked>
-                                            <label for="dailyRadio" class="hire_option_label px-4 py-2" onclick="performSwitch()">
+                                            <label for="dailyRadio" class="hire_option_label px-5 py-2" onclick="performSwitch()">
                                                 <!-- <span class="customRadio"></span> -->
                                             Daily</label>
                                         </div>
                                         <div>
                                             <input type="radio" id="hourlyRadio" name="hire_option" class="hire_option rej_radio">
-                                            <label for="hourlyRadio" class="hire_option_label px-4 py-2" onclick="performSwitch()">
+                                            <label for="hourlyRadio" class="hire_option_label px-5 py-2" onclick="performSwitch()">
                                                 <!-- <span class="customRadio"></span> -->
                                                 Hourly</label>
                                         </div>

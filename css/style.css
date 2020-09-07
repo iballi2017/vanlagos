@@ -264,7 +264,7 @@ navbar brand logo modified for screen-readers
   margin-top: -40vh; }
 
 .hero-tab-nav-links {
-  background-color: #f0f0f0;
+  background-color: #F6F6F6;
   color: #a8b622;
   border-radius: 0 !important;
   padding-top: 1em;
@@ -645,5 +645,10 @@ input.invalid {
 .flex-label {
   display: flex !important;
   align-items: center !important; }
+
+.hire_option_label {
+  background-color: #F6F6F6;
+  border-radius: 3px;
+  color: #4d9f45; }
 
 /*# sourceMappingURL=style.css.map */
