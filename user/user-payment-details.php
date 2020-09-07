@@ -78,7 +78,7 @@ include_once '../includes/header.php'; ?>
                                 <div class="row">
                                     <div class="col-12 mb-3">
                                         <input type="checkbox" class="rej_checkbox" name="agreeTerms" id="agreeTerms">
-                                        <label for="agreeTerms" class="flex-label" id="agreeTermsLabel">
+                                        <label for="agreeTerms" class="flex-label" id="agreeTermsLabel" onclick="checkTermsandCondition()">
                                             <span class="customCheck fontawesome-pseudo"></span>
                                             I agree to the&nbsp;<a href="#" class="regular-link">terms & condition</a>
                                         </label>

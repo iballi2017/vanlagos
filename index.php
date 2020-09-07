@@ -96,18 +96,27 @@
                         <!-- VAN HIRE FORM OPENS -->
                         <div class="container">
 
+                            <div>
+                                <!-- <form action="#"> -->
+                                    <div class="flex-label">
+                                        <div>
+                                            <input type="radio" id="dailyRadio" name="hire_option" class="hire_option rej_radio" checked>
+                                            <label for="dailyRadio" class="hire_option_label px-4 py-2" onclick="performSwitch()">
+                                                <!-- <span class="customRadio"></span> -->
+                                            Daily</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="hourlyRadio" name="hire_option" class="hire_option rej_radio">
+                                            <label for="hourlyRadio" class="hire_option_label px-4 py-2" onclick="performSwitch()">
+                                                <!-- <span class="customRadio"></span> -->
+                                                Hourly</label>
+                                        </div>
+                                    </div>
+                                <!-- </form> -->
+                            </div>
+
                             <!-- ***** -->
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link hero-tab-nav-links py-2 px-4 active" id="pills-daily-tab" data-toggle="pill" href="#pills-daily" role="tab" aria-controls="pills-daily" aria-selected="true">Daily</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link hero-tab-nav-links py-2 px-4" id="pills-hourly-tab" data-toggle="pill" href="#pills-hourly" role="tab" aria-controls="pills-hourly" aria-selected="false">Hourly</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-daily" role="tabpanel" aria-labelledby="pills-daily-tab">
-                                    <!-- Daily form -->
+                           <!-- Daily form -->
                                     <form action="#">
                                         <div class="row">
                                             <div class="col-12 col-md-6">
@@ -199,7 +208,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form_grp">
+                                                <div class="form_grp" id="switchOne">
                                                     <div class="row no-gutters">
                                                         <div class="col-5">
                                                             <div class="border rounded m-1">
@@ -218,113 +227,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <!-- Link button -->
-                                        <div class="row">
-                                            <div class="col">
-                                                <button type="submit" class="btn m-1 custom-form-btn">Continue
-                                                    Reservation</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="tab-pane fade" id="pills-hourly" role="tabpanel" aria-labelledby="pills-hourly-tab">
-                                    <!-- Hourly form -->
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-12 col-md-6">
-                                                <div class="form_grp">
-                                                    <label for="#" class="m-1">Pick-up</label>
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-md-7">
-                                                            <div class="border rounded m-1">
-                                                                <!-- <div class="row"> -->
-                                                                <div class="col py-1 px-1">
-                                                                    <input type="text" class="border-0 w-100" placeholder="Input your address">
-                                                                </div>
-                                                                <!-- </div> -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-5">
-                                                            <div class="border rounded m-1">
-                                                                <div class="row">
-                                                                    <div class="col py-1 px-3">
-                                                                        <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                            <select class="border-0" name="state" id="state">
-                                                                                <option value="default" selected>State
-                                                                                </option>
-                                                                                <option value="lagos">Lagos</option>
-                                                                                <option value="lagos">Abuja</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form_grp">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-7">
-                                                            <div class="border rounded m-1">
-                                                                <div class="col py-1 px-1">
-                                                                    <input type="date" class="border-0 w-100" placeholder="Input your address">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-5">
-                                                            <div class="border rounded m-1">
-                                                                <div class="row">
-                                                                    <div class="col py-1 px-3">
-                                                                        <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                            <select class="border-0" name="pickup_time" id="pickup_time">
-                                                                                <option value="default" selected>Pick-up
-                                                                                    time
-                                                                                </option>
-                                                                                <option value="10am">10:00am</option>
-                                                                                <option value="1pm">1:00pm</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <div class="form_grp">
-                                                    <label for="#" class="m-1">Pick-up</label>
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-md-7">
-                                                            <div class="border rounded m-1">
-                                                                <!-- <div class="row"> -->
-                                                                <div class="col py-1 px-1">
-                                                                    <input type="text" class="border-0 w-100" placeholder="Input your address">
-                                                                </div>
-                                                                <!-- </div> -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-5">
-                                                            <div class="border rounded m-1">
-                                                                <div class="row">
-                                                                    <div class="col py-1 px-3">
-                                                                        <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                            <select class="border-0" name="state" id="state">
-                                                                            <option value="default" selected>State
-                                                                            </option>
-                                                                            <option value="lagos">Lagos</option>
-                                                                            <option value="lagos">Abuja</option>
-                                                                        </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form_grp">
+                                                <!--  -->
+                                                
+                                                <div class="form_grp d-none" id="switchTwo">
                                                     <div class="row no-gutters">
                                                         <div class="col-7">
                                                             <div class="border rounded m-1">
@@ -362,9 +267,6 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div>
-                            </div>
-
                             <!-- ***** -->
                         </div>
                         <!-- VAN HIRE FORM CLOSES -->

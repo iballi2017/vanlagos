@@ -621,6 +621,10 @@ input.invalid {
 .rej_radio:checked ~ label .customRadio {
   box-shadow: inset 0 0 0 5px #4d9f45; }
 
+.rej_radio.hire_option:checked ~ label {
+  background-color: #a8b622;
+  color: #ffffff; }
+
 .customCheck,
 .customRadio {
   --size: 1.2em;

@@ -174,13 +174,39 @@ function checktoggle(arg1, arg2) {
     }
 }
 
-agreeTermsLabel.addEventListener("click", () => {
+
+var checkTermsandCondition = () => {
     checktoggle(agreeTerms, paymentOption)
-});
+}
 
 
 
 // back function
 function goBack() {
     window.history.back();
+}
+
+
+// switching between daily and hourly vehicle hire to view and hide corresponding form-control
+var dailyRadio = document.getElementById("dailyRadio");
+var hourlyRadio = document.getElementById("hourlyRadio");
+var switchTwo = document.getElementById("switchTwo");
+
+function performSwitch() {
+    if (hourlyRadio.checked) {
+        if (switchOne.classList.contains("d-none")) {
+            switchOne.classList.remove("d-none")
+        }
+        if (!switchTwo.classList.contains("d-none")) {
+            switchTwo.classList.add("d-none")
+        }
+    }
+    if (dailyRadio.checked) {
+        if (switchTwo.classList.contains("d-none")) {
+            switchTwo.classList.remove("d-none")
+        }
+        if (!switchOne.classList.contains("d-none")) {
+            switchOne.classList.add("d-none")
+        }
+    }
 }

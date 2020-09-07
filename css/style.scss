@@ -884,6 +884,13 @@ input.invalid {
     }
 }
 
+.rej_radio.hire_option {
+    &:checked~label {
+        background-color: $greenishLightColor;
+        color: $white;
+    }
+}
+
 .customCheck,
 .customRadio {
     --size: 1.2em;
@@ -906,4 +913,9 @@ input.invalid {
 .flex-label {
     display: flex !important;
     align-items: center !important;
+}
+
+.hire_option_label {
+    /* padding: 1em; */
+    border: 1px solid #ccc;
 }
