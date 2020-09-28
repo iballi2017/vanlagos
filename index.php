@@ -27,7 +27,7 @@
             <a class="navbar-brand" href="./">
                 <h2>Brand Logo</h2>
             </a>
-            <button class="navbar-toggler mobile-menu-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler mobile-menu-icon border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars fa-1x"></i>
             </button>
 
@@ -603,7 +603,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-6 col-md-3">
                     <ul>
                         <li>
                             <a class="navbar-brand" href="#">
@@ -617,7 +617,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-6 col-md-3">
                     <ul>
                         <li>
                             <h6 class="footer-column-title">QUICK LINKS</h6>
@@ -629,9 +629,6 @@
                             <a href="#" class="footer-links">About us</a>
                         </li>
                         <li>
-                            <a href="./user/faq.php" class="footer-links">FAQ</a>
-                        </li>
-                        <li>
                             <a href="#" class="footer-links">Privacy policy</a>
                         </li>
                         <li>
@@ -639,7 +636,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-6 col-md-3">
                     <ul>
                         <li>
                             <h6 class="footer-column-title">CONTACT</h6>
@@ -651,7 +648,7 @@
                             <a href="#" class="footer-links">Address 2</a>
                         </li>
                         <li>
-                            <a href="#" class="footer-links">Phn number</a>
+                            <a href="#" class="footer-links">+234 070 0000 0000</a>
                         </li>
                         <li>
                             <a href="#" class="footer-links">Email</a>
@@ -662,7 +659,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-4 offset-md-8">
+                <div class="col-6 col-md-3">
                     <ul>
                         <li class="footer-column-title">SOCIAL MEDIA</li>
                         <li>
@@ -683,8 +680,7 @@
             </div>
         </div>
 
-        <hr style="border-top: 1px solid #fff">
-        <div class="container p-0">Copyright &copy; 2020</div>
+        <div class="text-center py-2 mt-2" style="border-top: 1px solid #fff">Copyright &copy; 2020 Vanlagos.</div>
 
     </footer>
 
