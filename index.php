@@ -111,14 +111,12 @@
                         <div class="container">
 
                             <div>
-                                <!-- <form action="#"> -->
                                 <div class="flex-label">
                                     <div class="mr-2">
                                         <input type="radio" id="dailyRadio" name="hire_option"
                                             class="hire_option rej_radio" checked>
                                         <label for="dailyRadio" class="hire_option_label px-3 py-1 px-sm-5 py-sm-2"
                                             onclick="performSwitch()">
-                                            <!-- <span class="customRadio"></span> -->
                                             Daily
                                         </label>
                                     </div>
@@ -127,12 +125,10 @@
                                             class="hire_option rej_radio">
                                         <label for="hourlyRadio" class="hire_option_label px-3 py-1 px-sm-5 py-sm-2"
                                             onclick="performSwitch()">
-                                            <!-- <span class="customRadio"></span> -->
                                             Hourly
                                         </label>
                                     </div>
                                 </div>
-                                <!-- </form> -->
                             </div>
 
                             <!-- ***** -->
