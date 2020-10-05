@@ -14,16 +14,22 @@ $white: #ffffff;
 $lightBlue: #2589bd;
 $mainFontfamily: "Roboto",
 sans-serif;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #e5e5e5;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 
@@ -375,6 +381,9 @@ navbar brand logo modified for screen-readers
 /*............... Pricing ................*/
 
 #pricingSection {
+    &>.container {
+        max-width: 800px;
+    }
     .cust_title {
         display: inline-flex;
         align-items: center;

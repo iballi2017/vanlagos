@@ -2,15 +2,20 @@
 /********
     scss variables
 ********/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
 body {
   margin: 0;
   padding: 0;
   background-color: #e5e5e5;
   font-size: 14px;
   font-family: "Roboto", sans-serif; }
-
-* {
-  box-sizing: border-box; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -299,6 +304,8 @@ navbar brand logo modified for screen-readers
     flex-basis: 46%; }
 
 /*............... Pricing ................*/
+#pricingSection > .container {
+  max-width: 800px; }
 #pricingSection .cust_title {
   display: inline-flex;
   align-items: center; }

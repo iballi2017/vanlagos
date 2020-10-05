@@ -27,7 +27,9 @@
             <a class="navbar-brand" href="./">
                 <h2>Brand Logo</h2>
             </a>
-            <button class="navbar-toggler mobile-menu-icon border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler mobile-menu-icon border-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fas fa-bars fa-1x"></i>
             </button>
 
@@ -47,11 +49,13 @@
                                 class="fas fa-user"></i> My Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2" href="./user/login.php">Sign
+                        <a class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
+                            href="./user/login.php">Sign
                             In</a>
                     </li>
                     <li class="nav-item mt-2 mt-md-0">
-                        <a class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2" href="./user/register.php">Sign
+                        <a class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
+                            href="./user/register.php">Sign
                             Up</a>
                     </li>
                     <li class="nav-item">
@@ -69,7 +73,8 @@
                 <div class="text-content-top">
                     <div class="hero-title">
                         <h2 class="animated fadeInDown delay-1s">We are always there at your service</h2>
-                        <h1 class="animated fadeInUp delay-1s">FAST and RELIABLE way to find QUALITY anywhere you need it
+                        <h1 class="animated fadeInUp delay-1s">FAST and RELIABLE way to find QUALITY anywhere you need
+                            it
                         </h1>
                     </div>
                 </div>
@@ -82,176 +87,84 @@
             <!-- <div class="card-body bg-white"> -->
             <div class="form-wrapper card-body p-0">
                 <ul class="nav nav-pills row hero-main-nav-pills  m-0" id="pills-tab" role="tablist">
-                    <li class="nav-item col-6 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links active curve-left-top px-5 btn-lg" id="pills-hirevan-tab" data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan" aria-selected="true">VAN
+                    <li class="nav-item col-4 text-center p-0">
+                        <a class="nav-link hero-tab-nav-links active curve-left-top px-md-5 btn-md-lg" id="pills-hirevan-tab"
+                            data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan"
+                            aria-selected="true">VAN
                             HIRE</a>
                     </li>
-                    <li class="nav-item col-6 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links curve-right-top px-5 btn-lg" id="pills-hirebus-tab" data-toggle="pill" href="#pills-hirebus" role="tab" aria-controls="pills-hirebus" aria-selected="false">BUS
+                    <li class="nav-item col-4 text-center p-0">
+                        <a class="nav-link hero-tab-nav-links px-md-5 btn-md-lg" id="pills-hirebus-tab" data-toggle="pill"
+                            href="#pills-hirebus" role="tab" aria-controls="pills-hirebus" aria-selected="false">BUS
                             HIRE</a>
+                    </li>
+                    <li class="nav-item col-4 text-center p-0">
+                        <a class="nav-link hero-tab-nav-links curve-right-top px-md-5 btn-md-lg" id="pills-car-tab"
+                            data-toggle="pill" href="#pills-car" role="tab" aria-controls="pills-car"
+                            aria-selected="false">CAR</a>
                     </li>
                 </ul>
                 <div class="tab-content bg-white py-3" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-hirevan" role="tabpanel" aria-labelledby="pills-hirevan-tab">
+                    <div class="tab-pane fade show active" id="pills-hirevan" role="tabpanel"
+                        aria-labelledby="pills-hirevan-tab">
                         <!-- VAN HIRE FORM OPENS -->
                         <div class="container">
 
                             <div>
                                 <!-- <form action="#"> -->
-                                    <div class="flex-label">
-                                        <div class="mr-2">
-                                            <input type="radio" id="dailyRadio" name="hire_option" class="hire_option rej_radio" checked>
-                                            <label for="dailyRadio" class="hire_option_label px-5 py-2" onclick="performSwitch()">
-                                                <!-- <span class="customRadio"></span> -->
-                                            Daily</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="hourlyRadio" name="hire_option" class="hire_option rej_radio">
-                                            <label for="hourlyRadio" class="hire_option_label px-5 py-2" onclick="performSwitch()">
-                                                <!-- <span class="customRadio"></span> -->
-                                                Hourly</label>
-                                        </div>
+                                <div class="flex-label">
+                                    <div class="mr-2">
+                                        <input type="radio" id="dailyRadio" name="hire_option"
+                                            class="hire_option rej_radio" checked>
+                                        <label for="dailyRadio" class="hire_option_label px-3 py-1 px-sm-5 py-sm-2"
+                                            onclick="performSwitch()">
+                                            <!-- <span class="customRadio"></span> -->
+                                            Daily
+                                        </label>
                                     </div>
+                                    <div>
+                                        <input type="radio" id="hourlyRadio" name="hire_option"
+                                            class="hire_option rej_radio">
+                                        <label for="hourlyRadio" class="hire_option_label px-3 py-1 px-sm-5 py-sm-2"
+                                            onclick="performSwitch()">
+                                            <!-- <span class="customRadio"></span> -->
+                                            Hourly
+                                        </label>
+                                    </div>
+                                </div>
                                 <!-- </form> -->
                             </div>
 
                             <!-- ***** -->
-                           <!-- Daily form -->
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-12 col-md-6">
-                                                <div class="form_grp">
-                                                    <label for="#" class="m-1">Pick-up</label>
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-md-7">
-                                                            <div class="border rounded m-1">
-                                                                <!-- <div class="row"> -->
-                                                                <div class="col py-1 px-1">
-                                                                    <input type="text" class="border-0 w-100" placeholder="Input your address">
-                                                                </div>
-                                                                <!-- </div> -->
-                                                            </div>
+                            <!-- Daily form -->
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form_grp">
+                                            <label for="#" class="m-1">Pick-up</label>
+                                            <div class="row no-gutters">
+                                                <div class="col-12 col-md-7">
+                                                    <div class="border rounded m-1">
+                                                        <!-- <div class="row"> -->
+                                                        <div class="col py-1 px-1">
+                                                            <input type="text" class="border-0 w-100"
+                                                                placeholder="Input your address">
                                                         </div>
-                                                        <div class="col-12 col-md-5">
-                                                            <div class="border rounded m-1">
-                                                                <div class="row">
-                                                                    <div class="col py-1 px-3">
-                                                                        <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                            <select class="border-0" name="state" id="state">
-                                                                                <option value="default" selected>State
-                                                                                </option>
-                                                                                <option value="lagos">Lagos</option>
-                                                                                <option value="lagos">Abuja</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <!-- </div> -->
                                                     </div>
                                                 </div>
-                                                <div class="form_grp">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-7">
-                                                            <div class="border rounded m-1">
-                                                                <div class="col py-1 px-1">
-                                                                    <input type="date" class="border-0 w-100" placeholder="Input your address">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-5">
-                                                            <div class="border rounded m-1">
-                                                                <div class="row">
-                                                                    <div class="col py-1 px-3">
-                                                                        <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                            <select class="border-0" name="pickup_time" id="pickup_time">
-                                                                                <option value="default" selected>Pick-up
-                                                                                    time
-                                                                                </option>
-                                                                                <option value="10am">10:00am</option>
-                                                                                <option value="1pm">1:00pm</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <div class="form_grp">
-                                                    <label for="#" class="m-1">Drop-off</label>
-                                                    <div class="row no-gutters">
-                                                        <div class="col-12 col-md-7">
-                                                            <div class="border rounded m-1">
-                                                                <div class="col py-1 px-1">
-                                                                    <input type="text" class="border-0 w-100" placeholder="Input your address">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-5">
-                                                            <div class="border rounded m-1">
-                                                                <div class="row">
-                                                                    <div class="col py-1 px-3">
-                                                                        <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                            <select class="border-0" name="state" id="state">
-                                                                                <option value="default" selected>State
-                                                                                </option>
-                                                                                <option value="lagos">Lagos</option>
-                                                                                <option value="lagos">Abuja</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form_grp" id="switchOne">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-5">
-                                                            <div class="border rounded m-1">
-                                                                <div class="row">
-                                                                    <div class="col py-1 px-3">
-                                                                        <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                            <select class="border-0" name="duration" id="duration">
-                                                                                <option value="1_day" selected>1 day
-                                                                                </option>
-                                                                                <option value="2_days">2 days</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--  -->
-                                                
-                                                <div class="form_grp d-none" id="switchTwo">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-7">
-                                                            <div class="border rounded m-1">
-                                                                <div class="col py-1 px-1">
-                                                                    <input type="date" class="border-0 w-100" placeholder="Input your address">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-5">
-                                                            <div class="border rounded m-1">
-                                                                <div class="row">
-                                                                    <div class="col py-1 px-3">
-                                                                        <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                            <select class="border-0" name="pickup_time" id="pickup_time">
-                                                                            <option value="default" selected>Pick-up
-                                                                                time
-                                                                            </option>
-                                                                            <option value="10am">10:00am</option>
-                                                                            <option value="1pm">1:00pm</option>
-                                                                        </select>
-                                                                        </div>
-                                                                    </div>
+                                                <div class="col-12 col-md-5">
+                                                    <div class="border rounded m-1">
+                                                        <div class="row">
+                                                            <div class="col py-1 px-3">
+                                                                <div
+                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                    <select class="border-0" name="state" id="state">
+                                                                        <option value="default" selected>State
+                                                                        </option>
+                                                                        <option value="lagos">Lagos</option>
+                                                                        <option value="lagos">Abuja</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -259,14 +172,133 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Link button -->
-                                        <div class="row">
-                                            <div class="col">
-                                                <button type="submit" class="btn m-1 custom-form-btn">Continue
-                                                    Reservation</button>
+                                        <div class="form_grp">
+                                            <div class="row no-gutters">
+                                                <div class="col-7">
+                                                    <div class="border rounded m-1">
+                                                        <div class="col py-1 px-1">
+                                                            <input type="date" class="border-0 w-100"
+                                                                placeholder="Input your address">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="border rounded m-1">
+                                                        <div class="row">
+                                                            <div class="col py-1 px-3">
+                                                                <div
+                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                    <select class="border-0" name="pickup_time"
+                                                                        id="pickup_time">
+                                                                        <option value="default" selected>Pick-up
+                                                                            time
+                                                                        </option>
+                                                                        <option value="10am">10:00am</option>
+                                                                        <option value="1pm">1:00pm</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form_grp">
+                                            <label for="#" class="m-1">Drop-off</label>
+                                            <div class="row no-gutters">
+                                                <div class="col-12 col-md-7">
+                                                    <div class="border rounded m-1">
+                                                        <div class="col py-1 px-1">
+                                                            <input type="text" class="border-0 w-100"
+                                                                placeholder="Input your address">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-5">
+                                                    <div class="border rounded m-1">
+                                                        <div class="row">
+                                                            <div class="col py-1 px-3">
+                                                                <div
+                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                    <select class="border-0" name="state" id="state">
+                                                                        <option value="default" selected>State
+                                                                        </option>
+                                                                        <option value="lagos">Lagos</option>
+                                                                        <option value="lagos">Abuja</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form_grp" id="switchOne">
+                                            <div class="row no-gutters">
+                                                <div class="col-5">
+                                                    <div class="border rounded m-1">
+                                                        <div class="row">
+                                                            <div class="col py-1 px-3">
+                                                                <div
+                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                    <select class="border-0" name="duration"
+                                                                        id="duration">
+                                                                        <option value="1_day" selected>1 day
+                                                                        </option>
+                                                                        <option value="2_days">2 days</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+
+                                        <div class="form_grp d-none" id="switchTwo">
+                                            <div class="row no-gutters">
+                                                <div class="col-7">
+                                                    <div class="border rounded m-1">
+                                                        <div class="col py-1 px-1">
+                                                            <input type="date" class="border-0 w-100"
+                                                                placeholder="Input your address">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="border rounded m-1">
+                                                        <div class="row">
+                                                            <div class="col py-1 px-3">
+                                                                <div
+                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                    <select class="border-0" name="pickup_time"
+                                                                        id="pickup_time">
+                                                                        <option value="default" selected>Pick-up
+                                                                            time
+                                                                        </option>
+                                                                        <option value="10am">10:00am</option>
+                                                                        <option value="1pm">1:00pm</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Link button -->
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="submit" class="btn m-1 custom-form-btn">Continue
+                                            Reservation</button>
+                                    </div>
+                                </div>
+                            </form>
                             <!-- ***** -->
                         </div>
                         <!-- VAN HIRE FORM CLOSES -->
@@ -344,7 +376,8 @@
                                     <div class="border m-1 rounded">
                                         <div class="row no-gutters">
                                             <div class="col-5 col-md-4 py-1 px-2 bg-light">
-                                                <label for="pickupDate" class="m-0 pick-up-label fontawesome-pseudo">Pick-up</label>
+                                                <label for="pickupDate"
+                                                    class="m-0 pick-up-label fontawesome-pseudo">Pick-up</label>
                                             </div>
                                             <div class="col-7 col-md-8 py-1 px-3">
                                                 <input type="text" id="pickupDate" class="border-0">
@@ -375,7 +408,8 @@
                                     <div class="border m-1 rounded">
                                         <div class="row no-gutters">
                                             <div class="col-5 col-md-4 py-1 px-2 bg-light">
-                                                <label for="dropOffDate" class="m-0 pick-up-label fontawesome-pseudo">Drop-off</label>
+                                                <label for="dropOffDate"
+                                                    class="m-0 pick-up-label fontawesome-pseudo">Drop-off</label>
                                             </div>
                                             <div class="col-7 col-md-8 py-1 px-3">
                                                 <input type="text" id="dropOffDate" class="border-0">
@@ -408,6 +442,12 @@
                             </div>
                         </form>
                         <!-- BUS HIRE FORM CLOSES -->
+                    </div>
+                    <div class="tab-pane fade" id="pills-car" role="tabpanel" aria-labelledby="pills-car-tab">
+
+                        <!-- CAR FORM OPENS -->
+                        <h6 class="text-center">Bus hire form goes here!</h6>
+                        <!-- CAR FORM CLOSES -->
                     </div>
                 </div>
             </div>
@@ -453,7 +493,7 @@
             <div class="container">
                 <h3 class="text-center">Pricing</h3>
                 <div class="row no-gutters">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card m-2">
                             <div class="card-header text-center">
                                 <span class="desc-icons">
@@ -481,7 +521,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card m-2">
                             <div class="card-header text-center">
                                 <span class="desc-icons">
@@ -509,35 +549,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card m-2">
-                            <div class="card-header text-center">
-                                <span class="desc-icons">
-                                    <img src="./images/punctuality.png" class="img-fluid" alt="">
-                                    <img src="./images/air-condition.png" class="img-fluid" alt="">
-                                    <img src="./images/refreshment.png" class="img-fluid" alt="">
-                                    <img src="./images/comfort.png" class="img-fluid" alt="">
-                                </span>
-                            </div>
-                            <picture class="py-2 text-center" style="width: 70%; margin: 0 auto">
-                                <source srcset="./images/vehicle-1.png" media="(min-width: 800px)">
-                                <source srcset="./images/vehicle-2.png" media="(min-width: 800px)">
-                                <img src="./images/vehicle-3.png" class="img-fluid" alt="" />
-                            </picture>
-                            <!-- <img src="./images/vehicle-1.png" class="card-img-top" alt="..."> -->
-                            <div class="card-body">
-                                <div class="card-text mb-2">
-                                    <div class="item-name">Van hire within Lagos</div>
-                                    <div>
-                                        <span class="price"><span>N</span><span>40,000</span></span>&nbsp;<small>Daily
-                                            rate</small>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-block custom-form-btn text-uppercase">Hire now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card m-2">
                             <div class="card-header text-center">
                                 <span class="desc-icons">
@@ -612,7 +624,8 @@
                         </li>
                         <li>
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis soluta eligendi iure sunt pariatur accusamus veniam, unde non est?
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis soluta
+                                eligendi iure sunt pariatur accusamus veniam, unde non est?
                             </p>
                         </li>
                     </ul>
@@ -686,11 +699,14 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="./js/app.js"></script>
 </body>
