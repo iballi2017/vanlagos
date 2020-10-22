@@ -1,0 +1,24 @@
+{
+    "name": "vanlagos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "nodemon": "^2.0.6"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "sass --watch css/style.scss css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iballi2017/vanlagos.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/iballi2017/vanlagos/issues"
+    },
+    "homepage": "https://github.com/iballi2017/vanlagos#readme"
+}
