@@ -24,7 +24,6 @@ body {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-button,
 input,
 select,
 optgroup,
@@ -90,8 +89,6 @@ input[type=submit] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
   line-height: 1;
   padding: 0.6em 1em 0.4em;
 }
@@ -117,11 +114,19 @@ input[type=number],
 input[type=tel],
 input[type=date],
 input[type=time],
+<<<<<<< HEAD
+=======
+.select_drop_wrapper,
+>>>>>>> safeplace
 textarea {
   font-family: "Roboto", sans-serif;
   border: 1px solid #ccc;
   border-radius: 3px;
+<<<<<<< HEAD
   padding: 3px;
+=======
+  height: 45px;
+>>>>>>> safeplace
 }
 .form-control:focus, .form-control:active,
 .custom-select:focus,
@@ -142,6 +147,11 @@ input[type=date]:focus,
 input[type=date]:active,
 input[type=time]:focus,
 input[type=time]:active,
+<<<<<<< HEAD
+=======
+.select_drop_wrapper:focus,
+.select_drop_wrapper:active,
+>>>>>>> safeplace
 textarea:focus,
 textarea:active {
   border: 1px solid #4d9f45;
@@ -717,7 +727,11 @@ input.invalid {
   right: 0.3em;
   color: #a8b622;
   pointer-events: none;
+<<<<<<< HEAD
   bottom: 0.2em;
+=======
+  bottom: 0.5em;
+>>>>>>> safeplace
 }
 .select_drop_wrapper:focus, .select_drop_wrapper:active {
   outline: 0;
@@ -732,6 +746,10 @@ input.invalid {
   -o-appearance: none;
   appearance: none;
   width: 100%;
+<<<<<<< HEAD
+=======
+  height: 100%;
+>>>>>>> safeplace
 }
 .select_drop_wrapper select:focus {
   outline: 0;
