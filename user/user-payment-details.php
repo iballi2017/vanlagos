@@ -58,10 +58,10 @@ include_once '../includes/header.php'; ?>
                                             <div class="col-12 col-md-3 mb-3">
                                                 <label for="gender" class="d-block">Gender</label>
                                                 <div class="select_drop_wrapper border fontawesome-pseudo py-1">
-                                                    <select class="border-0" name="state" id="state">
-                                                        <option value="default" selected>State</option>
-                                                        <option value="lagos">Lagos</option>
-                                                        <option value="lagos">Abuja</option>
+                                                    <select class="border-0" name="gender" id="gender">
+                                                        <option value="default" selected>Select</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -76,71 +76,9 @@ include_once '../includes/header.php'; ?>
                                                 <input type="text" name="phone" id="phone">
                                             </div>
                                         </div>
-                                        <!-- <div class="row">
-                                            <div class="col-12 mb-3">
-                                                <input type="checkbox" class="rej_checkbox" name="agreeTerms"
-                                                    id="agreeTerms">
-                                                <label for="agreeTerms" class="flex-label" id="agreeTermsLabel"
-                                                    onclick="checkTermsandCondition()">
-                                                    <span class="customCheck fontawesome-pseudo"></span>
-                                                    I agree to the&nbsp;<a href="#" class="regular-link">terms &
-                                                        condition</a>
-                                                </label>
-                                            </div>
-                                        </div> -->
-
                                     </div>
 
                                 </div>
-
-
-                                <!-- <div class="card my-2 rounded-0 d-none" id="paymentOption">
-                                    <div class="card-header bg-white">
-                                        SELECT PAYMENT METHOD
-                                    </div>
-                                    <div class="card-body">
-                                        <div>
-                                            <input type="radio" class="rej_radio" name="paymentMethod"
-                                                id="bankTransfer">
-                                            <label for="bankTransfer" class="d-flex" id="banktransferToggler">
-                                                <span class="customRadio fontawesome-pseudo"></span>
-                                                Bank Transfer
-                                            </label>
-
-                                            <div class="container d-none" id="seller_account_details">
-
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div>
-                                                            <span class="mb-3">
-                                                                <span class="font-weight-bold">Account
-                                                                    number:&nbsp;</span><span>1234569</span>
-                                                            </span>
-                                                            <span class="float-md-right d-block d-md-flex mb-3">
-                                                                <span class="font-weight-bold">Bank
-                                                                    name:</span>&nbsp;<span>First Bank</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex mb-3">
-                                                            <label class="font-weight-bold"
-                                                                for="amount">Amount:</label>&nbsp;
-                                                            <span>
-                                                                <input type="number" name="amount" id="amount">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <input type="radio" class="rej_radio" name="paymentMethod" id="gtPay">
-                                            <label for="gtPay" class="d-flex">
-                                                <span class="customRadio fontawesome-pseudo"></span>
-                                                GT Pay
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div> -->
 
 
                             </div>
@@ -280,7 +218,7 @@ include_once '../includes/header.php'; ?>
 
                     <!-- Second column -->
                     <div class="col-12 col-md-5">
-                        <div>
+                        <div class="payment-summary">
                             <div class="card rounded-top">
                                 <div class="card-header">
                                     Summary
@@ -332,8 +270,8 @@ include_once '../includes/header.php'; ?>
                 <!-- submit button -->
                 <div class="row">
                     <div class="col-12 col-md-7">
-                        <button type="button" class="py-3 px-5 custom-form-btn" onclick="goBack()">Back</button>
-                        <button type="submit" class="py-3 px-5 grey-btn float-right" id="paymentContinueBtn"
+                        <button type="button" class="py-3 px-5 custom-form-btn payment-prev-btn" onclick="goBack()">Back</button>
+                        <button type="submit" class="py-3 px-5 grey-btn float-right payment-next-btn" id="paymentContinueBtn"
                             disabled>Continue</button>
                     </div>
                 </div>

@@ -513,7 +513,7 @@
                                             rate</small>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-block custom-form-btn text-uppercase">Hire Now</a>
+                                <a href="#" class="btn btn-block custom-form-btn text-uppercase grid-items-center">Hire Now</a>
                             </div>
                         </div>
                     </div>
@@ -541,7 +541,7 @@
                                             rate</small>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-block custom-form-btn text-uppercase">Hire now</a>
+                                <a href="#" class="btn btn-block custom-form-btn text-uppercase grid-items-center">Hire now</a>
                             </div>
                         </div>
                     </div>
@@ -569,7 +569,7 @@
                                             rate</small>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-block custom-form-btn text-uppercase">Hire now</a>
+                                <a href="#" class="btn btn-block custom-form-btn text-uppercase grid-items-center">Hire now</a>
                             </div>
                         </div>
                     </div>

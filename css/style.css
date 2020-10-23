@@ -25,10 +25,9 @@ body {
 # Typography
 --------------------------------------------------------------*/
 input,
-select,
 optgroup,
 textarea {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -114,19 +113,12 @@ input[type=number],
 input[type=tel],
 input[type=date],
 input[type=time],
-<<<<<<< HEAD
-=======
 .select_drop_wrapper,
->>>>>>> safeplace
 textarea {
   font-family: "Roboto", sans-serif;
   border: 1px solid #ccc;
   border-radius: 3px;
-<<<<<<< HEAD
-  padding: 3px;
-=======
   height: 45px;
->>>>>>> safeplace
 }
 .form-control:focus, .form-control:active,
 .custom-select:focus,
@@ -147,11 +139,8 @@ input[type=date]:focus,
 input[type=date]:active,
 input[type=time]:focus,
 input[type=time]:active,
-<<<<<<< HEAD
-=======
 .select_drop_wrapper:focus,
 .select_drop_wrapper:active,
->>>>>>> safeplace
 textarea:focus,
 textarea:active {
   border: 1px solid #4d9f45;
@@ -175,6 +164,7 @@ textarea {
 .custom-form-btn {
   background-color: #a8b622;
   color: #ffffff;
+  height: 45px;
 }
 .custom-form-btn:hover {
   background-color: #c3d03f !important;
@@ -318,7 +308,13 @@ navbar brand logo modified for screen-readers
   color: #ffffff;
 }
 
-/*......................................................*/
+/*............................ MISC
+.........................*/
+.grid-items-center {
+  display: grid;
+  place-content: center;
+}
+
 /*...................... Hero tab ......................*/
 .hero-tab-main-content-wrapper {
   background-color: #ffffff;
@@ -439,6 +435,10 @@ navbar brand logo modified for screen-readers
 
 .select-bus-condition-wrapper {
   background-color: #f18805;
+}
+
+.user-payment-container .payment-summary {
+  line-height: 35px;
 }
 
 .user-payment-response-container .message-container {
@@ -660,6 +660,14 @@ input.invalid {
     font-weight: 600;
   }
 }
+@media (max-width: 500px) {
+  .payment-prev-btn,
+.payment-next-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.3em;
+  }
+}
 @media (max-width: 425px) {
   .step {
     height: 40px;
@@ -715,9 +723,10 @@ input.invalid {
 
 .select_drop_wrapper {
   position: relative;
+  border: none;
   font-family: "Roboto", sans-serif;
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
   background-color: unset;
 }
 .select_drop_wrapper::after {
@@ -727,15 +736,12 @@ input.invalid {
   right: 0.3em;
   color: #a8b622;
   pointer-events: none;
-<<<<<<< HEAD
-  bottom: 0.2em;
-=======
   bottom: 0.5em;
->>>>>>> safeplace
 }
 .select_drop_wrapper:focus, .select_drop_wrapper:active {
   outline: 0;
   inset: 0;
+  border: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
 }
 .select_drop_wrapper select {
@@ -746,10 +752,7 @@ input.invalid {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-<<<<<<< HEAD
-=======
   height: 100%;
->>>>>>> safeplace
 }
 .select_drop_wrapper select:focus {
   outline: 0;
@@ -758,7 +761,6 @@ input.invalid {
   margin: 5em;
   line-height: 2;
   font: inherit;
-  font-size: 0.8rem;
 }
 .select_drop_wrapper select::after {
   content: "hhhhh";
