@@ -37,12 +37,10 @@ body {
 # Typography
 --------------------------------------------------------------*/
 
-// button,
 input,
-select,
 optgroup,
 textarea {
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -156,6 +154,7 @@ textarea {
 .custom-form-btn {
     background-color: $greenishLightColor;
     color: $white;
+    height: 45px;
     &:hover {
         background-color: $greenishLightColor2 !important;
         color: $white;
@@ -314,7 +313,13 @@ navbar brand logo modified for screen-readers
 }
 
 
-/*......................................................*/
+/*............................ MISC
+.........................*/
+
+.grid-items-center {
+    display: grid;
+    place-content: center;
+}
 
 
 /*...................... Hero tab ......................*/
@@ -450,6 +455,12 @@ navbar brand logo modified for screen-readers
 
 .select-bus-condition-wrapper {
     background-color: #f18805;
+}
+
+.user-payment-container {
+    .payment-summary {
+        line-height: 35px;
+    }
 }
 
 .user-payment-response-container {
@@ -729,6 +740,15 @@ input.invalid {
     }
 }
 
+@media (max-width: 500px) {
+    .payment-prev-btn,
+    .payment-next-btn {
+        display: block;
+        width: 100%;
+        margin-bottom: .3em;
+    }
+}
+
 @media (max-width: 425px) {
     .step {
         height: 40px;
@@ -823,6 +843,7 @@ input.invalid {
 // Custom form select dropdown
 .select_drop_wrapper {
     position: relative;
+    border: none;
     &::after {
         content: "\f0dd";
         font-size: 20px;
@@ -835,12 +856,13 @@ input.invalid {
     // ........................
     font-family: $mainFontfamily;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px;
     background-color: unset;
     &:focus,
     &:active {
         outline: 0;
         inset: 0;
+        border: none;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
     }
     // ........................
@@ -861,7 +883,6 @@ input.invalid {
             margin: 5em;
             line-height: 2;
             font: inherit;
-            font-size: 0.8rem;
         }
         &::after {
             content: "hhhhh";
