@@ -1,0 +1,31 @@
+
+.fontawesome-pseudo:before,
+.fontawesome-pseudo:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.grey_control {
+    background-color: #efefef;
+}
+
+.grid-items-center {
+    display: grid;
+    place-content: center;
+}
+
+.text-display-lg{
+    font-size: large;
+}

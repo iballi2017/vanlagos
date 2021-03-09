@@ -1,0 +1,50 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap");
+
+/********
+    scss variables
+********/
+
+$OneViewport: 100vh;
+$greenishColor: #4d9f45;
+$greenishLightColor: #a8b622;
+$greenishLightColor2: #c3d03f;
+$greyishColor: #dedede;
+$greyColor_alt: #F6F6F6;
+$white: #ffffff;
+$lightBlue: #2589bd;
+$mainFontfamily: "Roboto",
+sans-serif;
+
+@mixin mq($size){
+
+    @media(min-width: $size){
+        @content
+    }
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 16px;
+    font-family: $mainFontfamily;
+    width: 100%;
+    min-height: 100%;
+    @include mq(768px){
+        // font-size: 22px;
+    }
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+

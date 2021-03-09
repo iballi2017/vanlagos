@@ -17,7 +17,8 @@
     <!-- Bootstrap 4.4.1 -->
     <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./stylesheet/css/style.min.css">
 </head>
 
 <body>
@@ -36,10 +37,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
+                        <a class="btn btn-lg nav-call-toaction-btn px-4 nav-link custom-nav-link" href="#">Book Now</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link custom-nav-link" href="./user/about-us.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#" target="_blank">Pricing</a>
+                        <a class="nav-link custom-nav-link" href="#">Pricing</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-nav-link" href="./user/contact-us-alt.php">Contact Us</a>
@@ -49,12 +53,12 @@
                                 class="fas fa-user"></i> My Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
+                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
                             href="./user/login.php">Sign
                             In</a>
                     </li>
                     <li class="nav-item mt-2 mt-md-0">
-                        <a class="btn btn-sm btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
+                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
                             href="./user/register.php">Sign
                             Up</a>
                     </li>
