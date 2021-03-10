@@ -8,21 +8,23 @@ include_once '../includes/header.php'; ?>
         <div class="row">
             <div class="col-12 col-md-3">
                 <!-- user account sidenav -->
-                <ul id="user-acct-sidenav">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;Book History</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;&nbsp;Account Settings</a>
-                    </li>
-                </ul>
+                <div>
+                    <ul id="user-acct-sidenav">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;Book History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;&nbsp;Account Settings</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="col-12 col-md-9">
                 <div class="d-flex align-items-center">
                     <button class="btn btn-sm mr-2">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                <h2 class="text-display-lg">Book History Details</h2>
+                    <h2 class="text-display-lg">Book History Details</h2>
                 </div>
                 <div class="card mb-3">
                     <div class="card-header">
@@ -41,8 +43,8 @@ include_once '../includes/header.php'; ?>
                                     <td>Male</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Phonee</th>
-                                    <td>0704455667888</td>
+                                    <th scope="row">Phone</th>
+                                    <td>07044556678</td>
                                 </tr>
                             </tbody>
                         </table>

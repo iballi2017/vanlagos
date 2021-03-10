@@ -35,6 +35,12 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+<div class="d-block d-lg-none text-center my-4">
+    <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2 w-50">Sign In</a>
+    <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2">Sign Up</a>
+</div>
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="btn btn-lg nav-call-toaction-btn px-4 nav-link custom-nav-link" href="#">Book Now</a>
@@ -52,12 +58,13 @@
                         <a class="nav-link custom-nav-link" href="./user/user-account-profile.php"><i
                                 class="fas fa-user"></i> My Account</a>
                     </li>
-                    <li class="nav-item">
+                    
+                    <li class="nav-item d-none d-lg-block">
                         <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
                             href="./user/login.php">Sign
                             In</a>
                     </li>
-                    <li class="nav-item mt-2 mt-md-0">
+                    <li class="nav-item mt-2 mt-md-0 d-none d-lg-block">
                         <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
                             href="./user/register.php">Sign
                             Up</a>

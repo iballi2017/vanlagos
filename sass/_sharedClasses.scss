@@ -17,6 +17,10 @@
     text-transform: capitalize;
 }
 
+.text-light{
+    color: #B0B0B0 !important;
+}
+
 .grey_control {
     background-color: #efefef;
 }
@@ -28,4 +32,8 @@
 
 .text-display-lg{
     font-size: large;
+}
+
+.text-greenishLightColor2{
+    color: $greenishLightColor2
 }

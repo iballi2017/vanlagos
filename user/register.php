@@ -38,25 +38,24 @@ include_once '../includes/header.php'; ?>
                                             <option>Female</option>
                                         </select>
                                     </div>
-                                    
-                                <div class="form-group col-md-4">
-                                    <input type="email" class="form-control grey_control" id="inputEmail" placeholder="Email">
-                                </div>
+
+                                    <div class="form-group col-md-4">
+                                        <input type="email" class="form-control grey_control" id="inputEmail" placeholder="Email">
+                                    </div>
                                 </div>
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <input type="password" class="form-control grey_control" id="inputPassword"
-                                            placeholder="Password">
+                                        <input type="password" class="form-control grey_control" id="inputPassword" placeholder="Password">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <input type="password" class="form-control grey_control" id="inputConfirmPassword"
-                                            placeholder="Confirm Password">
+                                        <input type="password" class="form-control grey_control" id="inputConfirmPassword" placeholder="Confirm Password">
                                     </div>
                                 </div>
-<div>
-                                <small>By signing up I agree to the <a href="#" class="regular-link">terms and conditions</a></small></div>
+                                <div>
+                                    <small>By signing up I agree to the <a href="#" class="regular-link">terms and conditions</a></small>
+                                </div>
 
                                 <button type="submit" class="btn custom-form-btn px-4 my-2">Sign Up</button>
                                 <div class="mt-2">

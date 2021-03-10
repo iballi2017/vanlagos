@@ -48,7 +48,7 @@
 //     for (i = 0; i < y.length; i++) {
 //         // If a field is empty...
 //         if (y[i].value == "") {
-//             // add an "invalid" class to the field:
+//             // add an "invalid" classList.contains("hide") to the field:
 //             y[i].className += " invalid";
 //             // and set the current valid status to false:
 //             valid = false;
@@ -62,12 +62,12 @@
 // }
 
 // function fixStepIndicator(n) {
-//     // This function removes the "active" class of all steps...
+//     // This function removes the "active" classList.contains("hide") of all steps...
 //     var i, x = document.getElementsByClassName("step");
 //     for (i = 0; i < x.length; i++) {
 //         x[i].className = x[i].className.replace(" active", "");
 //     }
-//     //... and adds the "active" class to the current step:
+//     //... and adds the "active" classList.contains("hide") to the current step:
 //     x[n].className += " active";
 // }
 
@@ -181,10 +181,21 @@ var checkTermsandCondition = () => {
 
 
 
-// back function
+/* back function */
 function goBack() {
     window.history.back();
 }
+
+/* handle sidenave toggle */
+const sidenavToggler = document.querySelector(".sidenav-toggler");
+const handleSideNavToggle = () =>{
+    console.log("hey!")
+    const sidenavContainer = document.querySelector(".sidenav-container");
+    if(sidenavContainer.classList.contains("hide")){
+        sidenavContainer.classList.remove("hide");
+    }
+}
+sidenavToggler.addEventListener("click", handleSideNavToggle)
 
 
 // switching between daily and hourly vehicle hire to view and hide corresponding form-control
