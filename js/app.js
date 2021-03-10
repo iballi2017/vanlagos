@@ -73,9 +73,9 @@
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     const w = $(".passenger-accordion-btn").parent().parent().siblings()
-    $(".passenger-accordion-btn").click(function() {
+    $(".passenger-accordion-btn").click(function () {
         if (!w.hasClass("show")) {
             $(this).removeClass("passenger-accordion-plus-btn").addClass("passenger-accordion-minus-btn")
         } else {
@@ -85,7 +85,7 @@ $(document).ready(function() {
 
     var loc = window.location.pathname;
 
-    $('#navbarSupportedContent').find('a').each(function() {
+    $('#navbarSupportedContent').find('a').each(function () {
         $(this).toggleClass('active', $(this).attr('href') == loc);
     });
 
@@ -142,11 +142,11 @@ $(document).ready(function() {
     var gtPay = $("#gtPay");
     var gtPayChecked = $("#gtPay:checked");
 
-    bankTransfer.on("click", function() {
+    bankTransfer.on("click", function () {
         showbankDetails(bankTransferChecked, seller_account_details)
     })
 
-    gtPay.on("click", function() {
+    gtPay.on("click", function () {
         hidebankDetails(gtPayChecked, seller_account_details)
     })
 
@@ -187,15 +187,29 @@ function goBack() {
 }
 
 /* handle sidenave toggle */
+
 const sidenavToggler = document.querySelector(".sidenav-toggler");
-const handleSideNavToggle = () =>{
-    console.log("hey!")
+const sidenavClose = document.querySelector(".sidenav-close");
+const handleSideNavToggle = () => {
     const sidenavContainer = document.querySelector(".sidenav-container");
-    if(sidenavContainer.classList.contains("hide")){
+    if (sidenavContainer.classList.contains("hide")) {
         sidenavContainer.classList.remove("hide");
     }
+
 }
-sidenavToggler.addEventListener("click", handleSideNavToggle)
+const handleSideNavClose = () => {
+    const sidenavContainer = document.querySelector(".sidenav-container");
+    if (!sidenavContainer.classList.contains("hide")) {
+        sidenavContainer.classList.add("hide");
+    }
+}
+
+if(sidenavToggler){
+    sidenavToggler.addEventListener("click", handleSideNavToggle)
+}
+if(sidenavClose){
+sidenavClose.addEventListener("click", handleSideNavClose)
+}
 
 
 // switching between daily and hourly vehicle hire to view and hide corresponding form-control

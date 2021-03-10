@@ -4,22 +4,17 @@ include_once '../includes/header.php'; ?>
 
 <main class="booking-history-container mb-5">
     <div class="container">
-        <h1 class="my-3">Welcome, <span class="user-name">Aderoye</span></h1>
+        <h1 class="my-3 d-none d-md-block">Welcome, <span class="user-name">Aderoye</span></h1>
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 sidenav-container hide">
                 <!-- user account sidenav -->
-                <div>
-                    <ul id="user-acct-sidenav">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;Book History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;&nbsp;Account Settings</a>
-                        </li>
-                    </ul>
-                </div>
+                <?php
+                include_once '../includes/user-account-sidenav.php'; ?>
             </div>
-            <div class="col-12 col-md-9">
+            <div class="col-12 col-md-9 main-content">
+                <button class="btn btn-default sidenav-toggler d-block d-md-none mt-3">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
                 <div class="card border-0" style="background-color: #e5e5e5">
                     <div class="card-header bg-secondary">
                         <h3 class="text-display-lg my-0 text-white">Book history</h3>

@@ -4,24 +4,16 @@ include_once '../includes/header.php'; ?>
 
 <main class="user-account-container mb-5">
     <div class="container">
-        <h1 class="my-3">Welcome, <span class="user-name">Aderoye</span></h1>
+        <h1 class="my-3 d-none d-md-block">Welcome, <span class="user-name">Aderoye</span></h1>
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 sidenav-container hide">
                 <!-- user account sidenav -->
-                <div>
-                    <ul id="user-acct-sidenav">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;Book History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;&nbsp;Account Settings</a>
-                        </li>
-                    </ul>
-                </div>
+                <?php
+                include_once '../includes/user-account-sidenav.php'; ?>
             </div>
-            <div class="col-12 col-md-9">
-                <div class="d-flex align-items-center">
-                    <button class="btn btn-sm mr-2">
+            <div class="col-12 col-md-9 main-content">
+                <div class="d-flex align-items-center mt-3">
+                    <button class="btn btn-default sidenav-toggler d-block d-md-none">
                         <i class="fas fa-arrow-left"></i>
                     </button>
                     <h2 class="text-display-lg">Book History Details</h2>

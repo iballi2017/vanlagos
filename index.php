@@ -28,18 +28,16 @@
             <a class="navbar-brand" href="./">
                 <h2>Brand Logo</h2>
             </a>
-            <button class="navbar-toggler mobile-menu-icon border-0" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler mobile-menu-icon border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars fa-1x"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-<div class="d-block d-lg-none text-center my-4">
-    <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2 w-50">Sign In</a>
-    <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2">Sign Up</a>
-</div>
+                <div class="d-block d-lg-none text-center my-4">
+                    <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2 w-50">Sign In</a>
+                    <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2">Sign Up</a>
+                </div>
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -55,18 +53,15 @@
                         <a class="nav-link custom-nav-link" href="./user/contact-us-alt.php">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="./user/user-account-profile.php"><i
-                                class="fas fa-user"></i> My Account</a>
+                        <a class="nav-link custom-nav-link" href="./user/booking-history.php"><i class="fas fa-user"></i> My Account</a>
                     </li>
-                    
+
                     <li class="nav-item d-none d-lg-block">
-                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
-                            href="./user/login.php">Sign
+                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2" href="./user/login.php">Sign
                             In</a>
                     </li>
                     <li class="nav-item mt-2 mt-md-0 d-none d-lg-block">
-                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
-                            href="./user/register.php">Sign
+                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2" href="./user/register.php">Sign
                             Up</a>
                     </li>
                     <li class="nav-item">
@@ -99,43 +94,33 @@
             <div class="form-wrapper card-body p-0">
                 <ul class="nav nav-pills row hero-main-nav-pills  m-0" id="pills-tab" role="tablist">
                     <li class="nav-item col-4 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links active curve-left-top px-md-5 btn-md-lg" id="pills-hirevan-tab"
-                            data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan"
-                            aria-selected="true">VAN
+                        <a class="nav-link hero-tab-nav-links active curve-left-top px-md-5 btn-md-lg" id="pills-hirevan-tab" data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan" aria-selected="true">VAN
                             HIRE</a>
                     </li>
                     <li class="nav-item col-4 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links px-md-5 btn-md-lg" id="pills-hirebus-tab" data-toggle="pill"
-                            href="#pills-hirebus" role="tab" aria-controls="pills-hirebus" aria-selected="false">BUS
+                        <a class="nav-link hero-tab-nav-links px-md-5 btn-md-lg" id="pills-hirebus-tab" data-toggle="pill" href="#pills-hirebus" role="tab" aria-controls="pills-hirebus" aria-selected="false">BUS
                             HIRE</a>
                     </li>
                     <li class="nav-item col-4 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links curve-right-top px-md-5 btn-md-lg" id="pills-car-tab"
-                            data-toggle="pill" href="#pills-car" role="tab" aria-controls="pills-car"
-                            aria-selected="false">CAR</a>
+                        <a class="nav-link hero-tab-nav-links curve-right-top px-md-5 btn-md-lg" id="pills-car-tab" data-toggle="pill" href="#pills-car" role="tab" aria-controls="pills-car" aria-selected="false">CAR</a>
                     </li>
                 </ul>
                 <div class="tab-content bg-white py-3" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-hirevan" role="tabpanel"
-                        aria-labelledby="pills-hirevan-tab">
+                    <div class="tab-pane fade show active" id="pills-hirevan" role="tabpanel" aria-labelledby="pills-hirevan-tab">
                         <!-- VAN HIRE FORM OPENS -->
                         <div class="container">
 
                             <div>
                                 <div class="flex-label">
                                     <div class="mr-2">
-                                        <input type="radio" id="dailyRadio" name="hire_option"
-                                            class="hire_option rej_radio" checked>
-                                        <label for="dailyRadio" class="hire_option_label px-3 py-1 px-sm-5 py-sm-2"
-                                            onclick="performSwitch()">
+                                        <input type="radio" id="dailyRadio" name="hire_option" class="hire_option rej_radio" checked>
+                                        <label for="dailyRadio" class="hire_option_label px-3 py-1 px-sm-5 py-sm-2" onclick="performSwitch()">
                                             Daily
                                         </label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="hourlyRadio" name="hire_option"
-                                            class="hire_option rej_radio">
-                                        <label for="hourlyRadio" class="hire_option_label px-3 py-1 px-sm-5 py-sm-2"
-                                            onclick="performSwitch()">
+                                        <input type="radio" id="hourlyRadio" name="hire_option" class="hire_option rej_radio">
+                                        <label for="hourlyRadio" class="hire_option_label px-3 py-1 px-sm-5 py-sm-2" onclick="performSwitch()">
                                             Hourly
                                         </label>
                                     </div>
@@ -154,8 +139,7 @@
                                                     <div class="border rounded m-1">
                                                         <!-- <div class="row"> -->
                                                         <div class="col py-1 px-1">
-                                                            <input type="text" class="border-0 w-100"
-                                                                placeholder="Input your address">
+                                                            <input type="text" class="border-0 w-100" placeholder="Input your address">
                                                         </div>
                                                         <!-- </div> -->
                                                     </div>
@@ -164,8 +148,7 @@
                                                     <div class="border rounded m-1">
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
-                                                                <div
-                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
                                                                     <select class="border-0" name="state" id="state">
                                                                         <option value="default" selected>State
                                                                         </option>
@@ -184,8 +167,7 @@
                                                 <div class="col-7">
                                                     <div class="border rounded m-1">
                                                         <div class="col py-1 px-1">
-                                                            <input type="date" class="border-0 w-100"
-                                                                placeholder="Input your address">
+                                                            <input type="date" class="border-0 w-100" placeholder="Input your address">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -193,10 +175,8 @@
                                                     <div class="border rounded m-1">
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
-                                                                <div
-                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                    <select class="border-0" name="pickup_time"
-                                                                        id="pickup_time">
+                                                                <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                    <select class="border-0" name="pickup_time" id="pickup_time">
                                                                         <option value="default" selected>Pick-up
                                                                             time
                                                                         </option>
@@ -218,8 +198,7 @@
                                                 <div class="col-12 col-md-7">
                                                     <div class="border rounded m-1">
                                                         <div class="col py-1 px-1">
-                                                            <input type="text" class="border-0 w-100"
-                                                                placeholder="Input your address">
+                                                            <input type="text" class="border-0 w-100" placeholder="Input your address">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -227,8 +206,7 @@
                                                     <div class="border rounded m-1">
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
-                                                                <div
-                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
                                                                     <select class="border-0" name="state" id="state">
                                                                         <option value="default" selected>State
                                                                         </option>
@@ -248,10 +226,8 @@
                                                     <div class="border rounded m-1">
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
-                                                                <div
-                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                    <select class="border-0" name="duration"
-                                                                        id="duration">
+                                                                <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                    <select class="border-0" name="duration" id="duration">
                                                                         <option value="1_day" selected>1 day
                                                                         </option>
                                                                         <option value="2_days">2 days</option>
@@ -270,8 +246,7 @@
                                                 <div class="col-7">
                                                     <div class="border rounded m-1">
                                                         <div class="col py-1 px-1">
-                                                            <input type="date" class="border-0 w-100"
-                                                                placeholder="Input your address">
+                                                            <input type="date" class="border-0 w-100" placeholder="Input your address">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -279,10 +254,8 @@
                                                     <div class="border rounded m-1">
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
-                                                                <div
-                                                                    class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                    <select class="border-0" name="pickup_time"
-                                                                        id="pickup_time">
+                                                                <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
+                                                                    <select class="border-0" name="pickup_time" id="pickup_time">
                                                                         <option value="default" selected>Pick-up
                                                                             time
                                                                         </option>
@@ -383,8 +356,7 @@
                                     <div class="border m-1 rounded">
                                         <div class="row no-gutters">
                                             <div class="col-5 col-md-4 py-1 px-2 bg-light">
-                                                <label for="pickupDate"
-                                                    class="m-0 pick-up-label fontawesome-pseudo">Pick-up</label>
+                                                <label for="pickupDate" class="m-0 pick-up-label fontawesome-pseudo">Pick-up</label>
                                             </div>
                                             <div class="col-7 col-md-8 py-1 px-3">
                                                 <input type="text" id="pickupDate" class="border-0">
@@ -415,8 +387,7 @@
                                     <div class="border m-1 rounded">
                                         <div class="row no-gutters">
                                             <div class="col-5 col-md-4 py-1 px-2 bg-light">
-                                                <label for="dropOffDate"
-                                                    class="m-0 pick-up-label fontawesome-pseudo">Drop-off</label>
+                                                <label for="dropOffDate" class="m-0 pick-up-label fontawesome-pseudo">Drop-off</label>
                                             </div>
                                             <div class="col-7 col-md-8 py-1 px-3">
                                                 <input type="text" id="dropOffDate" class="border-0">
@@ -474,7 +445,7 @@
                     <div class="col">
                         <ul class="why-choose-us-list">
                             <li><img src="./images/punctuality.png" class="img img-fluid" alt="">
-                                <p><strong>Puntuality</strong></p>
+                                <p><strong>On time</strong></p>
                             </li>
                             <li><img src="./images/air-condition.png" class="img img-fluid" alt="">
                                 <p>
@@ -483,11 +454,12 @@
                                 </p>
                             </li>
                             <li><img src="./images/comfort.png" class="img img-fluid" alt="">
-                                <p><strong>Refreshment</strong></p>
-                            </li>
-                            <li><img src="./images/refreshment.png" class="img img-fluid" alt="">
                                 <p><strong>Comfortable seats
                                         & leg space</strong></p>
+                            </li>
+                            <li><img src="./images/24-hours-support-svgrepo-com.png" class="img img-fluid" alt="">
+                                <p><strong>24&nbsp;/&nbsp;7 Coustomer
+                                        support</strong></p>
                             </li>
                         </ul>
                     </div>
@@ -706,14 +678,11 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="./js/app.js"></script>
 </body>

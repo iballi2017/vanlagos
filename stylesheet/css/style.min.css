@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap");
 /********
     scss variables
@@ -7,8 +8,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -21,7 +21,6 @@ html, body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-
 body {
   background-color: #e5e5e5;
 }
@@ -53,7 +52,6 @@ body {
 }
 
 .grid-items-center {
-  display: -ms-grid;
   display: grid;
   place-content: center;
 }
@@ -87,27 +85,18 @@ h6 {
 
 .text-content-top {
   height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .text-content-top .hero-title {
   color: #ffffff;
 }
-
 .text-content-top .hero-title h1 {
   font-size: 1.2rem;
   margin: 0;
 }
-
 .text-content-top .hero-title h2 {
   font-size: 0.9rem;
   margin: 0;
@@ -117,9 +106,9 @@ h6 {
 # Forms
 --------------------------------------------------------------*/
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type=button],
+input[type=reset],
+input[type=submit] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -127,30 +116,28 @@ input[type="submit"] {
   line-height: 1;
   padding: 0.6em 1em 0.4em;
 }
-
 button:focus, button:active,
-input[type="button"]:focus,
-input[type="button"]:active,
-input[type="reset"]:focus,
-input[type="reset"]:active,
-input[type="submit"]:focus,
-input[type="submit"]:active {
+input[type=button]:focus,
+input[type=button]:active,
+input[type=reset]:focus,
+input[type=reset]:active,
+input[type=submit]:focus,
+input[type=submit]:active {
   outline: 0;
   inset: 0;
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 .form-control,
 .custom-select,
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="date"],
-input[type="time"],
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=date],
+input[type=time],
 .select_drop_wrapper,
 textarea {
   font-family: "Roboto", sans-serif;
@@ -158,26 +145,25 @@ textarea {
   border-radius: 3px;
   height: 45px;
 }
-
 .form-control:focus, .form-control:active,
 .custom-select:focus,
 .custom-select:active,
-input[type="text"]:focus,
-input[type="text"]:active,
-input[type="email"]:focus,
-input[type="email"]:active,
-input[type="password"]:focus,
-input[type="password"]:active,
-input[type="search"]:focus,
-input[type="search"]:active,
-input[type="number"]:focus,
-input[type="number"]:active,
-input[type="tel"]:focus,
-input[type="tel"]:active,
-input[type="date"]:focus,
-input[type="date"]:active,
-input[type="time"]:focus,
-input[type="time"]:active,
+input[type=text]:focus,
+input[type=text]:active,
+input[type=email]:focus,
+input[type=email]:active,
+input[type=password]:focus,
+input[type=password]:active,
+input[type=search]:focus,
+input[type=search]:active,
+input[type=number]:focus,
+input[type=number]:active,
+input[type=tel]:focus,
+input[type=tel]:active,
+input[type=date]:focus,
+input[type=date]:active,
+input[type=time]:focus,
+input[type=time]:active,
 .select_drop_wrapper:focus,
 .select_drop_wrapper:active,
 textarea:focus,
@@ -185,8 +171,7 @@ textarea:active {
   border: 1px solid #4d9f45;
   outline: 0;
   inset: 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 select {
@@ -200,8 +185,7 @@ textarea {
 /* buttons */
 .btn:focus {
   outline: 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 .custom-form-btn {
@@ -209,18 +193,15 @@ textarea {
   color: #ffffff;
   height: 45px;
 }
-
 .custom-form-btn:hover {
   background-color: #c3d03f !important;
   color: #ffffff;
 }
-
 .custom-form-btn:focus {
   border: 1px solid #a8b622;
   outline: 0;
   inset: 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 .grey-btn {
@@ -230,10 +211,8 @@ textarea {
 
 .regular-link {
   color: #4d9f45;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-
 .regular-link:hover {
   color: #c3d03f;
   text-decoration: none;
@@ -252,7 +231,6 @@ textarea {
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff;
 }
-
 .navbar-light .navbar-nav .nav-link:hover {
   color: #ffffff;
 }
@@ -264,7 +242,6 @@ navbar brand logo modified for screen-readers
   text-indent: -100000px;
   padding: 0;
 }
-
 .navbar-brand h2 {
   background-image: url("../../images/brand-logo.png");
   background-repeat: no-repeat;
@@ -276,11 +253,9 @@ navbar brand logo modified for screen-readers
 .btn-custom-green-outline {
   border: 1px solid #a8b622;
 }
-
 .btn-custom-green-outline:hover {
   background-color: #4d9f45;
 }
-
 .btn-custom-green-outline:focus {
   border: 1px solid #4d9f45;
 }
@@ -288,7 +263,6 @@ navbar brand logo modified for screen-readers
 .mobile-menu-icon {
   color: #4d9f45 !important;
 }
-
 .mobile-menu-icon:active {
   color: #a8b622 !important;
   border: 1px solid #4d9f45 !important;
@@ -297,34 +271,29 @@ navbar brand logo modified for screen-readers
 .custom-nav-btn {
   color: #ffffff;
 }
-
 .custom-nav-btn:hover, .custom-nav-btn:focus {
   background-color: #a8b622;
   color: #ffffff;
   outline: 0;
   inset: 0;
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 @media (min-width: 768px) {
   .navbar-nav .nav-item + li {
-    margin-left: .4em;
+    margin-left: 0.4em;
   }
 }
-
 .navbar-nav .nav-item .active .custom-nav-link {
   color: #a8b622;
 }
 
 .custom-nav-link {
   color: #ffffff;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   font-size: 1rem;
   font-weight: lighter;
 }
-
 .custom-nav-link:hover {
   color: #a8b622;
 }
@@ -348,23 +317,19 @@ navbar brand logo modified for screen-readers
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .how-it-works .content-area {
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 .how-it-works ul {
   counter-reset: counter-name;
   font-size: 1.3rem;
 }
-
 .how-it-works ul li {
   list-style: none;
   position: relative;
   margin-bottom: 2.5em;
   padding-left: 1em;
 }
-
 .how-it-works ul li::before {
   counter-increment: counter-name;
   content: counter(counter-name) "  ";
@@ -373,15 +338,9 @@ navbar brand logo modified for screen-readers
   top: -0.2em;
   width: 2em;
   height: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 100%;
   border: 3px solid #ffffff;
   color: #ffffff;
@@ -404,11 +363,9 @@ navbar brand logo modified for screen-readers
   padding-bottom: 1em;
   font-size: 1rem;
 }
-
 .hero-tab-nav-links:hover, .hero-tab-nav-links:focus {
   color: #4d9f45;
 }
-
 .hero-tab-nav-links.active {
   background-color: #a8b622 !important;
   color: #ffffff;
@@ -424,20 +381,18 @@ navbar brand logo modified for screen-readers
 #user-acct-sidenav li {
   list-style: none;
   background-color: #F6F6F6;
-  margin-bottom: .5em;
-  padding: .5em 0;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
   border-radius: 3px;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
 }
-
 #user-acct-sidenav li a {
   font-weight: 500;
   color: #333;
 }
-
 #user-acct-sidenav li.active, #user-acct-sidenav li:hover {
   border: 1px solid #a8b622;
 }
@@ -451,38 +406,25 @@ navbar brand logo modified for screen-readers
 }
 
 .why-choose-us-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
-
 .why-choose-us-list li {
   text-align: center;
-  -ms-flex-preferred-size: 46%;
-      flex-basis: 46%;
+  flex-basis: 46%;
 }
 
 /*............... Pricing ................*/
 #pricingSection > .container {
   max-width: 800px;
 }
-
 #pricingSection .cust_title {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #pricingSection .cust_title::after,
 #pricingSection .cust_title::before {
   content: "";
@@ -492,19 +434,15 @@ navbar brand logo modified for screen-readers
   margin-right: 0.5em;
   margin-left: 0.5em;
 }
-
 #pricingSection .desc-icons {
   margin: 0 auto;
 }
-
 #pricingSection .desc-icons img {
   width: 20px;
 }
-
 #pricingSection .item-name {
   font-weight: 500;
 }
-
 #pricingSection .price {
   font-size: 1.2rem;
   font-weight: 600;
@@ -514,14 +452,9 @@ navbar brand logo modified for screen-readers
 .how-it-works-inner {
   height: 100%;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .how-it-works-inner .section-title::after {
   background-color: #ffffff;
   width: 25%;
@@ -531,19 +464,11 @@ navbar brand logo modified for screen-readers
 .problem-then-contact-us {
   background-color: #212121;
 }
-
 .problem-then-contact-us .problem-then-contact-us-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .title-component-wrapper {
@@ -571,15 +496,12 @@ navbar brand logo modified for screen-readers
   max-width: 700px;
   margin: 0 auto;
 }
-
 .user-payment-response-container .message-container a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: #a8b622;
-  -webkit-transition: 3s ease;
   transition: 3s ease;
 }
-
 .user-payment-response-container .message-container a:hover {
   color: #c3d03f;
 }
@@ -592,35 +514,26 @@ footer {
   background-color: #1b1c13;
   color: #ffffff;
 }
-
 footer ul {
   padding: 0;
 }
-
 footer ul li {
   list-style: none;
   margin-top: 1em;
 }
-
 footer a {
   text-decoration: none;
   color: #ffffff;
 }
-
 footer a:hover, footer a:focus {
   color: #ffffff;
 }
-
 footer .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 footer .social-icons .social-icon {
   margin-right: 2em;
 }
-
 footer .footer-column-title::after {
   content: "";
   display: block;
@@ -645,12 +558,10 @@ input {
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */
 }
-
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
-input[type="number"] {
+input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -675,15 +586,9 @@ input.invalid {
   border-radius: 50%;
   display: inline-block;
   opacity: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 100000;
   margin: 0;
 }
@@ -720,13 +625,13 @@ input.invalid {
 .step-indicators {
   text-align: center;
   margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
 }
 
 /* Mark the steps that are finished and valid: */
@@ -750,25 +655,20 @@ input.invalid {
   font-weight: 900;
   color: #a8b622;
 }
-
 .step-2-fill-information-page .passenger-accordion-plus-btn::before {
-  content: "\f067";
+  content: "";
 }
-
 .step-2-fill-information-page .passenger-accordion-minus-btn::before {
-  content: "\f068";
+  content: "";
 }
-
 .step-2-fill-information-page .passenger-accordion-btn:hover {
   border: none;
 }
-
 .step-2-fill-information-page .passenger-accordion-btn:focus {
   border: 1px solid #4d9f45;
   outline: 0;
   inset: 0;
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 .bus-hire-page .page-info-banner p span:first-child {
@@ -778,24 +678,21 @@ input.invalid {
 .faq-accordion-button {
   color: #4d9f45;
 }
-
 .faq-accordion-button:hover {
   color: #a8b622;
 }
 
 /*.............booking history mini table ......*/
 .booking-history-table th, .booking-history-table td {
-  padding-top: .2em;
-  padding-bottom: .2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
-
 .booking-history-table th .title {
   text-decoration: none;
   color: #c3d03f;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
 }
-
 .booking-history-table th .title:hover {
   color: #4d9f45;
 }
@@ -807,15 +704,19 @@ input.invalid {
     top: 0;
     bottom: 0;
     right: 0;
-    left: -100%;
+    left: 0;
+    transition: left 300ms ease-in-out;
     z-index: 3;
     padding-top: 13em;
+  }
+  .sidenav-container.hide {
+    left: -100%;
   }
   .sidenav-container #user-acct-sidenav .nav-item {
     position: relative;
   }
   .sidenav-container #user-acct-sidenav .nav-item::after {
-    content: "\f0da";
+    content: "";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: absolute;
@@ -829,6 +730,7 @@ input.invalid {
   body {
     font-size: 16px;
   }
+
   .text-content-top .hero-title {
     color: #ffffff;
   }
@@ -839,49 +741,43 @@ input.invalid {
     font-size: 1.3rem;
   }
 }
-
 @media (min-width: 765px) {
   .curve-left-top {
     border-radius: 10px 0 0 0 !important;
   }
+
   .curve-right-top {
     border-radius: 0 10px 0 0 !important;
   }
+
   .why-choose-us-list li {
     text-align: center;
-    -ms-flex-preferred-size: 24%;
-        flex-basis: 24%;
+    flex-basis: 24%;
   }
+
   .bus-hire-page .page-info-banner p span:first-child {
     font-size: 1.4rem;
     font-weight: 600;
   }
 }
-
 @media (max-width: 500px) {
   .payment-prev-btn,
-  .payment-next-btn {
+.payment-next-btn {
     display: block;
     width: 100%;
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
   }
 }
-
 @media (max-width: 425px) {
   .step {
     height: 40px;
     width: 40px;
   }
 }
-
 /* structure.hml style */
 .step-indicators-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
@@ -891,43 +787,29 @@ input.invalid {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-}
-
-.text {
-  /* bottom: 0; */
 }
 
 .userHireForm .form-wrapper {
   max-width: 800px;
   margin: 0 auto;
 }
-
 .userHireForm #pills-hirevan-tab.active {
   background-color: #a8b622;
 }
-
-.userHireForm input[type="text"],
+.userHireForm input[type=text],
 .userHireForm select {
   width: 100%;
 }
-
-.userHireForm input[type="text"]:focus,
+.userHireForm input[type=text]:focus,
 .userHireForm select:focus {
   outline: 0;
 }
-
 .userHireForm .pick-up-label::before {
-  content: "\f073";
+  content: "";
   margin-right: 0.3em;
 }
 
@@ -943,9 +825,8 @@ input.invalid {
   padding: 10px;
   background-color: unset;
 }
-
 .select_drop_wrapper::after {
-  content: "\f0dd";
+  content: "";
   font-size: 20px;
   position: absolute;
   right: 0.3em;
@@ -953,36 +834,29 @@ input.invalid {
   pointer-events: none;
   bottom: 0.5em;
 }
-
 .select_drop_wrapper:focus, .select_drop_wrapper:active {
   outline: 0;
   inset: 0;
   border: none;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
 }
-
 .select_drop_wrapper select {
   /* remove default style from browsers */
   -webkit-appearance: none;
   -moz-appearance: none;
-  -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
   width: 100%;
   height: 100%;
 }
-
 .select_drop_wrapper select:focus {
   outline: 0;
 }
-
 .select_drop_wrapper select option {
   margin: 5em;
   line-height: 2;
   font: inherit;
 }
-
 .select_drop_wrapper select::after {
   content: "hhhhh";
 }
@@ -993,21 +867,18 @@ input.invalid {
   opacity: 0;
   margin-top: -3000px;
 }
-
 .rej_checkbox ~ label,
 .rej_radio ~ label {
   cursor: pointer;
 }
-
 .rej_checkbox:checked ~ label .customCheck::after,
 .rej_radio:checked ~ label .customCheck::after {
-  content: "\f00c";
+  content: "";
   color: #4d9f45;
 }
 
 .rej_radio:checked ~ label .customRadio {
-  -webkit-box-shadow: inset 0 0 0 5px #4d9f45;
-          box-shadow: inset 0 0 0 5px #4d9f45;
+  box-shadow: inset 0 0 0 5px #4d9f45;
 }
 
 .rej_radio.hire_option:checked ~ label {
@@ -1024,13 +895,8 @@ input.invalid {
   cursor: pointer;
   border: 0.6px solid #4d9f45;
   border-radius: 3px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
+  transform: scale(1);
   transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
-  display: -ms-grid;
   display: grid;
   place-content: center;
 }
@@ -1040,12 +906,8 @@ input.invalid {
 }
 
 .flex-label {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  align-items: center !important;
 }
 
 .hire_option_label {
