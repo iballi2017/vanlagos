@@ -26,7 +26,7 @@ include_once '../includes/header.php'; ?>
                                 <tr>
                                     <th scope="col"></th>
                                     <th scope="col" colspan="2">
-                                        <a href="#" class="title">Bus Hire</a>
+                                        <a href="./booking-details.php" class="title">Bus Hire</a>
                                     </th>
                                     <!-- <th scope="col">Last</th> -->
                                     <th scope="col" class="text-light">8wks ago</th>
@@ -55,7 +55,7 @@ include_once '../includes/header.php'; ?>
                                 <tr>
                                     <th scope="col"></th>
                                     <th scope="col" colspan="2">
-                                        <a href="#" class="title">Van Hire</a>
+                                        <a href="./booking-details.php" class="title">Van Hire</a>
                                     </th>
                                     <th scope="col" class="text-light">8wks ago</th>
                                 </tr>

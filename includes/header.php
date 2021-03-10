@@ -40,7 +40,7 @@
                                
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="btn btn-lg nav-call-toaction-btn px-4 nav-link custom-nav-link" href="#">Book Now</a>
+                        <a class="btn btn-lg nav-call-toaction-btn px-4 nav-link custom-nav-link" href="../#pricingSection">Book Now</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-nav-link" href="../user/about-us.php">About Us</a>
@@ -52,7 +52,7 @@
                         <a class="nav-link custom-nav-link" href="../user/contact-us-alt.php">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="../user/user-account.php"><i
+                        <a class="nav-link custom-nav-link" href="../user/booking-history.php"><i
                                 class="fas fa-user"></i> My Account</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./stylesheet/css/style.min.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="20">
     <nav class="navbar navbar-expand-lg main-nav-bar sticky-top">
 
         <div class="container">
@@ -41,7 +41,7 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="btn btn-lg nav-call-toaction-btn px-4 nav-link custom-nav-link" href="#">Book Now</a>
+                        <a class="btn btn-lg nav-call-toaction-btn px-4 nav-link custom-nav-link" href="./#pricingSection">Book Now</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-nav-link" href="./user/about-us.php">About Us</a>
@@ -149,7 +149,7 @@
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
                                                                 <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                    <select class="border-0" name="state" id="state">
+                                                                    <select class="border-0" name="vanHire-pickup-state" id="vanHire-pickup-state">
                                                                         <option value="default" selected>State
                                                                         </option>
                                                                         <option value="lagos">Lagos</option>
@@ -176,7 +176,7 @@
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
                                                                 <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                    <select class="border-0" name="pickup_time" id="pickup_time">
+                                                                    <select class="border-0" name="vanHire-pickup_time" id="vanHire-pickup_time">
                                                                         <option value="default" selected>Pick-up
                                                                             time
                                                                         </option>
@@ -207,7 +207,7 @@
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
                                                                 <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                    <select class="border-0" name="state" id="state">
+                                                                    <select class="border-0" name="vanHire-dropOff-state" id="vanHire-dropOff-state">
                                                                         <option value="default" selected>State
                                                                         </option>
                                                                         <option value="lagos">Lagos</option>
@@ -255,7 +255,7 @@
                                                         <div class="row">
                                                             <div class="col py-1 px-3">
                                                                 <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                                    <select class="border-0" name="pickup_time" id="pickup_time">
+                                                                    <select class="border-0" name="vahHire_pickup_time" id="vahHire_pickup_time">
                                                                         <option value="default" selected>Pick-up
                                                                             time
                                                                         </option>
@@ -307,7 +307,7 @@
                                         <div class="row">
                                             <div class="col py-1 px-3">
                                                 <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                    <select class="border-0" name="state" id="state">
+                                                    <select class="border-0" name="busHire-pickup-state" id="busHire-pickup-state">
                                                         <option value="default" selected>State</option>
                                                         <option value="lagos">Lagos</option>
                                                         <option value="lagos">Abuja</option>
@@ -337,7 +337,7 @@
                                         <div class="row">
                                             <div class="col py-1 px-3">
                                                 <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                    <select class="border-0" name="state" id="state">
+                                                    <select class="border-0" name="busHire-dropOff-state" id="busHire-dropOff-state">
                                                         <option value="default" selected>State</option>
                                                         <option value="lagos">Lagos</option>
                                                         <option value="lagos">Abuja</option>
@@ -369,7 +369,7 @@
                                         <div class="row">
                                             <div class="col py-1 px-3">
                                                 <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                    <select class="border-0" name="dropOffTime" id="dropOffTime">
+                                                    <select class="border-0" name="busHire-pickUpTime" id="busHire-pickUpTime">
                                                         <option value="default" selected>Time</option>
                                                         <option value="10am">10:00AM</option>
                                                         <option value="2pm">2:00PM</option>
@@ -400,7 +400,7 @@
                                         <div class="row">
                                             <div class="col py-1 px-3">
                                                 <div class="select_drop_wrapper fontawesome-pseudo mx-1 py-1">
-                                                    <select class="border-0" name="dropOffTime" id="dropOffTime">
+                                                    <select class="border-0" name="busHire-dropOffTime" id="busHire-dropOffTime">
                                                         <option value="default" selected>Time</option>
                                                         <option value="10am">10:00AM</option>
                                                         <option value="2pm">2:00PM</option>
@@ -684,6 +684,8 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
 </body>
 

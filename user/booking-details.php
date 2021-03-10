@@ -18,6 +18,7 @@ include_once '../includes/header.php'; ?>
                     </button>
                     <h2 class="text-display-lg">Book History Details</h2>
                 </div>
+                <!--  -->
                 <div class="card mb-3">
                     <div class="card-header">
                         <h3 class="text-display-lg my-0">Personal details</h3>
