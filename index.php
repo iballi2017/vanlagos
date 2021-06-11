@@ -12,8 +12,9 @@
     <!-- Font awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <!-- Animate css -->
-    <link rel="stylesheet" href="./css/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Bootstrap 4.4.1 -->
     <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <!-- custom css -->
@@ -78,8 +79,8 @@
             <div class="container">
                 <div class="text-content-top">
                     <div class="hero-title">
-                        <h2 class="animated fadeInDown delay-1s">We are always there at your service</h2>
-                        <h1 class="animated fadeInUp delay-1s">FAST and RELIABLE way to find QUALITY anywhere you need
+                        <h2 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">We are always there at your service</h2>
+                        <h1 data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">FAST and RELIABLE way to find QUALITY anywhere you need
                             it
                         </h1>
                     </div>
@@ -89,7 +90,7 @@
 
         </section>
         <!--  -->
-        <section class="index-booking-form userHireForm mx-4">
+        <section class="index-booking-form userHireForm mx-4" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
             <!-- <div class="card-body bg-white"> -->
             <div class="form-wrapper card-body p-0">
                 <ul class="nav nav-pills row hero-main-nav-pills  m-0" id="pills-tab" role="tablist">
@@ -97,12 +98,19 @@
                         <a class="nav-link hero-tab-nav-links active curve-left-top px-md-5 btn-md-lg" id="pills-hirevan-tab" data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan" aria-selected="true">VAN
                             HIRE</a>
                     </li>
-                    <li class="nav-item col-4 text-center p-0">
+                    <!-- <li class="nav-item col-4 text-center p-0">
                         <a class="nav-link hero-tab-nav-links px-md-5 btn-md-lg" id="pills-hirebus-tab" data-toggle="pill" href="#pills-hirebus" role="tab" aria-controls="pills-hirebus" aria-selected="false">BUS
                             HIRE</a>
                     </li>
                     <li class="nav-item col-4 text-center p-0">
                         <a class="nav-link hero-tab-nav-links curve-right-top px-md-5 btn-md-lg" id="pills-car-tab" data-toggle="pill" href="#pills-car" role="tab" aria-controls="pills-car" aria-selected="false">CAR</a>
+                    </li> -->
+                    <li class="nav-item col-4 text-center p-0">
+                        <a class="nav-link hero-tab-nav-links px-md-5 btn-md-lg disabled" id="pills-hirebus-tab" data-toggle="pill" href="#pills-hirebus" role="tab" aria-controls="pills-hirebus" aria-selected="false">BUS
+                            HIRE</a>
+                    </li>
+                    <li class="nav-item col-4 text-center p-0">
+                        <a class="nav-link hero-tab-nav-links curve-right-top px-md-5 btn-md-lg disabled" id="pills-car-tab" data-toggle="pill" href="#pills-car" role="tab" aria-controls="pills-car" aria-selected="false">CAR</a>
                     </li>
                 </ul>
                 <div class="tab-content bg-white py-3" id="pills-tabContent">
@@ -433,7 +441,7 @@
         </section>
 
 
-        <section class="why-choose-us my-5">
+        <section class="why-choose-us my-5" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -473,7 +481,7 @@
                 <h3 class="text-center">Pricing</h3>
                 <div class="row no-gutters">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card m-2">
+                        <div class="card m-2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
                             <div class="card-header text-center">
                                 <span class="desc-icons">
                                     <img src="./images/punctuality.png" class="img-fluid" alt="">
@@ -501,7 +509,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card m-2">
+                        <div class="card m-2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
                             <div class="card-header text-center">
                                 <span class="desc-icons">
                                     <img src="./images/punctuality.png" class="img-fluid" alt="">
@@ -529,7 +537,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="card m-2">
+                        <div class="card m-2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
                             <div class="card-header text-center">
                                 <span class="desc-icons">
                                     <img src="./images/punctuality.png" class="img-fluid" alt="">
@@ -564,7 +572,7 @@
             <div class="container-fluid" style="height: 100%;">
                 <div class="row" style="height: 100%;">
                     <div class="col-12 col-md-6 offset-md-6 content-area pl-5" style="height: 100%;">
-                        <div class="how-it-works-inner">
+                        <div class="how-it-works-inner" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
                             <div>
                                 <h2 class="my-5 section-title">How it works</h2>
 
@@ -582,8 +590,8 @@
 
         <section class="problem-then-contact-us">
             <div class="container py-4 text-white problem-then-contact-us-inner">
-                <h4>Having Any Problem Booking? Let Us Know ! ! !</h4>
-                <a href="./user/contact-us.php" class="btn custom-form-btn btn-lg">CONTACT US</a>
+                <h4 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">Having Any Problem Booking? Let Us Know ! ! !</h4>
+                <a href="./user/contact-us.php" class="btn custom-form-btn btn-lg" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">CONTACT US</a>
             </div>
         </section>
 
@@ -682,10 +690,14 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"> </script>
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/app.js"></script>
 </body>
 

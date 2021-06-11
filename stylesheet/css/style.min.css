@@ -497,8 +497,7 @@ navbar brand logo modified for screen-readers
   margin: 0 auto;
 }
 .user-payment-response-container .message-container a {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
   color: #a8b622;
   transition: 3s ease;
 }
@@ -683,7 +682,8 @@ input.invalid {
 }
 
 /*.............booking history mini table ......*/
-.booking-history-table th, .booking-history-table td {
+.booking-history-table th,
+.booking-history-table td {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
@@ -844,6 +844,7 @@ input.invalid {
   /* remove default style from browsers */
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
   width: 100%;
@@ -915,3 +916,5 @@ input.invalid {
   border-radius: 3px;
   color: #4d9f45;
 }
+
+/*# sourceMappingURL=style.min.css.map */
