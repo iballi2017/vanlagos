@@ -100,6 +100,10 @@ textarea {
 /* buttons */
 
 .btn {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
     &:focus {
         outline: 0;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
@@ -371,7 +375,7 @@ navbar brand logo modified for screen-readers
 
 #pricingSection {
     &>.container {
-        max-width: 800px;
+        max-width: 1000px;
     }
     .cust_title {
         display: inline-flex;
@@ -398,6 +402,22 @@ navbar brand logo modified for screen-readers
     .price {
         font-size: 1.2rem;
         font-weight: 600;
+    }
+    .watermark {
+        background-color: rgba(#ffffff, .6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-weight: bold;
+            font-size: 2.3rem;
+            color: lightslategray;
+        }
     }
 }
 

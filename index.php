@@ -95,7 +95,7 @@
             <div class="form-wrapper card-body p-0">
                 <ul class="nav nav-pills row hero-main-nav-pills  m-0" id="pills-tab" role="tablist">
                     <li class="nav-item col-4 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links active curve-left-top px-md-5 btn-md-lg" id="pills-hirevan-tab" data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan" aria-selected="true">VAN
+                        <a class="nav-link hero-tab-nav-links curve-left-top px-md-5 btn-md-lg disabled" id="pills-hirevan-tab" data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan" aria-selected="false">VAN
                             HIRE</a>
                     </li>
                     <!-- <li class="nav-item col-4 text-center p-0">
@@ -106,7 +106,7 @@
                         <a class="nav-link hero-tab-nav-links curve-right-top px-md-5 btn-md-lg" id="pills-car-tab" data-toggle="pill" href="#pills-car" role="tab" aria-controls="pills-car" aria-selected="false">CAR</a>
                     </li> -->
                     <li class="nav-item col-4 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links px-md-5 btn-md-lg disabled" id="pills-hirebus-tab" data-toggle="pill" href="#pills-hirebus" role="tab" aria-controls="pills-hirebus" aria-selected="false">BUS
+                        <a class="nav-link hero-tab-nav-links px-md-5 btn-md-lg active" id="pills-hirebus-tab" data-toggle="pill" href="#pills-hirebus" role="tab" aria-controls="pills-hirebus" aria-selected="true">BUS
                             HIRE</a>
                     </li>
                     <li class="nav-item col-4 text-center p-0">
@@ -114,7 +114,7 @@
                     </li>
                 </ul>
                 <div class="tab-content bg-white py-3" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-hirevan" role="tabpanel" aria-labelledby="pills-hirevan-tab">
+                    <div class="tab-pane fade" id="pills-hirevan" role="tabpanel" aria-labelledby="pills-hirevan-tab">
                         <!-- VAN HIRE FORM OPENS -->
                         <div class="container">
 
@@ -291,7 +291,7 @@
                         </div>
                         <!-- VAN HIRE FORM CLOSES -->
                     </div>
-                    <div class="tab-pane fade" id="pills-hirebus" role="tabpanel" aria-labelledby="pills-hirebus-tab">
+                    <div class="tab-pane fade show active" id="pills-hirebus" role="tabpanel" aria-labelledby="pills-hirebus-tab">
 
                         <!-- BUS HIRE FORM OPENS -->
 
@@ -482,6 +482,9 @@
                 <div class="row no-gutters">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card m-2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                            <div class="watermark">
+                                <p>Coming soon!</p>
+                            </div>
                             <div class="card-header text-center">
                                 <span class="desc-icons">
                                     <img src="./images/punctuality.png" class="img-fluid" alt="">
@@ -510,6 +513,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card m-2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+
                             <div class="card-header text-center">
                                 <span class="desc-icons">
                                     <img src="./images/punctuality.png" class="img-fluid" alt="">
@@ -538,6 +542,9 @@
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="card m-2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                            <div class="watermark">
+                                <p>Coming soon!</p>
+                            </div>
                             <div class="card-header text-center">
                                 <span class="desc-icons">
                                     <img src="./images/punctuality.png" class="img-fluid" alt="">
