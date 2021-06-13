@@ -403,6 +403,26 @@ navbar brand logo modified for screen-readers
   border: 1px solid #a8b622;
 }
 
+/*................loader ...................*/
+#loading {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffff;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loading .spinner-border {
+  width: 6rem;
+  height: 6rem;
+}
+
 /*...............why-choose-us-list................*/
 .why-choose-us .section-title::after {
   background-color: #a8b622;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Van Lagos</title>    
+    <title>Van Lagos</title>
     <!-- favicon -->
     <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
     <!-- font family -->
@@ -19,15 +19,19 @@
 </head>
 
 <body>
+    <!-- page loader -->
+    <div id="loading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg main-nav-bar sticky-top">
 
         <div class="container">
             <a class="navbar-brand" href=".././">
                 <h2>Brand Logo</h2>
             </a>
-            <button class="navbar-toggler mobile-menu-icon" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler mobile-menu-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars fa-1x"></i>
             </button>
 
@@ -37,7 +41,7 @@
                     <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2 w-50">Sign In</a>
                     <a href="#" class="btn-custom-green-outline custom-nav-btn px-5 py-2">Sign Up</a>
                 </div>
-                               
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="btn btn-lg nav-call-toaction-btn px-4 nav-link custom-nav-link" href="../#pricingSection">Book Now</a>
@@ -52,17 +56,14 @@
                         <a class="nav-link custom-nav-link" href="../user/contact-us-alt.php">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="../user/booking-history.php"><i
-                                class="fas fa-user"></i> My Account</a>
+                        <a class="nav-link custom-nav-link" href="../user/booking-history.php"><i class="fas fa-user"></i> My Account</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
-                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
-                            href="../user/login.php">Sign
+                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2" href="../user/login.php">Sign
                             In</a>
                     </li>
                     <li class="nav-item mt-2 mt-md-0 d-none d-lg-block">
-                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2"
-                            href="../user/register.php">Sign
+                        <a class="btn btn-custom-green-outline custom-nav-btn px-3 mx-md-2" href="../user/register.php">Sign
                             Up</a>
                     </li>
                     <li class="nav-item">

@@ -23,6 +23,12 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="20">
+    <!-- page loader -->
+    <div id="loading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg main-nav-bar sticky-top">
 
         <div class="container">
@@ -705,6 +711,8 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="./js/app.jquery.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

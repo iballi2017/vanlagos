@@ -347,6 +347,28 @@ navbar brand logo modified for screen-readers
 }
 
 
+/*................loader ...................*/
+
+#loading {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ffff;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .spinner-border {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+
 /*...............why-choose-us-list................*/
 
 .why-choose-us {
