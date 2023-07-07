@@ -20,11 +20,11 @@
 
 <body>
     <!-- page loader -->
-    <div id="loading">
+    <!-- <div id="loading">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>
+    </div> -->
     <nav class="navbar navbar-expand-lg main-nav-bar sticky-top">
 
         <div class="container">

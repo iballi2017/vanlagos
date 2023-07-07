@@ -71,119 +71,112 @@
 //     x[n].className += " active";
 // }
 
-
-
 $(document).ready(function () {
-    const w = $(".passenger-accordion-btn").parent().parent().siblings()
-    $(".passenger-accordion-btn").click(function () {
-        if (!w.hasClass("show")) {
-            $(this).removeClass("passenger-accordion-plus-btn").addClass("passenger-accordion-minus-btn")
-        } else {
-            $(this).removeClass("passenger-accordion-minus-btn").addClass("passenger-accordion-plus-btn")
-        }
-    })
+  const w = $(".passenger-accordion-btn").parent().parent().siblings();
+  $(".passenger-accordion-btn").click(function () {
+    if (!w.hasClass("show")) {
+      $(this)
+        .removeClass("passenger-accordion-plus-btn")
+        .addClass("passenger-accordion-minus-btn");
+    } else {
+      $(this)
+        .removeClass("passenger-accordion-minus-btn")
+        .addClass("passenger-accordion-plus-btn");
+    }
+  });
 
-    var loc = window.location.pathname;
+  var loc = window.location.pathname;
 
-    $('#navbarSupportedContent').find('a').each(function () {
-        $(this).toggleClass('active', $(this).attr('href') == loc);
+  $("#navbarSupportedContent")
+    .find("a")
+    .each(function () {
+      $(this).toggleClass("active", $(this).attr("href") == loc);
     });
 
-    var path = loc.split("/").pop();
-    if (path == "") {
-        path = 'index.php';
+  var path = loc.split("/").pop();
+  if (path == "") {
+    path = "index.php";
+  }
+
+  var target = $('nav-item a[href="' + path + '"]');
+  target.addClass("active");
+
+  // $('.special-service-dropdown').hover(function () {
+  //     // alert("Hello world!")
+  //     // this.parent().css({ 'background-color': 'red' })
+  //     this.parent().css('background-color', 'red')
+  // })
+
+  // $(".dropdownToggler").hover(function () {
+  //     alert("Hello world!")
+  //     $(this).children(".dropDownItem").toggle();
+  // })
+
+  // #### Payment section PART B
+  function showbankDetails(arg1, arg2) {
+    if (arg1) {
+      if (arg2.hasClass("d-none")) {
+        arg2.removeClass("d-none");
+      } else {
+        return;
+      }
     }
-
-
-    var target = $('nav-item a[href="' + path + '"]');
-    target.addClass('active');
-
-
-
-
-    // $('.special-service-dropdown').hover(function () {
-    //     // alert("Hello world!")
-    //     // this.parent().css({ 'background-color': 'red' })
-    //     this.parent().css('background-color', 'red')
-    // })
-
-    // $(".dropdownToggler").hover(function () {
-    //     alert("Hello world!")
-    //     $(this).children(".dropDownItem").toggle();
-    // })
-
-
-
-    // #### Payment section PART B
-    function showbankDetails(arg1, arg2) {
-        if (arg1) {
-            if (arg2.hasClass("d-none")) {
-                arg2.removeClass("d-none")
-            } else {
-                return
-            }
-        }
+  }
+  //
+  function hidebankDetails(arg1, arg2) {
+    if (arg1) {
+      if (!arg2.hasClass("d-none")) {
+        arg2.addClass("d-none");
+      } else {
+        return;
+      }
     }
-    // 
-    function hidebankDetails(arg1, arg2) {
-        if (arg1) {
-            if (!arg2.hasClass("d-none")) {
-                arg2.addClass("d-none")
-            } else {
-                return
-            }
-        }
-    }
+  }
 
-    var bankTransfer = $("#bankTransfer");
-    var bankTransferChecked = $("#bankTransfer:checked");
-    var seller_account_details = $("#seller_account_details");
-    // 
-    var gtPay = $("#gtPay");
-    var gtPayChecked = $("#gtPay:checked");
+  var bankTransfer = $("#bankTransfer");
+  var bankTransferChecked = $("#bankTransfer:checked");
+  var seller_account_details = $("#seller_account_details");
+  //
+  var gtPay = $("#gtPay");
+  var gtPayChecked = $("#gtPay:checked");
 
-    bankTransfer.on("click", function () {
-        showbankDetails(bankTransferChecked, seller_account_details)
-    })
+  bankTransfer.on("click", function () {
+    showbankDetails(bankTransferChecked, seller_account_details);
+  });
 
-    gtPay.on("click", function () {
-        hidebankDetails(gtPayChecked, seller_account_details)
-    })
-
-})
-
+  gtPay.on("click", function () {
+    hidebankDetails(gtPayChecked, seller_account_details);
+  });
+});
 
 // #### Payment section PART A
-// 
+//
 var agreeTerms = document.querySelector("#agreeTerms");
 var agreeTermsLabel = document.querySelector("#agreeTermsLabel");
 var paymentOption = document.querySelector("#paymentOption");
 var paymentContinueBtn = document.querySelector("#paymentContinueBtn");
 
 function checktoggle(arg1, arg2) {
-    if (!arg1.checked) {
-        arg2.classList.remove("d-none")
-        paymentContinueBtn.classList.remove("grey-btn")
-        paymentContinueBtn.classList.add("custom-form-btn");
-        paymentContinueBtn.removeAttribute("disabled")
-    } else {
-        arg2.classList.add("d-none")
-        paymentContinueBtn.classList.add("grey-btn")
-        paymentContinueBtn.classList.remove("custom-form-btn")
-        paymentContinueBtn.setAttribute("disabled", true)
-    }
+  if (!arg1.checked) {
+    arg2.classList.remove("d-none");
+    paymentContinueBtn.classList.remove("grey-btn");
+    paymentContinueBtn.classList.add("custom-form-btn");
+    paymentContinueBtn.removeAttribute("disabled");
+  } else {
+    arg2.classList.add("d-none");
+    paymentContinueBtn.classList.add("grey-btn");
+    paymentContinueBtn.classList.remove("custom-form-btn");
+    paymentContinueBtn.setAttribute("disabled", true);
+  }
 }
-
 
 var checkTermsandCondition = () => {
-    checktoggle(agreeTerms, paymentOption)
-}
-
-
+  checktoggle(agreeTerms, paymentOption);
+};
 
 /* back function */
 function goBack() {
-    window.history.back();
+  window.history.back();
 }
 
 /* handle sidenave toggle */
@@ -191,26 +184,24 @@ function goBack() {
 const sidenavToggler = document.querySelector(".sidenav-toggler");
 const sidenavClose = document.querySelector(".sidenav-close");
 const handleSideNavToggle = () => {
-    const sidenavContainer = document.querySelector(".sidenav-container");
-    if (sidenavContainer.classList.contains("hide")) {
-        sidenavContainer.classList.remove("hide");
-    }
-
-}
+  const sidenavContainer = document.querySelector(".sidenav-container");
+  if (sidenavContainer.classList.contains("hide")) {
+    sidenavContainer.classList.remove("hide");
+  }
+};
 const handleSideNavClose = () => {
-    const sidenavContainer = document.querySelector(".sidenav-container");
-    if (!sidenavContainer.classList.contains("hide")) {
-        sidenavContainer.classList.add("hide");
-    }
-}
+  const sidenavContainer = document.querySelector(".sidenav-container");
+  if (!sidenavContainer.classList.contains("hide")) {
+    sidenavContainer.classList.add("hide");
+  }
+};
 
-if(sidenavToggler){
-    sidenavToggler.addEventListener("click", handleSideNavToggle)
+if (sidenavToggler) {
+  sidenavToggler.addEventListener("click", handleSideNavToggle);
 }
-if(sidenavClose){
-sidenavClose.addEventListener("click", handleSideNavClose)
+if (sidenavClose) {
+  sidenavClose.addEventListener("click", handleSideNavClose);
 }
-
 
 // switching between daily and hourly vehicle hire to view and hide corresponding form-control
 var dailyRadio = document.getElementById("dailyRadio");
@@ -218,20 +209,113 @@ var hourlyRadio = document.getElementById("hourlyRadio");
 var switchTwo = document.getElementById("switchTwo");
 
 function performSwitch() {
-    if (hourlyRadio.checked) {
-        if (switchOne.classList.contains("d-none")) {
-            switchOne.classList.remove("d-none")
-        }
-        if (!switchTwo.classList.contains("d-none")) {
-            switchTwo.classList.add("d-none")
-        }
+  if (hourlyRadio.checked) {
+    if (switchOne.classList.contains("d-none")) {
+      switchOne.classList.remove("d-none");
     }
-    if (dailyRadio.checked) {
-        if (switchTwo.classList.contains("d-none")) {
-            switchTwo.classList.remove("d-none")
-        }
-        if (!switchOne.classList.contains("d-none")) {
-            switchOne.classList.add("d-none")
-        }
+    if (!switchTwo.classList.contains("d-none")) {
+      switchTwo.classList.add("d-none");
     }
+  }
+  if (dailyRadio.checked) {
+    if (switchTwo.classList.contains("d-none")) {
+      switchTwo.classList.remove("d-none");
+    }
+    if (!switchOne.classList.contains("d-none")) {
+      switchOne.classList.add("d-none");
+    }
+  }
 }
+
+/**Booking Timer */
+function bookingTimer(date) {
+  var countDownDate = new Date(date).getTime();
+  var isStarted = false;
+  var isPending = false;
+  var isCompleted = true;
+
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var daysToHours = days * 24;
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    var bookingStatus = document.querySelector(".booking-status");
+
+    if (isStarted) {
+      if (bookingStatus) {
+        if (bookingStatus?.classList.contains("pending")) {
+          bookingStatus?.classList.remove("pending");
+        }
+        if (bookingStatus?.classList.contains("completed")) {
+          bookingStatus?.classList.remove("completed");
+        }
+
+        if (!bookingStatus?.classList.contains("started")) {
+          bookingStatus?.classList.add("started");
+        }
+      }
+    }
+
+    if (!isStarted && isPending) {
+      if (bookingStatus?.classList.contains("completed")) {
+        bookingStatus?.classList.remove("completed");
+      }
+      if (bookingStatus?.classList.contains("started")) {
+        bookingStatus?.classList.remove("started");
+      }
+
+      if (!bookingStatus?.classList.contains("pending")) {
+        bookingStatus?.classList.add("pending");
+      }
+    }
+
+    if (!isStarted && isCompleted) {
+      if (bookingStatus?.classList.contains("pending")) {
+        bookingStatus?.classList.remove("pending");
+      }
+      if (bookingStatus?.classList.contains("started")) {
+        bookingStatus?.classList.remove("started");
+      }
+
+      if (!bookingStatus?.classList.contains("completed")) {
+        bookingStatus?.classList.add("completed");
+      }
+    }
+
+    let content = `  <div class='countdown-timer-container mb-3'><div class='book-timer-wrapper'>`;
+    content += `<div class='time-item'><span>${hours < 10 ? "0" : ""}${
+      isStarted && hours + daysToHours ? hours + daysToHours : ""
+    }</span><span>hr</span></div>`;
+    content += "<div>:</div>";
+    content += `<div class='time-item'><span>${
+      isStarted && minutes < 10 ? "0" : ""
+    }${isStarted && minutes ? minutes : ""}</span><span>min</span></div>`;
+    content += "<div>:</div>";
+    content += `<div class='time-item'><span>${
+      isStarted && seconds < 10 ? "0" : ""
+    }${isStarted && minutes ? seconds : ""}</span><span>s</span></div>`;
+    content += `      </div></div>`;
+    document.getElementById("bookingTimer").innerHTML = content;
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+}
+
+// bookingTimer("Jan 5, 2024 15:37:25");
+bookingTimer("2024/01/01");
