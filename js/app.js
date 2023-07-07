@@ -230,9 +230,10 @@ function performSwitch() {
 /**Booking Timer */
 function bookingTimer(date) {
   var countDownDate = new Date(date).getTime();
-  var isStarted = false;
-  var isPending = false;
-  var isCompleted = true;
+  var isStarted = true;
+  var isPending = true;
+  var isCompleted = false;
+  var tag = document.querySelector(".booking-status .tag");
 
   // Update the count down every 1 second
   var x = setInterval(function () {
@@ -264,6 +265,7 @@ function bookingTimer(date) {
 
         if (!bookingStatus?.classList.contains("started")) {
           bookingStatus?.classList.add("started");
+          tag ? (tag.innerHTML = "Started") : "Pending";
         }
       }
     }
@@ -278,6 +280,7 @@ function bookingTimer(date) {
 
       if (!bookingStatus?.classList.contains("pending")) {
         bookingStatus?.classList.add("pending");
+        tag ? (tag.innerHTML = "Pending") : "Pending";
       }
     }
 
@@ -291,6 +294,7 @@ function bookingTimer(date) {
 
       if (!bookingStatus?.classList.contains("completed")) {
         bookingStatus?.classList.add("completed");
+        tag ? (tag.innerHTML = "Completed") : "Pending";
       }
     }
 
