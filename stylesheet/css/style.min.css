@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap");
 /********
     scss variables
@@ -210,6 +209,29 @@ textarea {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
+.custom-form-btn[aria-label=inverse] {
+  color: #a8b622;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 5px;
+  border: 1px solid #a8b622;
+  background: #fff;
+  padding-right: 0.8em;
+  padding-left: 0.8em;
+}
+.custom-form-btn[aria-label=inverse]:hover {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 50em) {
+  .custom-form-btn,
+.custom-form-btn[aria-label=inverse] {
+    height: auto;
+  }
+}
 .grey-btn {
   background-color: #c4c4c4;
   color: #ffffff;
@@ -225,7 +247,7 @@ textarea {
 }
 
 .nav-call-toaction-btn {
-  background-color: #F18805;
+  background-color: #f18805;
 }
 
 /*......................................................*/
@@ -697,10 +719,10 @@ input.invalid {
   color: #a8b622;
 }
 .step-2-fill-information-page .passenger-accordion-plus-btn::before {
-  content: "";
+  content: "\f067";
 }
 .step-2-fill-information-page .passenger-accordion-minus-btn::before {
-  content: "";
+  content: "\f068";
 }
 .step-2-fill-information-page .passenger-accordion-btn:hover {
   border: none;
@@ -758,7 +780,7 @@ input.invalid {
     position: relative;
   }
   .sidenav-container #user-acct-sidenav .nav-item::after {
-    content: "";
+    content: "\f0da";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: absolute;
@@ -851,7 +873,7 @@ input.invalid {
   outline: 0;
 }
 .userHireForm .pick-up-label::before {
-  content: "";
+  content: "\f073";
   margin-right: 0.3em;
 }
 
@@ -868,7 +890,7 @@ input.invalid {
   background-color: unset;
 }
 .select_drop_wrapper::after {
-  content: "";
+  content: "\f0dd";
   font-size: 20px;
   position: absolute;
   right: 0.3em;
@@ -916,7 +938,7 @@ input.invalid {
 }
 .rej_checkbox:checked ~ label .customCheck::after,
 .rej_radio:checked ~ label .customCheck::after {
-  content: "";
+  content: "\f00c";
   color: #4d9f45;
 }
 
@@ -957,6 +979,111 @@ input.invalid {
   background-color: #F6F6F6;
   border-radius: 3px;
   color: #4d9f45;
+}
+
+.countdown-timer-container {
+  border: 2px solid #e3e3e3;
+  border-radius: 7px;
+  padding: 1em;
+}
+
+.booking-status {
+  font-family: Roboto;
+  font-size: 1.03rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1b2c19;
+}
+.booking-status .tag {
+  padding: 0.32em 1.3em;
+  display: inline-block;
+  margin-bottom: 1.1em;
+  border-radius: 5px;
+}
+.booking-status.pending .tag {
+  background: #f3be7b;
+}
+.booking-status.pending .tag + #bookingTimer .book-timer-wrapper {
+  color: #f3be7b;
+}
+.booking-status.pending .tag + #bookingTimer .time-item span:first-child::after, .booking-status.pending .tag + #bookingTimer .time-item span:first-child::before {
+  background-color: #f3be7b;
+}
+.booking-status.started .tag {
+  background: #fa5252;
+  color: #ffffff;
+}
+.booking-status.started .tag + #bookingTimer .book-timer-wrapper {
+  color: #fa5252;
+}
+.booking-status.started .tag + #bookingTimer .time-item span:first-child::after, .booking-status.started .tag + #bookingTimer .time-item span:first-child::before {
+  background-color: #fa5252;
+}
+.booking-status.completed .tag {
+  background: #6ec04c;
+  color: #ffffff;
+}
+.booking-status.completed .tag + #bookingTimer .book-timer-wrapper {
+  color: #6ec04c;
+}
+.booking-status.completed .tag + #bookingTimer .time-item span:first-child::after, .booking-status.completed .tag + #bookingTimer .time-item span:first-child::before {
+  background-color: #6ec04c;
+}
+.booking-status.completed .time-item, .booking-status.pending .time-item {
+  display: flex;
+  align-items: flex-end;
+}
+.booking-status.completed .time-item span, .booking-status.pending .time-item span {
+  --pseudo-width: 45%;
+  display: block;
+  height: 100%;
+}
+.booking-status.completed .time-item span:first-child, .booking-status.pending .time-item span:first-child {
+  width: 2.5rem;
+  position: relative;
+}
+.booking-status.completed .time-item span:first-child::after, .booking-status.pending .time-item span:first-child::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: calc(var(--pseudo-width));
+}
+.booking-status.completed .time-item span:first-child::before, .booking-status.pending .time-item span:first-child::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: calc(var(--pseudo-width));
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.book-timer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  color: #6ec04c;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.book-timer-wrapper .time-item {
+  display: flex;
+  align-items: center;
+}
+.book-timer-wrapper .time-item span {
+  --pseudo-width: 45%;
+}
+.book-timer-wrapper .time-item span:first-child {
+  margin-right: 0.2em;
+}
+@media only screen and (max-width: 50em) {
+  .book-timer-wrapper {
+    font-size: 1.3rem;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map */

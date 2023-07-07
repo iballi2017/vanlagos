@@ -40,7 +40,6 @@ h6 {
     }
 }
 
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -96,7 +95,6 @@ textarea {
     width: 100%;
 }
 
-
 /* buttons */
 
 .btn {
@@ -126,6 +124,30 @@ textarea {
     }
 }
 
+.custom-form-btn[aria-label="inverse"] {
+    color: #a8b622;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1px solid #a8b622;
+    background: #fff;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    .custom-form-btn,
+    .custom-form-btn[aria-label="inverse"] {
+        height: auto;
+    }
+}
+
 .grey-btn {
     background-color: #c4c4c4;
     color: $white;
@@ -141,13 +163,12 @@ textarea {
 }
 
 .nav-call-toaction-btn {
-    background-color: #F18805;
+    background-color: #f18805;
 }
 
 //........................................
 
 /*......................................................*/
-
 
 /*...................... Brand-logo style considering screen readers ......................*/
 
@@ -161,7 +182,6 @@ textarea {
         color: $white;
     }
 }
-
 
 /*...........................
 navbar brand logo modified for screen-readers
@@ -211,9 +231,9 @@ navbar brand logo modified for screen-readers
 
 .navbar-nav {
     .nav-item {
-        +li {
+        + li {
             @include mq(768px) {
-                margin-left: .4em;
+                margin-left: 0.4em;
             }
         }
         .active {
@@ -234,16 +254,15 @@ navbar brand logo modified for screen-readers
     }
 }
 
-
 /*......................................................*/
-
 
 /* ..............
  hero content section
  ..................*/
 
 .hero {
-    height: 80/100 * $OneViewport;
+    // height: 80/100 * $OneViewport;
+    height: calc(calc(80 / 100) * $OneViewport);
     background-image: url(../../images/hero-banner4.png);
     background-blend-mode: soft-light;
     background-size: cover;
@@ -286,7 +305,6 @@ navbar brand logo modified for screen-readers
     }
 }
 
-
 /*...................... Hero tab ......................*/
 
 .hero-tab-main-content-wrapper {
@@ -321,15 +339,14 @@ navbar brand logo modified for screen-readers
     height: 10px;
 }
 
-
 /*.................user sidenav..........*/
 
 #user-acct-sidenav {
     li {
         list-style: none;
         background-color: $greyColor_alt;
-        margin-bottom: .5em;
-        padding: .5em 0;
+        margin-bottom: 0.5em;
+        padding: 0.5em 0;
         border-radius: 3px;
         transition: all 300ms ease-in-out;
         -webkit-transition: all 300ms ease-in-out;
@@ -345,7 +362,6 @@ navbar brand logo modified for screen-readers
         }
     }
 }
-
 
 /*................loader ...................*/
 
@@ -367,7 +383,6 @@ navbar brand logo modified for screen-readers
         height: 6rem;
     }
 }
-
 
 /*...............why-choose-us-list................*/
 
@@ -392,11 +407,10 @@ navbar brand logo modified for screen-readers
     }
 }
 
-
 /*............... Pricing ................*/
 
 #pricingSection {
-    &>.container {
+    & > .container {
         max-width: 1000px;
     }
     .cust_title {
@@ -426,7 +440,7 @@ navbar brand logo modified for screen-readers
         font-weight: 600;
     }
     .watermark {
-        background-color: rgba(#ffffff, .6);
+        background-color: rgba(#ffffff, 0.6);
         position: absolute;
         top: 0;
         bottom: 0;
@@ -442,7 +456,6 @@ navbar brand logo modified for screen-readers
         }
     }
 }
-
 
 /*...............How it works................*/
 
@@ -506,9 +519,7 @@ navbar brand logo modified for screen-readers
     }
 }
 
-
 /*......................................................*/
-
 
 /*...................... footer ......................*/
 
@@ -562,7 +573,6 @@ footer {
     // min-width: 300px;
 }
 
-
 /* Style the input fields */
 
 input {
@@ -583,20 +593,17 @@ input {
     }
 }
 
-
 /* Mark input boxes that gets an error on validation: */
 
 input.invalid {
     background-color: #ffdddd;
 }
 
-
 /* Hide all steps by default: */
 
 .tab {
     display: none;
 }
-
 
 /* Make circles that indicate the steps of the form: */
 
@@ -622,13 +629,11 @@ input.invalid {
     font-weight: 600;
 }
 
-
 /* Mark the active step: */
 
 .step.active {
     opacity: 1;
 }
-
 
 /* Mark the steps that are finished and valid: */
 
@@ -636,7 +641,7 @@ input.invalid {
     background-color: #00327a;
 }
 
-.step.finish>.step-label {
+.step.finish > .step-label {
     color: #00327a !important;
     font-weight: 600;
 }
@@ -662,7 +667,6 @@ input.invalid {
     transform: rotate(45deg);
 }
 
-
 /* Mark the steps that are finished and valid: */
 
 .step.finish {
@@ -679,7 +683,7 @@ input.invalid {
     background-image: url(../../images/seat.svg) !important;
 }
 
-.custom-control-input:checked~.custom-control-label::before {
+.custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
     border-color: $greenishColor;
     background-color: $greenishColor;
@@ -730,14 +734,13 @@ input.invalid {
     }
 }
 
-
 /*.............booking history mini table ......*/
 
 .booking-history-table {
     th,
     td {
-        padding-top: .2em;
-        padding-bottom: .2em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
     }
     th {
         .title {
@@ -753,7 +756,7 @@ input.invalid {
 }
 
 .sidenav-container {
-    @media(max-width: 800px) {
+    @media (max-width: 800px) {
         background-color: #e5e5e5;
         position: fixed;
         top: 0;
@@ -828,7 +831,7 @@ input.invalid {
     .payment-next-btn {
         display: block;
         width: 100%;
-        margin-bottom: .3em;
+        margin-bottom: 0.3em;
     }
 }
 
@@ -838,7 +841,6 @@ input.invalid {
         width: 40px;
     }
 }
-
 
 /* structure.hml style */
 
@@ -976,10 +978,10 @@ input.invalid {
     position: absolute;
     opacity: 0;
     margin-top: -3000px;
-    ~label {
+    ~ label {
         cursor: pointer;
     }
-    &:checked~label .customCheck {
+    &:checked ~ label .customCheck {
         &::after {
             content: "\f00c";
             color: $greenishColor;
@@ -988,13 +990,13 @@ input.invalid {
 }
 
 .rej_radio {
-    &:checked~label .customRadio {
+    &:checked ~ label .customRadio {
         box-shadow: inset 0 0 0 5px $greenishColor;
     }
 }
 
 .rej_radio.hire_option {
-    &:checked~label {
+    &:checked ~ label {
         background-color: $greenishLightColor;
         color: $white;
     }
@@ -1028,4 +1030,172 @@ input.invalid {
     background-color: $greyColor_alt;
     border-radius: 3px;
     color: $greenishColor;
+}
+
+.countdown-timer-container {
+    border: 2px solid #e3e3e3;
+    border-radius: 7px;
+    padding: 1em;
+}
+
+.booking-status {
+    font-family: Roboto;
+    font-size: 1.03rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #1b2c19;
+
+    .tag {
+        padding: 0.32em 1.3em;
+        display: inline-block;
+        margin-bottom: 1.1em;
+        border-radius: 5px;
+    }
+    &.pending {
+        .tag {
+            background: #f3be7b;
+
+            & + #bookingTimer {
+                .book-timer-wrapper {
+                    color: #f3be7b;
+                }
+                .time-item {
+                    span {
+                        &:first-child {
+                            &::after,
+                            &::before {
+                                background-color: #f3be7b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.started {
+        .tag {
+            background: #fa5252;
+            color: #ffffff;
+
+            & + #bookingTimer {
+                .book-timer-wrapper {
+                    color: #fa5252;
+                }
+                .time-item {
+                    span {
+                        &:first-child {
+                            &::after,
+                            &::before {
+                                background-color: #fa5252;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.completed {
+        .tag {
+            background: #6ec04c;
+            color: #ffffff;
+
+            & + #bookingTimer {
+                .book-timer-wrapper {
+                    color: #6ec04c;
+                }
+                .time-item {
+                    span {
+                        &:first-child {
+                            &::after,
+                            &::before {
+                                background-color: #6ec04c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.completed,
+    &.pending {
+        .time-item {
+            display: flex;
+            // align-items: center;
+            align-items: flex-end;
+
+            span {
+                --pseudo-width: 45%;
+                // --pseudo-width: 20px;
+                display: block;
+                height: 100%;
+                // background-color: red;
+                &:first-child {
+                    // margin-right: 0.2em;
+                    width: 2.5rem;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        width: calc(var(--pseudo-width));
+                    }
+                    &::before {
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        width: calc(var(--pseudo-width));
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.book-timer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    color: #6ec04c;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    .time-item {
+        display: flex;
+        align-items: center;
+
+        span {
+            --pseudo-width: 45%;
+            &:first-child {
+                margin-right: 0.2em;
+                // position: relative;
+                // &::after {
+                //     content: "";
+                //     display: block;
+                //     height: 2px;
+                //     width: calc(var(--pseudo-width));
+                // }
+                // &::before {
+                //     content: "";
+                //     display: block;
+                //     height: 2px;
+                //     width: calc(var(--pseudo-width));
+                //     position: absolute;
+                //     bottom: 0;
+                //     right: 0;
+                // }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 50em) {
+        font-size: 1.3rem;
+    }
 }

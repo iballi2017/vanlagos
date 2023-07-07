@@ -16,7 +16,9 @@ include_once '../includes/header.php'; ?>
                     <button class="btn btn-default sidenav-toggler d-block d-md-none">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <h2 class="text-display-lg">Book History Details</h2>
+                    <h2 class="text-display-lg">
+                        <button class="btn btn-sm mr-2" onClick="history.back()"><i class="fas fa-arrow-left fa-2x"></i></button> Book History Details
+                    </h2>
                 </div>
                 <!--  -->
                 <div class="card mb-3">
@@ -41,6 +43,21 @@ include_once '../includes/header.php'; ?>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h3 class="text-display-lg my-0">Time</h3>
+                    </div>
+                    <div class="card-body booking-status pending"> <!-- pending | started | completed -->
+                        <span class="tag">
+                            <!-- Rescheduled -->
+                            Pending
+                        </span>
+                        <div id="bookingTimer"></div>
+                        <button class="custom-form-btn | btn btn-lg" aria-label="inverse">Cancel</button>
+                        <button class="custom-form-btn | btn btn-lg">Reshedule</button>
                     </div>
                 </div>
                 <!--  -->
