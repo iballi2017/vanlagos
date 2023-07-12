@@ -303,8 +303,8 @@ function bookingTimer(date) {
     }
 
     let content = `  <div class='countdown-timer-container mb-3'><div class='book-timer-wrapper'>`;
-    content += `<div class='time-item'><span>${hours < 10 ? "0" : ""}${
-      isStarted && hours + daysToHours ? hours + daysToHours : ""
+    content += `<div class='time-item'><span>${hours + daysToHours < 10 ? "0" : ""}${
+      (isStarted && (hours + daysToHours)) ? (hours + daysToHours) : ""
     }</span><span>hr</span></div>`;
     content += "<div>:</div>";
     content += `<div class='time-item'><span>${
@@ -320,10 +320,18 @@ function bookingTimer(date) {
     // If the count down is over, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
+      let content = `  <div class='countdown-timer-container mb-3'><div class='book-timer-wrapper'>`;
+      content += `EXPIRED`
+      content += `</div></div>`
+      document.getElementById("bookingTimer").innerHTML = content;
     }
   }, 1000);
 }
 
-// bookingTimer("Jan 5, 2024 15:37:25");
-bookingTimer("2024/01/01");
+bookingTimer("Jan 5, 2024 15:37:25");
+// bookingTimer("Jul 14, 2024 15:37:25");
+// bookingTimer("Jul 13, 2023");
+// bookingTimer("Jul 12, 2023 12:40:25");
+// bookingTimer("Jul 14, 2023 15:37:25");
+// bookingTimer("2024/07/14");
+// bookingTimer("01/01/2023");
