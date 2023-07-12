@@ -230,60 +230,9 @@ function performSwitch() {
 /**Booking Timer */
 function bookingTimer(date) {
   var countDownDate = new Date(date).getTime();
-  var isStarted = false;
+  var isStarted = true;
   var isPending = false;
   var isCompleted = true;
-
-  // Update the count down every 1 second
-  var x = setInterval(function () {
-    // Get today's date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var daysToHours = days * 24;
-    var hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    var bookingStatus = document.querySelector(".booking-status");
-
-    if (isStarted) {
-      if (bookingStatus) {
-        if (bookingStatus?.classList.contains("pending")) {
-          bookingStatus?.classList.remove("pending");
-        }
-        if (bookingStatus?.classList.contains("completed")) {
-          bookingStatus?.classList.remove("completed");
-  if (hourlyRadio.checked) {
-    if (switchOne.classList.contains("d-none")) {
-      switchOne.classList.remove("d-none");
-    }
-    if (!switchTwo.classList.contains("d-none")) {
-      switchTwo.classList.add("d-none");
-    }
-  }
-  if (dailyRadio.checked) {
-    if (switchTwo.classList.contains("d-none")) {
-      switchTwo.classList.remove("d-none");
-    }
-    if (!switchOne.classList.contains("d-none")) {
-      switchOne.classList.add("d-none");
-    }
-  }
-}
-
-/**Booking Timer */
-function bookingTimer(date) {
-  var countDownDate = new Date(date).getTime();
-  var isStarted = true;
-  var isPending = true;
-  var isCompleted = false;
   var tag = document.querySelector(".booking-status .tag");
 
   // Update the count down every 1 second
@@ -317,65 +266,11 @@ function bookingTimer(date) {
         if (!bookingStatus?.classList.contains("started")) {
           bookingStatus?.classList.add("started");
 
-        if (!bookingStatus?.classList.contains("started")) {
-          bookingStatus?.classList.add("started");
-          tag ? (tag.innerHTML = "Started") : "Pending";
+          if (!bookingStatus?.classList.contains("started")) {
+            bookingStatus?.classList.add("started");
+            tag ? (tag.innerHTML = "Started") : "Pending";
+          }
         }
-      }
-    }
-
-    if (!isStarted && isPending) {
-      if (bookingStatus?.classList.contains("completed")) {
-        bookingStatus?.classList.remove("completed");
-      }
-      if (bookingStatus?.classList.contains("started")) {
-        bookingStatus?.classList.remove("started");
-      }
-
-      if (!bookingStatus?.classList.contains("pending")) {
-        bookingStatus?.classList.add("pending");
-      }
-    }
-
-    if (!isStarted && isCompleted) {
-      if (bookingStatus?.classList.contains("pending")) {
-        bookingStatus?.classList.remove("pending");
-      }
-      if (bookingStatus?.classList.contains("started")) {
-        bookingStatus?.classList.remove("started");
-      }
-
-      if (!bookingStatus?.classList.contains("completed")) {
-        bookingStatus?.classList.add("completed");
-      }
-    }
-
-    let content = `  <div class='countdown-timer-container mb-3'><div class='book-timer-wrapper'>`;
-    content += `<div class='time-item'><span>${hours < 10 ? "0" : ""}${
-      isStarted && hours + daysToHours ? hours + daysToHours : ""
-    }</span><span>hr</span></div>`;
-    content += "<div>:</div>";
-    content += `<div class='time-item'><span>${
-      isStarted && minutes < 10 ? "0" : ""
-    }${isStarted && minutes ? minutes : ""}</span><span>min</span></div>`;
-    content += "<div>:</div>";
-    content += `<div class='time-item'><span>${
-      isStarted && seconds < 10 ? "0" : ""
-    }${isStarted && minutes ? seconds : ""}</span><span>s</span></div>`;
-    content += `      </div></div>`;
-    document.getElementById("bookingTimer").innerHTML = content;
-
-    // If the count down is over, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-}
-
-// bookingTimer("Jan 5, 2024 15:37:25");
-bookingTimer("2024/01/01");
-
       }
     }
 
