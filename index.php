@@ -101,7 +101,7 @@
             <div class="form-wrapper card-body p-0">
                 <ul class="nav nav-pills row hero-main-nav-pills  m-0" id="pills-tab" role="tablist">
                     <li class="nav-item col-4 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links curve-left-top px-md-5 btn-md-lg disabled" id="pills-hirevan-tab" data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan" aria-selected="false">VAN
+                        <a class="nav-link hero-tab-nav-links curve-left-top px-md-5 btn-md-lg" id="pills-hirevan-tab" data-toggle="pill" href="#pills-hirevan" role="tab" aria-controls="pills-hirevan" aria-selected="false">VAN
                             HIRE</a>
                     </li>
                     <!-- <li class="nav-item col-4 text-center p-0">
@@ -116,7 +116,7 @@
                             HIRE</a>
                     </li>
                     <li class="nav-item col-4 text-center p-0">
-                        <a class="nav-link hero-tab-nav-links curve-right-top px-md-5 btn-md-lg disabled" id="pills-car-tab" data-toggle="pill" href="#pills-car" role="tab" aria-controls="pills-car" aria-selected="false">CAR</a>
+                        <a class="nav-link hero-tab-nav-links curve-right-top px-md-5 btn-md-lg" id="pills-car-tab" data-toggle="pill" href="#pills-car" role="tab" aria-controls="pills-car" aria-selected="false">CAR</a>
                     </li>
                 </ul>
                 <div class="tab-content bg-white py-3" id="pills-tabContent">
@@ -435,6 +435,7 @@
                         </form>
                         <!-- BUS HIRE FORM CLOSES -->
                     </div>
+                    
                     <div class="tab-pane fade" id="pills-car" role="tabpanel" aria-labelledby="pills-car-tab">
 
                         <!-- CAR FORM OPENS -->
